@@ -22,7 +22,7 @@ export const imagealt = "Weevio Cloud Documentation"
 export const twitterhandle = "@WeevioCloud"
 
 export const companyname = "Weevio"
-export const companylink = "https://weevio.com"
+export const companylink = "https://weevio.co"
 
 export const branding = false
 export const rightsidebar = true

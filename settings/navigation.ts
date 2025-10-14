@@ -7,7 +7,7 @@ export const Navigations = [
   },
   {
     title: "Weevio Cloud",
-    href: "https://weevio.com",
+    href: "https://cloud.weevio.co",
     external: true,
   },
 ]

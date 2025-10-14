@@ -406,7 +406,7 @@ The Weevio Cloud API provides programmatic access to all platform features.
 ## API Base URL
 
 ```
-https://api.weevio.com/v1
+https://weevio.co/api/
 ```
 
 ## Response Format

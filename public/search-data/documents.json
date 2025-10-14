@@ -51,7 +51,7 @@
     "slug": "/api",
     "title": "API Reference",
     "description": "Complete API documentation for Weevio Cloud platform.",
-    "content": "# API Reference\n\nComplete REST API documentation for Weevio Cloud.\n\n## Overview\n\nThe Weevio Cloud API provides programmatic access to all platform features.\n\n## Getting Started\n\n## API Base URL\n\n```\nhttps://api.weevio.com/v1\n```\n\n## Response Format\n\nAll API responses are in JSON format.\n",
+    "content": "# API Reference\n\nComplete REST API documentation for Weevio Cloud.\n\n## Overview\n\nThe Weevio Cloud API provides programmatic access to all platform features.\n\n## Getting Started\n\n## API Base URL\n\n```\nhttps://cloud.weevio.co/api\n```\n\n## Response Format\n\nAll API responses are in JSON format.\n",
     "_searchMeta": {
       "cleanContent": "api reference complete rest api documentation for weevio cloud overview the weevio cloud api provides programmatic access to all platform features getting started api base url response format all api responses are in json format",
       "headings": [
@@ -69,7 +69,7 @@
         "Getting Started",
         "API Base URL",
         "Response Format",
-        "https://api.weevio.com/v1"
+        "https://cloud.weevio.co/api"
       ]
     }
   },
