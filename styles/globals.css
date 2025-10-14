@@ -130,6 +130,10 @@
   @apply dark:prose-invert prose-code:text-neutral-800 dark:prose-code:bg-neutral-900 dark:prose-code:text-white dark:prose-pre:bg-neutral-900;
 }
 
+.dark .typography :where(h1, h2, h3, h4, h5, h6):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  color: oklch(0.985 0 0);
+}
+
 .prose {
   margin: 0 !important;
 }
