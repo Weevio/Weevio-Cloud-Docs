@@ -16,12 +16,11 @@ export function Logo() {
         alt={`${Settings.title} main logo`}
         title={`${Settings.title} main logo`}
         aria-label={`${Settings.title} main logo`}
-        width={34}
-        height={34}
+        width={148}
+        height={48}
         loading="lazy"
         decoding="async"
       />
-      <span className="text-md font-semibold">{Settings.title}</span>
     </Link>
   )
 }
