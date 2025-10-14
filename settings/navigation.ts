@@ -13,5 +13,5 @@ export const Navigations = [
 ]
 
 export const GitHubLink = {
-  href: "https://github.com/macexperience/Weevio-Cloud-Docs",
+  href: null,
 }
