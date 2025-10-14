@@ -1,7 +1,16 @@
 {
-  "name": "rubix-documents",
-  "version": "1.0.1",
+  "name": "weevio-cloud-docs",
+  "version": "1.0.0",
   "private": false,
+  "description": "Official documentation for Weevio Cloud platform",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/macexperience/Weevio-Cloud-Docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/macexperience/Weevio-Cloud-Docs/issues"
+  },
+  "homepage": "https://github.com/macexperience/Weevio-Cloud-Docs#readme",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
