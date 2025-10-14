@@ -2,16 +2,16 @@ import { PageRoutes } from "@/lib/pageroutes"
 
 export const Navigations = [
   {
-    title: "Docs",
+    title: "Documentation",
     href: `/docs${PageRoutes[0].href}`,
   },
   {
-    title: "Rubix",
-    href: "https://rubixstudios.com.au",
+    title: "Weevio Cloud",
+    href: "https://weevio.com",
     external: true,
   },
 ]
 
 export const GitHubLink = {
-  href: "https://github.com/rubixvi/rubix-documents",
+  href: "https://github.com/macexperience/Weevio-Cloud-Docs",
 }

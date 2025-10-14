@@ -1,484 +1,1219 @@
 [
   {
-    "slug": "/basic-setup/changelog",
-    "title": "Changelog",
-    "description": "Changelogs and improvements to the Documents projects.",
-    "content": "## Added\n\n**Linting and Formatting**:\n\n* Added `pnpm run lint` and `pnpm run lint:fix` scripts to automate linting tasks.\n* Added `pnpm run format` and `pnpm run format:check` scripts to ensure consistent code formatting.\n\n**SEO Enhancements**:\n\n* Added an SEO component to MDX pages to dynamically include `keywords` and `lastModified` metadata for improved SEO generation.\n\n## Updated\n\n**Next.js Upgrade**:\n\n* Upgraded the project from **Next.js 14** to **Next.js 15**, leveraging the latest features and performance improvements.\n\n**Codebase Improvements**:\n\n* Reordered imports across the project files for better consistency and readability.\n\n**Mermaid Component**:\n\n* Fixed an ID bug that caused rendering issues when multiple Mermaid diagrams were included in MDX pages.\n* Improved initialization and rendering logic to prevent duplicate diagram rendering.\n",
+    "slug": "/api/authentication",
+    "title": "API Authentication",
+    "description": "Authenticate your API requests to Weevio Cloud.",
+    "content": "# API Authentication\n\nLearn how to authenticate requests to the Weevio Cloud API.\n\n## Authentication Methods\n\n*Documentation content to be added.*\n\n## API Keys\n\n*Documentation content to be added.*\n\n## Token Management\n\n*Documentation content to be added.*\n\n## Security Best Practices\n\n*Documentation content to be added.*\n",
     "_searchMeta": {
-      "cleanContent": "added linting and formatting: added pnpm run lint and pnpm run lint:fix scripts to automate linting tasks added pnpm run format and pnpm run format:check scripts to ensure consistent code formatting seo enhancements: added an seo component to mdx pages to dynamically include keywords and lastmodified metadata for improved seo generation updated next js upgrade: upgraded the project from next js 14 to next js 15 leveraging the latest features and performance improvements codebase improvements: reordered imports across the project files for better consistency and readability mermaid component: fixed an id bug that caused rendering issues when multiple mermaid diagrams were included in mdx pages improved initialization and rendering logic to prevent duplicate diagram rendering",
+      "cleanContent": "api authentication learn how to authenticate requests to the weevio cloud api authentication methods documentation content to be added api keys documentation content to be added token management documentation content to be added security best practices documentation content to be added",
       "headings": [
-        "Added",
-        "Updated"
+        "Authentication Methods",
+        "API Keys",
+        "Token Management",
+        "Security Best Practices"
       ],
       "keywords": [
-        "changelog",
-        "guide",
-        "nextjs",
-        "documents",
-        "Added",
-        "Updated",
-        "Linting and Formatting",
-        "SEO Enhancements",
-        "Next.js Upgrade",
-        "Next.js 14",
-        "Next.js 15",
-        "Codebase Improvements",
-        "Mermaid Component",
-        "pnpm run lint",
-        "pnpm run lint:fix",
-        "pnpm run format",
-        "pnpm run format:check",
-        "keywords",
-        "lastModified"
+        "authentication",
+        "API",
+        "security",
+        "tokens",
+        "Authentication Methods",
+        "API Keys",
+        "Token Management",
+        "Security Best Practices"
       ]
     }
   },
   {
-    "slug": "/basic-setup",
-    "title": "Introduction",
-    "description": "This section provides an overview of how to get started with the Documents, Next.js Document Starter Kit.",
-    "content": "![Banner](/images/banner.png \"Documents\")\n\n## Documents\n\n**Documents** is a lightweight, modular starter kit built with **Next.js**, **React**, **Tailwind CSS**, and **TypeScript**. It’s designed to help you\nlaunch structured, professional documentation without spending time on boilerplate.\n\nWhether you're building product manuals, internal systems guides, or dev documentation, Documents gives you a clean foundation that’s easy to\nextend and maintain.\n\n## Why use Documents?\n\nThis kit was built to simplify how teams manage and publish documentation. It works across projects of all sizes—from a single\nreadme to enterprise knowledge bases.\n\nWith MDX, reusable components, and Tailwind styling, it keeps your workflow efficient without compromising flexibility.\n\nUse it for:\n\n* **Product Guides** – Setup, usage, and troubleshooting\n* **Internal Docs** – Processes, policies, and team references\n* **Technical Manuals** – APIs, SDKs, architecture walkthroughs\n\nCustomize the UI and structure to match your brand or workflow—no lock-in.\n\n## Core Features\n\n| Feature                              | Description                                                                 |\n| ------------------------------------ | --------------------------------------------------------------------------- |\n| **Write in Markdown/MDX**            | Combine Markdown with components and Mermaid.js for rich content.           |\n| **Flexible Navigation**              | Multi-level menus, page hierarchy, and auto-generated TOCs.                 |\n| **Code Support**                     | Syntax highlighting, code tabs, and one-click copy.                         |\n| **Search**                           | Fuzzy matching with highlight and instant results.                          |\n| **Responsive Design**                | Built-in light/dark mode with mobile support.                               |\n| **Math + Tables**                    | LaTeX rendering and clean table styling.                                    |\n| **SEO Defaults**                     | Preconfigured meta, Open Graph, and structured data.                        |\n| **AI Docs (Upcoming)**               | AI tools for smart search and content generation (coming soon).             |\n\n## Using This Kit\n\nNavigation is on the left. Pages flow from setup to advanced features, but you're free to jump around.\n\nUse the table of contents on the right to skip through sections.\n\nStart with the [Installation Guide](/docs/basic-setup/installation).\n\n## Community Support\n\nGot questions? Reach out via:\n\n* [GitHub](https://github.com/rubixvi/rubix-documents)\n* [Twitter](https://x.com/rubixstory)\n* [Facebook](https://www.facebook.com/rubixstudios)\n",
+    "slug": "/api/endpoints",
+    "title": "API Endpoints",
+    "description": "Complete reference of Weevio Cloud API endpoints.",
+    "content": "# API Endpoints\n\nComplete reference for all Weevio Cloud API endpoints.\n\n## Available Endpoints\n\n*Documentation content to be added.*\n\n## Endpoint Categories\n\n*Documentation content to be added.*\n\n## Request/Response Examples\n\n*Documentation content to be added.*\n",
     "_searchMeta": {
-      "cleanContent": "banner documents documents is a lightweight modular starter kit built with next js react tailwind css and typescript it s designed to help you launch structured professional documentation without spending time on boilerplate whether you re building product manuals internal systems guides or dev documentation documents gives you a clean foundation that s easy to extend and maintain why use documents this kit was built to simplify how teams manage and publish documentation it works across projects of all sizes from a single readme to enterprise knowledge bases with mdx reusable components and tailwind styling it keeps your workflow efficient without compromising flexibility use it for: product guides setup usage and troubleshooting internal docs processes policies and team references technical manuals apis sdks architecture walkthroughs customize the ui and structure to match your brand or workflow no lock-in core features feature description------------------------------------ ---------------------------------------------------------------------------write in markdown mdx combine markdown with components and mermaid js for rich content flexible navigation multi-level menus page hierarchy and auto-generated tocs code support syntax highlighting code tabs and one-click copy search fuzzy matching with highlight and instant results responsive design built-in light dark mode with mobile support math tables latex rendering and clean table styling seo defaults preconfigured meta open graph and structured data ai docs upcoming ai tools for smart search and content generation coming soon using this kit navigation is on the left pages flow from setup to advanced features but you re free to jump around use the table of contents on the right to skip through sections start with the installation guide community support got questions reach out via: github twitter facebook",
+      "cleanContent": "api endpoints complete reference for all weevio cloud api endpoints available endpoints documentation content to be added endpoint categories documentation content to be added request response examples documentation content to be added",
       "headings": [
-        "Documents",
-        "Why use Documents?",
-        "Core Features",
-        "Using This Kit",
-        "Community Support"
+        "Available Endpoints",
+        "Endpoint Categories",
+        "Request/Response Examples"
       ],
       "keywords": [
-        "introduction",
-        "guide",
-        "nextjs",
-        "documents",
-        "Documents",
-        "Why use Documents?",
-        "Core Features",
-        "Using This Kit",
-        "Community Support",
-        "Next.js",
-        "React",
-        "Tailwind CSS",
-        "TypeScript",
-        "Product Guides",
-        "Internal Docs",
-        "Technical Manuals",
-        "Write in Markdown/MDX",
-        "Flexible Navigation",
-        "Code Support",
-        "Search",
-        "Responsive Design",
-        "Math + Tables",
-        "SEO Defaults",
-        "AI Docs (Upcoming)"
+        "endpoints",
+        "API",
+        "reference",
+        "REST",
+        "Available Endpoints",
+        "Endpoint Categories",
+        "Request/Response Examples"
       ]
     }
   },
   {
-    "slug": "/basic-setup/installation",
-    "title": "Installation",
-    "description": "This guide covers the installation of Documents and how to edit your new project.",
-    "content": "To install and edit the Documents, you need to have several prerequisites in place. Here's a list of all the essential pre-requisites\nfor setting up and working on this project.\n\n[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frubixvi%2Frubix-documents\\&project-name=my-documents\\&repository-name=my-documents\\&demo-title=Documents\\&demo-description=This%20Document%20Starter%20Kit%20is%20developed%20with%20Next.js%2C%20Tailwind%20CSS%20and%20TypeScript.%20It%20serves%20as%20a%20flexible%20and%20scalable%20foundation%20for%20building%20documentation%20websites%20or%20content-driven%20projects.\\&demo-url=https%3A%2F%2Frubix-documents.vercel.app%2F\\&demo-image=https%3A%2F%2Fgithub.com%2Frubixvi%2Frubix-documents%2Fblob%2Fmain%2Fpublic%2Fscreens%2Fscreen-1.png)\n\n## Prerequisites\n\n## Installation\n\n## Optional\n\n## Important Information\n\nThe project's search functionality relies on the Husky's automation to build `search-data/documents.json` ensure git commit is performed to generate this file.\n",
+    "slug": "/api",
+    "title": "API Reference",
+    "description": "Complete API documentation for Weevio Cloud platform.",
+    "content": "# API Reference\n\nComplete REST API documentation for Weevio Cloud.\n\n## Overview\n\nThe Weevio Cloud API provides programmatic access to all platform features.\n\n## Getting Started\n\n## API Base URL\n\n```\nhttps://api.weevio.com/v1\n```\n\n## Response Format\n\nAll API responses are in JSON format.\n",
     "_searchMeta": {
-      "cleanContent": "to install and edit the documents you need to have several prerequisites in place here s a list of all the essential pre-requisites for setting up and working on this project deploy with vercel https: vercel com new clone repository-url https 3a 2f 2fgithub com 2frubixvi 2frubix-documents project-name my-documents repository-name my-documents demo-title documents demo-description this 20document 20starter 20kit 20is 20developed 20with 20next js 2c 20tailwind 20css 20and 20typescript 20it 20serves 20as 20a 20flexible 20and 20scalable 20foundation 20for 20building 20documentation 20websites 20or 20content-driven 20projects demo-url https 3a 2f 2frubix-documents vercel app 2f demo-image https 3a 2f 2fgithub com 2frubixvi 2frubix-documents 2fblob 2fmain 2fpublic 2fscreens 2fscreen-1 png prerequisites installation optional important information the project s search functionality relies on the husky s automation to build search-data documents json ensure git commit is performed to generate this file",
+      "cleanContent": "api reference complete rest api documentation for weevio cloud overview the weevio cloud api provides programmatic access to all platform features getting started api base url response format all api responses are in json format",
       "headings": [
-        "Prerequisites",
-        "Installation",
-        "Optional",
-        "Important Information"
+        "Overview",
+        "Getting Started",
+        "API Base URL",
+        "Response Format"
       ],
       "keywords": [
-        "installation",
-        "github",
-        "node",
-        "guide",
-        "nextjs",
-        "documents",
-        "Prerequisites",
-        "Installation",
-        "Optional",
-        "Important Information",
-        "search-data/documents.json"
+        "API",
+        "reference",
+        "documentation",
+        "REST",
+        "Overview",
+        "Getting Started",
+        "API Base URL",
+        "Response Format",
+        "https://api.weevio.com/v1"
       ]
     }
   },
   {
-    "slug": "/basic-setup/setup",
-    "title": "Setup",
-    "description": "Setting up and configuring your documentation project",
-    "content": "Setting up your new documentation project is straightforward. Most of the essential project settings can be configured within the `settings` folder.\n\n## Settings\n\nThis section provides the core settings for your documentation site, such as defining the site's URL, site icon and title.\n\n```tsx showLineNumbers\nexport const url = \"\"                 // The URL for your documentation site\nexport const siteicon = \"\"            // Icon displayed next to the site name in the header\nexport const sitename = \"\"            // Title of your documentation site\n```\n\n## Google Tags\n\nThis section allows you to integrate Google Tag Manager into your documentation project. You can add your GTM code and configure whether it's connected.\n\n```tsx showLineNumbers\nexport const gtm = \"\"                 // Add your Google Tag Manager code here\nexport const gtmconnected = true      // Set to true if GTM is connected, otherwise set to false\n```\n\n## Search Engine\n\nConfigure essential SEO settings to ensure your documentation site is optimized for search engines. This includes meta descriptions, keywords and social media sharing details like images and alt text.\n\n```tsx showLineNumbers\nexport const description = \"\"         // Description of your documentation site for SEO\nexport const keywords = [\"\", \"\"]      // List of SEO keywords for your documentation site\nexport const urlimage = \"\"            // The URL of the image used when sharing on social media)\nexport const imagealt = \"\"            // Alt text for shared images, helpful for screen readers\nexport const twitterhandle = \"\"       // Your company’s Twitter handle for social sharing\n```\n\n## Footer Branding\n\nThe footer settings allow you to customize the company information displayed at the bottom of the site. You can add the company name and the URL that the name will link to.\n\n```tsx showLineNumbers\nexport const companyname = \"\"         // The company name displayed in the copyright section\nexport const companylink = \"\"         // The URL your company name should link to\n```\n\n## General Layout\n\nThe layout settings control the appearance and functionality of various elements of the documentation site, such as branding, the right sidebar, feedback options, table of contents, and scroll-to-top functionality.\n\n```tsx showLineNumbers\nexport const branding = true          // Set to true to display our branding elements\nexport const rightsidebar = true      // Set to true to enable the right sidebar with feedback, table of contents and scroll-to-top\nexport const feedbackedit = true      // Control to enable/disable feedback on GitHub\nexport const tableofcontent = true    // Control to enable/disable the generated table of contents\nexport const totopscroll = true       // Control to enable/disable scroll-to-top button\n```\n\n## Github Control\n\nIf your MDX files are hosted on GitHub, you can configure the project to load documents directly from there. This option can be useful for syncing documentation updates directly with your repository.\n\n```tsx showLineNumbers\nexport const loadfromgithub = false   // Set to true to load your MDX documents directly from GitHub\n```\n\n## Project Structure\n",
+    "slug": "/api/rate-limits",
+    "title": "Rate Limits",
+    "description": "API rate limiting policies and best practices.",
+    "content": "# Rate Limits\n\nUnderstand API rate limiting policies and quotas.\n\n## Rate Limit Overview\n\n*Documentation content to be added.*\n\n## Rate Limit Headers\n\n*Documentation content to be added.*\n\n## Handling Rate Limits\n\n*Documentation content to be added.*\n\n## Best Practices\n\n*Documentation content to be added.*\n",
     "_searchMeta": {
-      "cleanContent": "setting up your new documentation project is straightforward most of the essential project settings can be configured within the settings folder settings this section provides the core settings for your documentation site such as defining the site s url site icon and title google tags this section allows you to integrate google tag manager into your documentation project you can add your gtm code and configure whether it s connected search engine configure essential seo settings to ensure your documentation site is optimized for search engines this includes meta descriptions keywords and social media sharing details like images and alt text footer branding the footer settings allow you to customize the company information displayed at the bottom of the site you can add the company name and the url that the name will link to general layout the layout settings control the appearance and functionality of various elements of the documentation site such as branding the right sidebar feedback options table of contents and scroll-to-top functionality github control if your mdx files are hosted on github you can configure the project to load documents directly from there this option can be useful for syncing documentation updates directly with your repository project structure",
+      "cleanContent": "rate limits understand api rate limiting policies and quotas rate limit overview documentation content to be added rate limit headers documentation content to be added handling rate limits documentation content to be added best practices documentation content to be added",
       "headings": [
-        "Settings",
-        "Google Tags",
-        "Search Engine",
-        "Footer Branding",
-        "General Layout",
-        "Github Control",
-        "Project Structure"
+        "Rate Limit Overview",
+        "Rate Limit Headers",
+        "Handling Rate Limits",
+        "Best Practices"
+      ],
+      "keywords": [
+        "rate limits",
+        "API",
+        "throttling",
+        "quotas",
+        "Rate Limit Overview",
+        "Rate Limit Headers",
+        "Handling Rate Limits",
+        "Best Practices"
+      ]
+    }
+  },
+  {
+    "slug": "/api/webhooks",
+    "title": "Webhooks",
+    "description": "Set up webhooks for real-time event notifications.",
+    "content": "# Webhooks\n\nConfigure webhooks to receive real-time event notifications.\n\n## Overview\n\n*Documentation content to be added.*\n\n## Event Types\n\n*Documentation content to be added.*\n\n## Webhook Configuration\n\n*Documentation content to be added.*\n\n## Payload Format\n\n*Documentation content to be added.*\n\n## Security\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "webhooks configure webhooks to receive real-time event notifications overview documentation content to be added event types documentation content to be added webhook configuration documentation content to be added payload format documentation content to be added security documentation content to be added",
+      "headings": [
+        "Overview",
+        "Event Types",
+        "Webhook Configuration",
+        "Payload Format",
+        "Security"
+      ],
+      "keywords": [
+        "webhooks",
+        "events",
+        "notifications",
+        "API",
+        "Overview",
+        "Event Types",
+        "Webhook Configuration",
+        "Payload Format",
+        "Security"
+      ]
+    }
+  },
+  {
+    "slug": "/appointment-scheduler/embedding",
+    "title": "Website Embedding",
+    "description": "Embed the appointment scheduler on your website.",
+    "content": "# Website Embedding\n\nAdd the appointment scheduler to your website.\n\n## Embedding Options\n\n*Documentation content to be added.*\n\n## Customization\n\n*Documentation content to be added.*\n\n## Technical Integration\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "website embedding add the appointment scheduler to your website embedding options documentation content to be added customization documentation content to be added technical integration documentation content to be added",
+      "headings": [
+        "Embedding Options",
+        "Customization",
+        "Technical Integration"
+      ],
+      "keywords": [
+        "embed",
+        "widget",
+        "website",
+        "integration",
+        "Embedding Options",
+        "Customization",
+        "Technical Integration"
+      ]
+    }
+  },
+  {
+    "slug": "/appointment-scheduler/gsx-integration",
+    "title": "GSX Integration for Appointments",
+    "description": "Connect appointment scheduler with Apple GSX.",
+    "content": "# GSX Integration\n\nConfigure GSX integration for automatic appointment syncing.\n\n## Overview\n\n*Documentation content to be added.*\n\n## Configuration\n\n*Documentation content to be added.*\n\n## Syncing Process\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "gsx integration configure gsx integration for automatic appointment syncing overview documentation content to be added configuration documentation content to be added syncing process documentation content to be added",
+      "headings": [
+        "Overview",
+        "Configuration",
+        "Syncing Process"
+      ],
+      "keywords": [
+        "GSX",
+        "Apple",
+        "integration",
+        "sync",
+        "Overview",
+        "Configuration",
+        "Syncing Process"
+      ]
+    }
+  },
+  {
+    "slug": "/appointment-scheduler",
+    "title": "Appointment Scheduler",
+    "description": "Embed appointment scheduling on your website with GSX integration.",
+    "content": "# Appointment Scheduler\n\nEnable customers to book appointments directly on your website with seamless GSX integration.\n\n## Overview\n\nThe Appointment Scheduler allows you to:\n\n* Embed a booking widget on your website\n* Sync with Apple GSX automatically\n* Send automated email notifications\n* Manage appointment availability\n\n## Getting Started\n",
+    "_searchMeta": {
+      "cleanContent": "appointment scheduler enable customers to book appointments directly on your website with seamless gsx integration overview the appointment scheduler allows you to: embed a booking widget on your website sync with apple gsx automatically send automated email notifications manage appointment availability getting started",
+      "headings": [
+        "Overview",
+        "Getting Started"
+      ],
+      "keywords": [
+        "appointments",
+        "scheduler",
+        "GSX",
+        "booking",
+        "Overview",
+        "Getting Started"
+      ]
+    }
+  },
+  {
+    "slug": "/appointment-scheduler/notifications",
+    "title": "Email Notifications",
+    "description": "Configure automated email notifications for appointments.",
+    "content": "# Email Notifications\n\nSet up automated email workflows for appointment confirmations and reminders.\n\n## Notification Types\n\n*Documentation content to be added.*\n\n## Email Templates\n\n*Documentation content to be added.*\n\n## Configuration\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "email notifications set up automated email workflows for appointment confirmations and reminders notification types documentation content to be added email templates documentation content to be added configuration documentation content to be added",
+      "headings": [
+        "Notification Types",
+        "Email Templates",
+        "Configuration"
+      ],
+      "keywords": [
+        "email",
+        "notifications",
+        "automation",
+        "Notification Types",
+        "Email Templates",
+        "Configuration"
+      ]
+    }
+  },
+  {
+    "slug": "/appointment-scheduler/setup",
+    "title": "Appointment Scheduler Setup",
+    "description": "Configure your appointment scheduler settings.",
+    "content": "# Appointment Scheduler Setup\n\nLearn how to set up and configure the Appointment Scheduler.\n\n## Initial Configuration\n\n*Documentation content to be added.*\n\n## Availability Settings\n\n*Documentation content to be added.*\n\n## Service Types\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "appointment scheduler setup learn how to set up and configure the appointment scheduler initial configuration documentation content to be added availability settings documentation content to be added service types documentation content to be added",
+      "headings": [
+        "Initial Configuration",
+        "Availability Settings",
+        "Service Types"
       ],
       "keywords": [
         "setup",
         "configuration",
-        "layout",
-        "Google",
-        "SEO",
-        "nextjs",
-        "documents",
-        "Settings",
-        "Google Tags",
-        "Search Engine",
-        "Footer Branding",
-        "General Layout",
-        "Github Control",
-        "Project Structure",
-        "settings",
-        "tsx showLineNumbers\nexport const url = \"\"                 // The URL for your documentation site\nexport const siteicon = \"\"            // Icon displayed next to the site name in the header\nexport const sitename = \"\"            // Title of your documentation site",
-        "## Google Tags\n\nThis section allows you to integrate Google Tag Manager into your documentation project. You can add your GTM code and configure whether it's connected.",
-        "tsx showLineNumbers\nexport const gtm = \"\"                 // Add your Google Tag Manager code here\nexport const gtmconnected = true      // Set to true if GTM is connected, otherwise set to false",
-        "## Search Engine\n\nConfigure essential SEO settings to ensure your documentation site is optimized for search engines. This includes meta descriptions, keywords and social media sharing details like images and alt text.",
-        "tsx showLineNumbers\nexport const description = \"\"         // Description of your documentation site for SEO\nexport const keywords = [\"\", \"\"]      // List of SEO keywords for your documentation site\nexport const urlimage = \"\"            // The URL of the image used when sharing on social media)\nexport const imagealt = \"\"            // Alt text for shared images, helpful for screen readers\nexport const twitterhandle = \"\"       // Your company’s Twitter handle for social sharing",
-        "## Footer Branding\n\nThe footer settings allow you to customize the company information displayed at the bottom of the site. You can add the company name and the URL that the name will link to.",
-        "tsx showLineNumbers\nexport const companyname = \"\"         // The company name displayed in the copyright section\nexport const companylink = \"\"         // The URL your company name should link to",
-        "## General Layout\n\nThe layout settings control the appearance and functionality of various elements of the documentation site, such as branding, the right sidebar, feedback options, table of contents, and scroll-to-top functionality.",
-        "tsx showLineNumbers\nexport const branding = true          // Set to true to display our branding elements\nexport const rightsidebar = true      // Set to true to enable the right sidebar with feedback, table of contents and scroll-to-top\nexport const feedbackedit = true      // Control to enable/disable feedback on GitHub\nexport const tableofcontent = true    // Control to enable/disable the generated table of contents\nexport const totopscroll = true       // Control to enable/disable scroll-to-top button",
-        "## Github Control\n\nIf your MDX files are hosted on GitHub, you can configure the project to load documents directly from there. This option can be useful for syncing documentation updates directly with your repository.",
-        "tsx showLineNumbers\nexport const loadfromgithub = false   // Set to true to load your MDX documents directly from GitHub"
+        "appointments",
+        "Initial Configuration",
+        "Availability Settings",
+        "Service Types"
       ]
     }
   },
   {
-    "slug": "/markdown/cards",
-    "title": "Cards",
-    "description": "Explore and implement various card styles, including small, large and image cards.",
-    "content": "This section introduces the different card styles available in the system, from compact small cards to visually rich image cards. Each example is paired with JSX code snippets, providing you with a practical guide to incorporate these components seamlessly into your project.\n\n## Small Card\n\n```jsx\n<CardGrid>\n  <Card\n    title=\"Instructions\"\n    href=\"/docs/basic-setup/installation\"\n    icon=\"alignJustify\"\n    variant=\"small\"\n    description=\"test description\"\n  />\n  <Card\n    title=\"Setup\"\n    href=\"/docs/basic-setup/setup\"\n    icon=\"alignJustify\"\n    variant=\"small\"\n  />\n  <Card\n    title=\"Rubix Studios\"\n    href=\"https://rubixstudios.com.au\"\n    icon=\"alignJustify\"\n    external={true}\n    variant=\"small\"\n  />\n</CardGrid>\n```\n\n## Large Card\n\n```jsx\n<CardGrid>\n  <Card\n    subtitle=\"Instructions\"\n    title=\"Installation\"\n    description=\"Get started with Documents using our quick start installation guide to get your project started.\"\n    href=\"/docs/basic-setup/installation\"\n  />\n  <Card\n    subtitle=\"Setup\"\n    title=\"Site Settings\"\n    description=\"Setting up your Documents projects layout, links and search engine optimisation.\"\n    href=\"/docs/basic-setup/setup\"\n  />\n  <Card\n    subtitle=\"Support\"\n    title=\"Rubix Studios\"\n    description=\"Australia's leading branding, marketing and web development company.\"\n    href=\"https://rubixstudios.com.au\"\n    external={true}\n  />\n</CardGrid>\n```\n\n## Image Card\n\n```jsx\n<CardGrid>\n  <Card\n    title=\"Instructions\"\n    href=\"/docs/introduction/installation\"\n    image=\"/images/og-image.png\"\n    variant=\"image\"\n  />\n  <Card\n    title=\"Setup\"\n    href=\"/docs/introduction/setup\"\n    image=\"/images/og-image.png\"\n    variant=\"image\"\n  />\n  <Card\n    title=\"Rubix Studios\"\n    href=\"https://www.rubixstudios.com.au\"\n    image=\"/images/og-image.png\"\n    external={true}\n    variant=\"image\"\n  />\n</CardGrid>\n```\n",
+    "slug": "/customer-portal/customization",
+    "title": "Portal Customization",
+    "description": "Customize the Customer Portal to match your brand.",
+    "content": "# Portal Customization\n\nCustomize the Customer Portal to reflect your brand identity.\n\n## Branding Options\n\n*Documentation content to be added.*\n\n## Configuration Settings\n\n*Documentation content to be added.*\n\n## Advanced Customization\n\n*Documentation content to be added.*\n",
     "_searchMeta": {
-      "cleanContent": "this section introduces the different card styles available in the system from compact small cards to visually rich image cards each example is paired with jsx code snippets providing you with a practical guide to incorporate these components seamlessly into your project small card large card image card",
+      "cleanContent": "portal customization customize the customer portal to reflect your brand identity branding options documentation content to be added configuration settings documentation content to be added advanced customization documentation content to be added",
       "headings": [
-        "Small Card",
-        "Large Card",
-        "Image Card"
+        "Branding Options",
+        "Configuration Settings",
+        "Advanced Customization"
       ],
       "keywords": [
-        "Small Card",
-        "Large Card",
-        "Image Card",
-        "jsx\n<CardGrid>\n  <Card\n    title=\"Instructions\"\n    href=\"/docs/basic-setup/installation\"\n    icon=\"alignJustify\"\n    variant=\"small\"\n    description=\"test description\"\n  />\n  <Card\n    title=\"Setup\"\n    href=\"/docs/basic-setup/setup\"\n    icon=\"alignJustify\"\n    variant=\"small\"\n  />\n  <Card\n    title=\"Rubix Studios\"\n    href=\"https://rubixstudios.com.au\"\n    icon=\"alignJustify\"\n    external={true}\n    variant=\"small\"\n  />\n</CardGrid>",
-        "## Large Card",
-        "jsx\n<CardGrid>\n  <Card\n    subtitle=\"Instructions\"\n    title=\"Installation\"\n    description=\"Get started with Documents using our quick start installation guide to get your project started.\"\n    href=\"/docs/basic-setup/installation\"\n  />\n  <Card\n    subtitle=\"Setup\"\n    title=\"Site Settings\"\n    description=\"Setting up your Documents projects layout, links and search engine optimisation.\"\n    href=\"/docs/basic-setup/setup\"\n  />\n  <Card\n    subtitle=\"Support\"\n    title=\"Rubix Studios\"\n    description=\"Australia's leading branding, marketing and web development company.\"\n    href=\"https://rubixstudios.com.au\"\n    external={true}\n  />\n</CardGrid>",
-        "## Image Card",
-        "jsx\n<CardGrid>\n  <Card\n    title=\"Instructions\"\n    href=\"/docs/introduction/installation\"\n    image=\"/images/og-image.png\"\n    variant=\"image\"\n  />\n  <Card\n    title=\"Setup\"\n    href=\"/docs/introduction/setup\"\n    image=\"/images/og-image.png\"\n    variant=\"image\"\n  />\n  <Card\n    title=\"Rubix Studios\"\n    href=\"https://www.rubixstudios.com.au\"\n    image=\"/images/og-image.png\"\n    external={true}\n    variant=\"image\"\n  />\n</CardGrid>"
+        "customization",
+        "branding",
+        "configuration",
+        "Branding Options",
+        "Configuration Settings",
+        "Advanced Customization"
       ]
     }
   },
   {
-    "slug": "/markdown/diagrams",
-    "title": "Diagrams",
-    "description": "Add various diagram types, including flowcharts, decision trees and entity-relationship diagrams.",
-    "content": "Diagrams are powerful tools for visualizing processes, relationships, and decisions. This section showcases different types of diagrams created using **Mermaid**, complete with examples and reusable code snippets to integrate into your projects.\n\n## Flowchart\n\nA flowchart represents a sequence of steps or processes in a visual format. Use this diagram to map workflows, decision-making processes, or operational flows.\n\n```jsx\n<Mermaid\n  chart={\\`\n    graph TD;\n    Start --> Task1;\n    Task1 --> Task2;\n    Task2 --> End;\n  \\`}\n/>\n```\n\n## Decision Tree\n\nDecision trees illustrate choices and possible outcomes, making them ideal for decision-making workflows or processes involving multiple paths.\n\n```jsx\n<Mermaid\n  chart={\\`\n    graph TD;\n    A[Start] --> B{Is it raining?};\n    B -->|Yes| C[Take an umbrella];\n    B -->|No| D[Enjoy the weather];\n    C --> E[Go outside];\n    D --> E;\n  \\`}\n/>\n```\n\n## Entity-Relationship Diagram\n\nEntity-relationship diagrams (ERDs) are used to model relationships between entities in a system. They are widely used in database design and system architecture planning.\n\n```jsx\n<Mermaid\n  chart={\\`\n    erDiagram\n    CUSTOMER ||--o{ ORDER : places\n    ORDER ||--|{ LINE-ITEM : contains\n    PRODUCT ||--o{ LINE-ITEM : \"included in\"\n    CUSTOMER {\n        string name\n        string email\n    }\n    ORDER {\n        int orderNumber\n        date orderDate\n    }\n    LINE-ITEM {\n        int quantity\n        float price\n    }\n    PRODUCT {\n        int productId\n        string name\n        float price\n    }\n  \\`}\n/>\n```\n\nEach of these diagrams serves a specific purpose and Mermaid makes it easy to generate them dynamically. Feel free to experiment with the provided code snippets and adapt them to your needs.\n",
+    "slug": "/customer-portal/features",
+    "title": "Self-Service Features",
+    "description": "Overview of self-service features available in the Customer Portal.",
+    "content": "# Self-Service Features\n\nExplore the comprehensive self-service features available to your customers.\n\n## Available Features\n\n*Documentation content to be added.*\n\n## Feature Benefits\n\n*Documentation content to be added.*\n\n## Feature Configuration\n\n*Documentation content to be added.*\n",
     "_searchMeta": {
-      "cleanContent": "diagrams are powerful tools for visualizing processes relationships and decisions this section showcases different types of diagrams created using mermaid complete with examples and reusable code snippets to integrate into your projects flowchart a flowchart represents a sequence of steps or processes in a visual format use this diagram to map workflows decision-making processes or operational flows decision tree decision trees illustrate choices and possible outcomes making them ideal for decision-making workflows or processes involving multiple paths entity-relationship diagram entity-relationship diagrams erds are used to model relationships between entities in a system they are widely used in database design and system architecture planning each of these diagrams serves a specific purpose and mermaid makes it easy to generate them dynamically feel free to experiment with the provided code snippets and adapt them to your needs",
+      "cleanContent": "self-service features explore the comprehensive self-service features available to your customers available features documentation content to be added feature benefits documentation content to be added feature configuration documentation content to be added",
       "headings": [
-        "Flowchart",
-        "Decision Tree",
-        "Entity-Relationship Diagram"
+        "Available Features",
+        "Feature Benefits",
+        "Feature Configuration"
       ],
       "keywords": [
-        "Flowchart",
-        "Decision Tree",
-        "Entity-Relationship Diagram",
-        "Mermaid",
-        "jsx\n<Mermaid\n  chart={\\",
-        "}\n/>",
-        "## Decision Tree\n\nDecision trees illustrate choices and possible outcomes, making them ideal for decision-making workflows or processes involving multiple paths.",
-        "## Entity-Relationship Diagram\n\nEntity-relationship diagrams (ERDs) are used to model relationships between entities in a system. They are widely used in database design and system architecture planning."
+        "self-service",
+        "features",
+        "customer portal",
+        "Available Features",
+        "Feature Benefits",
+        "Feature Configuration"
       ]
     }
   },
   {
-    "slug": "/markdown/filetree",
-    "title": "Filetree",
-    "description": "This section provides an overview of file structures and their implementation using the FileTree component.",
-    "content": "This section demonstrates the structure of a file tree using the `FileTree` component. Below is an example showcasing folders and files organized hierarchically for a project setup.\n\n## How to Use\n\nIntegrate the `FileTree` component into your project to visually represent file and folder structures. This is particularly useful for documentation, tutorials, or providing users with an overview of your project's architecture.\n\n### JSX Code Example\n\nHere is how you can define the file tree structure in for use in your project:\n\n```jsx\n<FileTree>\n  <Folder name=\"src\" label=\"Source Code\">\n    <File name=\"index.tsx\" label=\"Index File\" />\n    <Folder name=\"components\" label=\"Components\">\n      <File name=\"button.tsx\" label=\"Button Component\" />\n      <File name=\"input.tsx\" label=\"Input Component\" />\n    </Folder>\n    <Folder name=\"pages\" label=\"Pages\">\n      <File name=\"home.tsx\" label=\"Home Page\" />\n      <File name=\"about.tsx\" label=\"About Page\" />\n    </Folder>\n  </Folder>\n</FileTree>\n```\n\nUse this code as a template to set up your own file tree structure and customize it as needed.\n",
+    "slug": "/customer-portal",
+    "title": "Customer Portal",
+    "description": "Enable self-service access for your customers with the Weevio Cloud Customer Portal.",
+    "content": "# Customer Portal\n\nThe Customer Portal empowers your customers with self-service access to their orders, invoices, and service requests.\n\n## Overview\n\nGive your customers 24/7 access to:\n\n* Order tracking and history\n* Invoice viewing and payment\n* SRO status updates and deposit payments\n* Account management\n* Communication history\n\n## Key Features\n\n## Benefits\n\n* **Reduced Support Workload** - Customers can find answers themselves\n* **24/7 Availability** - Access anytime, anywhere\n* **Improved Customer Satisfaction** - Transparency and convenience\n* **Faster Payments** - Easy online payment options\n\n## Getting Started\n\nLearn how to set up and customize the Customer Portal for your business.\n\n## Related Topics\n\n* [Portal Overview](/docs/customer-portal/overview)\n* [Customization](/docs/customer-portal/customization)\n* [Customer Management](/docs/store/customers)\n",
     "_searchMeta": {
-      "cleanContent": "this section demonstrates the structure of a file tree using the filetree component below is an example showcasing folders and files organized hierarchically for a project setup how to use integrate the filetree component into your project to visually represent file and folder structures this is particularly useful for documentation tutorials or providing users with an overview of your project s architecture jsx code example here is how you can define the file tree structure in for use in your project: use this code as a template to set up your own file tree structure and customize it as needed",
+      "cleanContent": "customer portal the customer portal empowers your customers with self-service access to their orders invoices and service requests overview give your customers 24 7 access to: order tracking and history invoice viewing and payment sro status updates and deposit payments account management communication history key features benefits reduced support workload - customers can find answers themselves 24 7 availability - access anytime anywhere improved customer satisfaction - transparency and convenience faster payments - easy online payment options getting started learn how to set up and customize the customer portal for your business related topics portal overview customization customer management",
       "headings": [
-        "How to Use"
-      ],
-      "keywords": [
-        "How to Use",
-        "FileTree",
-        "jsx\n<FileTree>\n  <Folder name=\"src\" label=\"Source Code\">\n    <File name=\"index.tsx\" label=\"Index File\" />\n    <Folder name=\"components\" label=\"Components\">\n      <File name=\"button.tsx\" label=\"Button Component\" />\n      <File name=\"input.tsx\" label=\"Input Component\" />\n    </Folder>\n    <Folder name=\"pages\" label=\"Pages\">\n      <File name=\"home.tsx\" label=\"Home Page\" />\n      <File name=\"about.tsx\" label=\"About Page\" />\n    </Folder>\n  </Folder>\n</FileTree>"
-      ]
-    }
-  },
-  {
-    "slug": "/markdown",
-    "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n## Sample Document with Mermaid\n\nHere is a Mermaid diagram:\n\nThis diagram should render automatically without any extra imports.\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nThank you for choosing the Documentation Template for your project. Whether you're documenting software, APIs, or processes, we're here to support you in creating clear and effective documentation. Happy documenting!\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text sample document with mermaid here is a mermaid diagram: this diagram should render automatically without any extra imports getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion thank you for choosing the documentation template for your project whether you re documenting software apis or processes we re here to support you in creating clear and effective documentation happy documenting",
-      "headings": [
-        "Sample Document with Mermaid",
+        "Overview",
+        "Key Features",
+        "Benefits",
         "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
+        "Related Topics"
       ],
       "keywords": [
-        "Sample Document with Mermaid",
+        "customer portal",
+        "self-service",
+        "orders",
+        "invoices",
+        "SRO",
+        "Overview",
+        "Key Features",
+        "Benefits",
         "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
+        "Related Topics",
+        "Reduced Support Workload",
+        "24/7 Availability",
+        "Improved Customer Satisfaction",
+        "Faster Payments"
       ]
     }
   },
   {
-    "slug": "/markdown/lists",
-    "title": "Lists",
-    "description": "This section provides an overview of creating and using lists in the Documents boilerplate.",
-    "content": "Learn how to create and render different types of lists in the Documents boilerplate. Examples include checklists, ordered lists, unordered lists and nested lists.\n\n## Checklist\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n```jsx\n- [x] Write the press release\n- [ ] Update the website\n- [ ] Contact the media\n```\n\n## Simple List\n\n* Item 1\n* Item 2\n* Item 3\n\n```jsx\n- Item 1\n- Item 2\n- Item 3\n```\n\n## Number List\n\n1. Research\n2. Draft the content\n3. Review and edit\n4. Publish\n\n```jsx\n1. Research\n2. Draft the content\n3. Review and edit\n4. Publish\n```\n\n## Nested List\n\n* Main Category 1\n  * Sub Item 1.1\n  * Sub Item 1.2\n* Main Category 2\n  * Sub Item 2.1\n  * Sub Item 2.2\n\n```jsx\n- Main Category 1\n  - Sub Item 1.1\n  - Sub Item 1.2\n- Main Category 2\n  - Sub Item 2.1\n  - Sub Item 2.2\n```\n\nUse these examples as a foundation to create and customize lists that fit your project's needs.\n",
+    "slug": "/customer-portal/invoice-payments",
+    "title": "Invoice Payments",
+    "description": "Process secure invoice payments through the Customer Portal.",
+    "content": "# Invoice Payments\n\nAllow customers to view and pay invoices securely online.\n\n## Overview\n\n*Documentation content to be added.*\n\n## Payment Methods\n\n*Documentation content to be added.*\n\n## Payment Security\n\n*Documentation content to be added.*\n",
     "_searchMeta": {
-      "cleanContent": "learn how to create and render different types of lists in the documents boilerplate examples include checklists ordered lists unordered lists and nested lists checklist x write the press release update the website contact the media simple list item 1 item 2 item 3 number list research draft the content review and edit publish nested list main category 1 sub item 1 1 sub item 1 2 main category 2 sub item 2 1 sub item 2 2 use these examples as a foundation to create and customize lists that fit your project s needs",
+      "cleanContent": "invoice payments allow customers to view and pay invoices securely online overview documentation content to be added payment methods documentation content to be added payment security documentation content to be added",
       "headings": [
-        "Checklist",
-        "Simple List",
-        "Number List",
-        "Nested List"
+        "Overview",
+        "Payment Methods",
+        "Payment Security"
       ],
       "keywords": [
-        "Checklist",
-        "Simple List",
-        "Number List",
-        "Nested List",
-        "jsx\n- [x] Write the press release\n- [ ] Update the website\n- [ ] Contact the media",
-        "## Simple List\n\n* Item 1\n* Item 2\n* Item 3",
-        "jsx\n- Item 1\n- Item 2\n- Item 3",
-        "## Number List\n\n1. Research\n2. Draft the content\n3. Review and edit\n4. Publish",
-        "jsx\n1. Research\n2. Draft the content\n3. Review and edit\n4. Publish",
-        "## Nested List\n\n* Main Category 1\n  * Sub Item 1.1\n  * Sub Item 1.2\n* Main Category 2\n  * Sub Item 2.1\n  * Sub Item 2.2",
-        "jsx\n- Main Category 1\n  - Sub Item 1.1\n  - Sub Item 1.2\n- Main Category 2\n  - Sub Item 2.1\n  - Sub Item 2.2"
+        "invoices",
+        "payments",
+        "billing",
+        "Overview",
+        "Payment Methods",
+        "Payment Security"
       ]
     }
   },
   {
-    "slug": "/markdown/maths",
-    "title": "Maths",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n## Basic Algebra\n\nThe area of a circle ($$A$$) can be calculated using the radius ($$r$$) as follows:\n\n```math\nA = \\pi r^2\n```\n\n## Quadratic Formula\n\nThe quadratic formula for solving an equation of the form $$ax^2 + bx + c = 0$$ is:\n\n```math\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\n```\n\n## Newton's Second Law of Motion\n\nNewton's second law of motion states that force ($$F$$) is the product of mass ($$m$$) and acceleration ($$a$$):\n\n```math\nF = ma\n```\n\n## Pythagorean Theorem\n\nThe Pythagorean theorem relates the lengths of the sides of a right triangle:\n\n```math\na^2 + b^2 = c^2\n```\n\n## Einstein's Mass-Energy Equivalence\n\nEinstein's famous equation relates energy ($$E$$), mass ($$m$$), and the speed of light ($$c$$):\n\n```math\nE = mc^2\n```\n",
+    "slug": "/customer-portal/order-tracking",
+    "title": "Order Tracking",
+    "description": "Track orders in real-time through the Customer Portal.",
+    "content": "# Order Tracking\n\nEnable customers to track their orders in real-time.\n\n## Overview\n\n*Documentation content to be added.*\n\n## Tracking Features\n\n*Documentation content to be added.*\n\n## Status Updates\n\n*Documentation content to be added.*\n",
     "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam basic algebra the area of a circle a can be calculated using the radius r as follows: quadratic formula the quadratic formula for solving an equation of the form ax 2 bx c 0 is: newton s second law of motion newton s second law of motion states that force f is the product of mass m and acceleration a : pythagorean theorem the pythagorean theorem relates the lengths of the sides of a right triangle: einstein s mass-energy equivalence einstein s famous equation relates energy e mass m and the speed of light c :",
+      "cleanContent": "order tracking enable customers to track their orders in real-time overview documentation content to be added tracking features documentation content to be added status updates documentation content to be added",
       "headings": [
-        "Basic Algebra",
-        "Quadratic Formula",
-        "Newton's Second Law of Motion",
-        "Pythagorean Theorem",
-        "Einstein's Mass-Energy Equivalence"
+        "Overview",
+        "Tracking Features",
+        "Status Updates"
       ],
       "keywords": [
-        "Basic Algebra",
-        "Quadratic Formula",
-        "Newton's Second Law of Motion",
-        "Pythagorean Theorem",
-        "Einstein's Mass-Energy Equivalence",
-        "math\nA = \\pi r^2",
-        "## Quadratic Formula\n\nThe quadratic formula for solving an equation of the form $$ax^2 + bx + c = 0$$ is:",
-        "math\nx = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
-        "## Newton's Second Law of Motion\n\nNewton's second law of motion states that force ($$F$$) is the product of mass ($$m$$) and acceleration ($$a$$):",
-        "math\nF = ma",
-        "## Pythagorean Theorem\n\nThe Pythagorean theorem relates the lengths of the sides of a right triangle:",
-        "math\na^2 + b^2 = c^2",
-        "## Einstein's Mass-Energy Equivalence\n\nEinstein's famous equation relates energy ($$E$$), mass ($$m$$), and the speed of light ($$c$$):",
-        "math\nE = mc^2"
+        "order tracking",
+        "orders",
+        "status",
+        "Overview",
+        "Tracking Features",
+        "Status Updates"
       ]
     }
   },
   {
-    "slug": "/markdown/notes",
-    "title": "Notes",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n## Standard Note\n\n## Success Note\n\n## Warning Note\n\n## Danger Note\n",
+    "slug": "/customer-portal/overview",
+    "title": "Customer Portal Overview",
+    "description": "Introduction to the Weevio Cloud Customer Portal features and capabilities.",
+    "content": "# Customer Portal Overview\n\nThe Customer Portal provides a comprehensive self-service platform for your customers.\n\n## What is the Customer Portal?\n\nA secure, branded web portal where your customers can:\n\n* View and track orders\n* Access invoices and make payments\n* Check SRO status and pay deposits\n* Update account information\n* View communication history\n\n## Portal Access\n\n*Documentation content to be added.*\n\n## Customer Experience\n\n*Documentation content to be added.*\n\n## Portal Branding\n\n*Documentation content to be added.*\n\n## Security and Privacy\n\n*Documentation content to be added.*\n\n## Related Topics\n\n* [Self-Service Features](/docs/customer-portal/features)\n* [Customization](/docs/customer-portal/customization)\n",
     "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam standard note success note warning note danger note",
+      "cleanContent": "customer portal overview the customer portal provides a comprehensive self-service platform for your customers what is the customer portal a secure branded web portal where your customers can: view and track orders access invoices and make payments check sro status and pay deposits update account information view communication history portal access documentation content to be added customer experience documentation content to be added portal branding documentation content to be added security and privacy documentation content to be added related topics self-service features customization",
       "headings": [
-        "Standard Note",
-        "Success Note",
-        "Warning Note",
-        "Danger Note"
+        "What is the Customer Portal?",
+        "Portal Access",
+        "Customer Experience",
+        "Portal Branding",
+        "Security and Privacy",
+        "Related Topics"
       ],
       "keywords": [
-        "Standard Note",
-        "Success Note",
-        "Warning Note",
-        "Danger Note"
+        "customer portal",
+        "overview",
+        "features",
+        "self-service",
+        "What is the Customer Portal?",
+        "Portal Access",
+        "Customer Experience",
+        "Portal Branding",
+        "Security and Privacy",
+        "Related Topics"
       ]
     }
   },
   {
-    "slug": "/markdown/steps",
-    "title": "Steps",
-    "description": "This section provides an overview of Introduction.",
-    "content": "The `<Step>` and `<StepItem>` components allow you to create structured step-by-step guides in your documentation. These components are particularly useful when you want to break down a process or tutorial into easy-to-follow stages.\n\n## Steps\n\nTo create a step-by-step guide in your MDX, you can use the following structure:\n",
+    "slug": "/customer-portal/sro-deposits",
+    "title": "SRO Deposits",
+    "description": "Manage SRO deposit payments through the Customer Portal.",
+    "content": "# SRO Deposits\n\nEnable customers to pay SRO deposits and track repair status.\n\n## Overview\n\n*Documentation content to be added.*\n\n## Deposit Payments\n\n*Documentation content to be added.*\n\n## Status Tracking\n\n*Documentation content to be added.*\n",
     "_searchMeta": {
-      "cleanContent": "the step and stepitem components allow you to create structured step-by-step guides in your documentation these components are particularly useful when you want to break down a process or tutorial into easy-to-follow stages steps to create a step-by-step guide in your mdx you can use the following structure:",
+      "cleanContent": "sro deposits enable customers to pay sro deposits and track repair status overview documentation content to be added deposit payments documentation content to be added status tracking documentation content to be added",
       "headings": [
-        "Steps"
+        "Overview",
+        "Deposit Payments",
+        "Status Tracking"
       ],
       "keywords": [
-        "Steps",
-        "<Step>",
-        "<StepItem>"
+        "SRO",
+        "deposits",
+        "payments",
+        "repairs",
+        "Overview",
+        "Deposit Payments",
+        "Status Tracking"
       ]
     }
   },
   {
-    "slug": "/markdown/table",
-    "title": "Table",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n| Feature       | Documentation Link |                    Notes |\n| :------------ | :----------------: | -----------------------: |\n| **Feature A** |     [Docs](#)      | For more info click here |\n| **Feature B** |     [Guide](#)     |  See the full guide here |\n| **Feature C** |     [Setup](#)     |       Setup instructions |\n",
+    "slug": "/gsx/appointment-sync",
+    "title": "Appointment Sync",
+    "description": "Synchronize appointments between GSX and Weevio Cloud.",
+    "content": "# Appointment Sync\n\nAutomatically sync appointments between GSX and your system.\n\n## Overview\n\n*Documentation content to be added.*\n\n## Sync Process\n\n*Documentation content to be added.*\n\n## Managing Synced Appointments\n\n*Documentation content to be added.*\n",
     "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text feature documentation link notes:------------ :----------------: -----------------------:feature a docs for more info click herefeature b guide see the full guide herefeature c setup setup instructions",
-      "headings": [],
-      "keywords": [
-        "Feature A",
-        "Feature B",
-        "Feature C"
-      ]
-    }
-  },
-  {
-    "slug": "/markdown/tabs",
-    "title": "Tabs",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam code examples with switch here a custom tab component from shadcn ui is used",
+      "cleanContent": "appointment sync automatically sync appointments between gsx and your system overview documentation content to be added sync process documentation content to be added managing synced appointments documentation content to be added",
       "headings": [
-        "Code Examples with switch"
+        "Overview",
+        "Sync Process",
+        "Managing Synced Appointments"
       ],
       "keywords": [
-        "Code Examples with switch"
+        "sync",
+        "appointments",
+        "GSX",
+        "integration",
+        "Overview",
+        "Sync Process",
+        "Managing Synced Appointments"
       ]
     }
   },
   {
-    "slug": "/navigation",
-    "title": "Navigation",
-    "description": "How to build our your documents menu and navigations.",
-    "content": "",
+    "slug": "/gsx/email-workflows",
+    "title": "Automated Email Workflows",
+    "description": "Configure automated email notifications for GSX appointments.",
+    "content": "# Automated Email Workflows\n\nSet up automated email notifications for GSX appointment events.\n\n## Overview\n\n*Documentation content to be added.*\n\n## Workflow Types\n\n*Documentation content to be added.*\n\n## Email Templates\n\n*Documentation content to be added.*\n\n## Configuration\n\n*Documentation content to be added.*\n",
     "_searchMeta": {
-      "cleanContent": "",
-      "headings": [],
-      "keywords": [
-        "navigation",
-        "sidebar",
-        "menus",
-        "mdx",
-        "nextjs",
-        "documents"
-      ]
-    }
-  },
-  {
-    "slug": "/random",
-    "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nAdding some random stuff to change the code\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion adding some random stuff to change the code",
+      "cleanContent": "automated email workflows set up automated email notifications for gsx appointment events overview documentation content to be added workflow types documentation content to be added email templates documentation content to be added configuration documentation content to be added",
       "headings": [
+        "Overview",
+        "Workflow Types",
+        "Email Templates",
+        "Configuration"
+      ],
+      "keywords": [
+        "email",
+        "automation",
+        "workflows",
+        "GSX",
+        "Overview",
+        "Workflow Types",
+        "Email Templates",
+        "Configuration"
+      ]
+    }
+  },
+  {
+    "slug": "/gsx",
+    "title": "GSX Integration",
+    "description": "Automated email workflows and appointment sync with Apple GSX.",
+    "content": "# GSX Integration\n\nAutomate your Apple GSX workflows with Weevio Cloud.\n\n## Overview\n\nFor Apple Authorized Service Providers, GSX Integration provides:\n\n* Automated email notifications for GSX appointments\n* Appointment synchronization\n* Customer communication workflows\n* Seamless PIMS integration\n\n## Features\n",
+    "_searchMeta": {
+      "cleanContent": "gsx integration automate your apple gsx workflows with weevio cloud overview for apple authorized service providers gsx integration provides: automated email notifications for gsx appointments appointment synchronization customer communication workflows seamless pims integration features",
+      "headings": [
+        "Overview",
+        "Features"
+      ],
+      "keywords": [
+        "GSX",
+        "Apple",
+        "integration",
+        "automation",
+        "Overview",
+        "Features"
+      ]
+    }
+  },
+  {
+    "slug": "/gsx/setup",
+    "title": "GSX Setup & Authentication",
+    "description": "Configure your GSX integration credentials.",
+    "content": "# GSX Setup & Authentication\n\nConnect your Apple GSX account to Weevio Cloud.\n\n## Prerequisites\n\n*Documentation content to be added.*\n\n## Configuration Steps\n\n*Documentation content to be added.*\n\n## Authentication\n\n*Documentation content to be added.*\n\n## Testing Connection\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "gsx setup authentication connect your apple gsx account to weevio cloud prerequisites documentation content to be added configuration steps documentation content to be added authentication documentation content to be added testing connection documentation content to be added",
+      "headings": [
+        "Prerequisites",
+        "Configuration Steps",
+        "Authentication",
+        "Testing Connection"
+      ],
+      "keywords": [
+        "GSX",
+        "setup",
+        "authentication",
+        "credentials",
+        "Prerequisites",
+        "Configuration Steps",
+        "Authentication",
+        "Testing Connection"
+      ]
+    }
+  },
+  {
+    "slug": "/gsx/troubleshooting",
+    "title": "GSX Troubleshooting",
+    "description": "Common issues and solutions for GSX integration.",
+    "content": "# GSX Troubleshooting\n\nCommon issues and solutions for GSX integration.\n\n## Common Issues\n\n*Documentation content to be added.*\n\n## Connection Problems\n\n*Documentation content to be added.*\n\n## Sync Issues\n\n*Documentation content to be added.*\n\n## Getting Help\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "gsx troubleshooting common issues and solutions for gsx integration common issues documentation content to be added connection problems documentation content to be added sync issues documentation content to be added getting help documentation content to be added",
+      "headings": [
+        "Common Issues",
+        "Connection Problems",
+        "Sync Issues",
+        "Getting Help"
+      ],
+      "keywords": [
+        "troubleshooting",
+        "issues",
+        "GSX",
+        "support",
+        "Common Issues",
+        "Connection Problems",
+        "Sync Issues",
+        "Getting Help"
+      ]
+    }
+  },
+  {
+    "slug": "/introduction",
+    "title": "Introduction to Weevio Cloud",
+    "description": "Learn about Weevio Cloud, the comprehensive multi-tenant SaaS platform for PIMS management and integrations.",
+    "content": "# Welcome to Weevio Cloud\n\nWeevio Cloud is a comprehensive multi-tenant SaaS platform designed to streamline PIMS management, customer engagement, and e-commerce operations for repair shops and service businesses.\n\n## What's Inside\n\nWeevio Cloud consists of five integrated applications:\n\n* **Store Management** - Manage orders, service repair orders (SROs), customers, and inventory\n* **Customer Portal** - Self-service portal for customers to track orders, pay invoices, and manage SROs\n* **Appointment Scheduler** - Embed appointment booking on your website with GSX integration\n* **GSX Integration** - Automated email workflows and appointment synchronization with Apple GSX\n* **Shopify Integration** - Sync inventory, orders, and enhance your store with variant selectors and cross-sell widgets\n\n## Get Started\n\n## Need Help?\n\nVisit our [Support](/docs/support) section for FAQs, troubleshooting guides, and contact information.\n",
+    "_searchMeta": {
+      "cleanContent": "welcome to weevio cloud weevio cloud is a comprehensive multi-tenant saas platform designed to streamline pims management customer engagement and e-commerce operations for repair shops and service businesses what s inside weevio cloud consists of five integrated applications: store management - manage orders service repair orders sros customers and inventory customer portal - self-service portal for customers to track orders pay invoices and manage sros appointment scheduler - embed appointment booking on your website with gsx integration gsx integration - automated email workflows and appointment synchronization with apple gsx shopify integration - sync inventory orders and enhance your store with variant selectors and cross-sell widgets get started need help visit our support section for faqs troubleshooting guides and contact information",
+      "headings": [
+        "What's Inside",
+        "Get Started",
+        "Need Help?"
+      ],
+      "keywords": [
+        "Weevio Cloud",
+        "introduction",
+        "overview",
+        "PIMS",
+        "What's Inside",
+        "Get Started",
+        "Need Help?",
+        "Store Management",
+        "Customer Portal",
+        "Appointment Scheduler",
+        "GSX Integration",
+        "Shopify Integration"
+      ]
+    }
+  },
+  {
+    "slug": "/introduction/quick-start",
+    "title": "Quick Start Guide",
+    "description": "Get up and running with Weevio Cloud in minutes.",
+    "content": "# Quick Start Guide\n\nThis guide will help you get started with Weevio Cloud quickly and efficiently.\n\n## Prerequisites\n\nBefore you begin, ensure you have:\n\n* Access to your Weevio Cloud account\n* PIMS Platinum/Gold credentials (if using PIMS integration)\n* Administrative access to your systems\n\n## Step 1: Account Setup\n\n1. Log in to your Weevio Cloud account\n2. Complete your organization profile\n3. Configure your basic settings\n\n## Step 2: Choose Your Apps\n\nSelect which Weevio Cloud applications you want to use:\n\n* **Store Management** - Start managing orders and customers\n* **Customer Portal** - Enable self-service for customers\n* **Appointment Scheduler** - Set up appointment booking\n* **GSX Integration** - Connect with Apple GSX\n* **Shopify Integration** - Link your Shopify store\n\n## Step 3: Configure Integrations\n\nSet up integrations based on your selected apps:\n\n* Configure PIMS connection\n* Set up GSX credentials (if applicable)\n* Connect your Shopify store (if applicable)\n\n## Step 4: Customize Settings\n\nAdjust settings to match your business needs:\n\n* Branding and appearance\n* Notification preferences\n* User permissions\n* Workflow automation\n\n## Next Steps\n\nExplore detailed documentation for each application:\n\n* [Store Management](/docs/store)\n* [Customer Portal](/docs/customer-portal)\n* [Appointment Scheduler](/docs/appointment-scheduler)\n* [GSX Integration](/docs/gsx)\n* [Shopify Integration](/docs/shopify)\n\n## Need Help?\n\nVisit our [Support](/docs/support) section or contact our team for assistance.\n",
+    "_searchMeta": {
+      "cleanContent": "quick start guide this guide will help you get started with weevio cloud quickly and efficiently prerequisites before you begin ensure you have: access to your weevio cloud account pims platinum gold credentials if using pims integration administrative access to your systems step 1: account setup log in to your weevio cloud account complete your organization profile configure your basic settings step 2: choose your apps select which weevio cloud applications you want to use: store management - start managing orders and customers customer portal - enable self-service for customers appointment scheduler - set up appointment booking gsx integration - connect with apple gsx shopify integration - link your shopify store step 3: configure integrations set up integrations based on your selected apps: configure pims connection set up gsx credentials if applicable connect your shopify store if applicable step 4: customize settings adjust settings to match your business needs: branding and appearance notification preferences user permissions workflow automation next steps explore detailed documentation for each application: store management customer portal appointment scheduler gsx integration shopify integration need help visit our support section or contact our team for assistance",
+      "headings": [
+        "Prerequisites",
+        "Step 1: Account Setup",
+        "Step 2: Choose Your Apps",
+        "Step 3: Configure Integrations",
+        "Step 4: Customize Settings",
+        "Next Steps",
+        "Need Help?"
+      ],
+      "keywords": [
+        "quick start",
+        "getting started",
+        "setup",
+        "onboarding",
+        "Prerequisites",
+        "Step 1: Account Setup",
+        "Step 2: Choose Your Apps",
+        "Step 3: Configure Integrations",
+        "Step 4: Customize Settings",
+        "Next Steps",
+        "Need Help?",
+        "Store Management",
+        "Customer Portal",
+        "Appointment Scheduler",
+        "GSX Integration",
+        "Shopify Integration"
+      ]
+    }
+  },
+  {
+    "slug": "/introduction/requirements",
+    "title": "System Requirements",
+    "description": "Technical requirements for using Weevio Cloud platform.",
+    "content": "# System Requirements\n\nLearn about the technical requirements and compatibility for Weevio Cloud.\n\n## Browser Support\n\nWeevio Cloud supports the latest versions of:\n\n* Google Chrome (recommended)\n* Mozilla Firefox\n* Safari\n* Microsoft Edge\n\n## Network Requirements\n\n* Stable internet connection\n* HTTPS support\n* Ports 443 and 80 accessible\n\n## Integration Requirements\n\n### PIMS Integration\n\n* PIMS Platinum or PIMS Gold\n* Valid PIMS credentials\n* Network access to PIMS server\n\n### GSX Integration\n\n* Apple Authorized Service Provider status\n* Valid GSX credentials\n* GSX API access\n\n### Shopify Integration\n\n* Active Shopify store\n* Shopify admin access\n* API access permissions\n\n## Customer Portal Requirements\n\nFor customers accessing the portal:\n\n* Modern web browser\n* Email address for notifications\n* Mobile-responsive design support\n\n## Appointment Scheduler\n\nFor embedding on your website:\n\n* Website with ability to embed iframes or scripts\n* HTTPS-enabled website (recommended)\n\n## Security Requirements\n\n* TLS 1.2 or higher\n* Modern SSL certificates\n* Secure authentication methods\n\n## Performance Recommendations\n\nFor optimal performance:\n\n* Broadband internet connection (5 Mbps or higher)\n* Modern devices (released within last 5 years)\n* JavaScript enabled\n\n## Need Help?\n\nContact our [Support](/docs/support/contact) team if you have questions about compatibility.\n",
+    "_searchMeta": {
+      "cleanContent": "system requirements learn about the technical requirements and compatibility for weevio cloud browser support weevio cloud supports the latest versions of: google chrome recommended mozilla firefox safari microsoft edge network requirements stable internet connection https support ports 443 and 80 accessible integration requirements pims integration pims platinum or pims gold valid pims credentials network access to pims server gsx integration apple authorized service provider status valid gsx credentials gsx api access shopify integration active shopify store shopify admin access api access permissions customer portal requirements for customers accessing the portal: modern web browser email address for notifications mobile-responsive design support appointment scheduler for embedding on your website: website with ability to embed iframes or scripts https-enabled website recommended security requirements tls 1 2 or higher modern ssl certificates secure authentication methods performance recommendations for optimal performance: broadband internet connection 5 mbps or higher modern devices released within last 5 years javascript enabled need help contact our support team if you have questions about compatibility",
+      "headings": [
+        "Browser Support",
+        "Network Requirements",
+        "Integration Requirements",
+        "Customer Portal Requirements",
+        "Appointment Scheduler",
+        "Security Requirements",
+        "Performance Recommendations",
+        "Need Help?"
+      ],
+      "keywords": [
+        "requirements",
+        "technical",
+        "system",
+        "compatibility",
+        "Browser Support",
+        "Network Requirements",
+        "Integration Requirements",
+        "Customer Portal Requirements",
+        "Appointment Scheduler",
+        "Security Requirements",
+        "Performance Recommendations",
+        "Need Help?"
+      ]
+    }
+  },
+  {
+    "slug": "/introduction/what-is-weevio",
+    "title": "What is Weevio Cloud?",
+    "description": "Overview of Weevio Cloud platform capabilities and features.",
+    "content": "# What is Weevio Cloud?\n\nWeevio Cloud is a comprehensive multi-tenant SaaS platform built to help repair shops and service businesses manage their operations more efficiently.\n\n## Key Features\n\n### Multi-Application Platform\n\nWeevio Cloud integrates five powerful applications:\n\n1. **Store Management** - Complete control over orders, SROs, customers, and inventory\n2. **Customer Portal** - Self-service capabilities for your customers\n3. **Appointment Scheduler** - Seamless appointment booking with GSX integration\n4. **GSX Integration** - Automated workflows for Apple authorized service providers\n5. **Shopify Integration** - E-commerce synchronization and enhancement tools\n\n## Platform Benefits\n\n* **Centralized Management** - All your business operations in one place\n* **Customer Self-Service** - Reduce support workload with portal access\n* **Seamless Integrations** - Connect with PIMS, GSX, and Shopify\n* **Automated Workflows** - Save time with email automation and sync features\n* **Multi-Tenant Architecture** - Scalable and secure for businesses of all sizes\n\n## Who is it For?\n\nWeevio Cloud is ideal for:\n\n* Apple Authorized Service Providers\n* Independent repair shops\n* Businesses using PIMS Platinum/Gold\n* Retailers with Shopify stores\n* Service businesses needing customer portals\n\n## Next Steps\n\nReady to get started? Check out the [Quick Start Guide](/docs/introduction/quick-start).\n",
+    "_searchMeta": {
+      "cleanContent": "what is weevio cloud weevio cloud is a comprehensive multi-tenant saas platform built to help repair shops and service businesses manage their operations more efficiently key features multi-application platform weevio cloud integrates five powerful applications: store management - complete control over orders sros customers and inventory customer portal - self-service capabilities for your customers appointment scheduler - seamless appointment booking with gsx integration gsx integration - automated workflows for apple authorized service providers shopify integration - e-commerce synchronization and enhancement tools platform benefits centralized management - all your business operations in one place customer self-service - reduce support workload with portal access seamless integrations - connect with pims gsx and shopify automated workflows - save time with email automation and sync features multi-tenant architecture - scalable and secure for businesses of all sizes who is it for weevio cloud is ideal for: apple authorized service providers independent repair shops businesses using pims platinum gold retailers with shopify stores service businesses needing customer portals next steps ready to get started check out the quick start guide",
+      "headings": [
+        "Key Features",
+        "Platform Benefits",
+        "Who is it For?",
+        "Next Steps"
+      ],
+      "keywords": [
+        "Weevio Cloud",
+        "overview",
+        "features",
+        "platform",
+        "Key Features",
+        "Platform Benefits",
+        "Who is it For?",
+        "Next Steps",
+        "Store Management",
+        "Customer Portal",
+        "Appointment Scheduler",
+        "GSX Integration",
+        "Shopify Integration",
+        "Centralized Management",
+        "Customer Self-Service",
+        "Seamless Integrations",
+        "Automated Workflows",
+        "Multi-Tenant Architecture"
+      ]
+    }
+  },
+  {
+    "slug": "/pims-sdk/api-methods",
+    "title": "API Methods",
+    "description": "Complete reference of PIMS SDK API methods.",
+    "content": "# API Methods\n\nComplete reference for all available PIMS SDK methods.\n\n## Available Methods\n\n*Documentation content to be added.*\n\n## Method Reference\n\n*Documentation content to be added.*\n\n## Parameters and Returns\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "api methods complete reference for all available pims sdk methods available methods documentation content to be added method reference documentation content to be added parameters and returns documentation content to be added",
+      "headings": [
+        "Available Methods",
+        "Method Reference",
+        "Parameters and Returns"
+      ],
+      "keywords": [
+        "API",
+        "methods",
+        "SDK",
+        "reference",
+        "Available Methods",
+        "Method Reference",
+        "Parameters and Returns"
+      ]
+    }
+  },
+  {
+    "slug": "/pims-sdk/authentication",
+    "title": "SDK Authentication",
+    "description": "Configure authentication for the PIMS SDK.",
+    "content": "# SDK Authentication\n\nSet up authentication for the PIMS SDK.\n\n## Overview\n\n*Documentation content to be added.*\n\n## Credentials\n\n*Documentation content to be added.*\n\n## Authentication Methods\n\n*Documentation content to be added.*\n\n## Security Best Practices\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "sdk authentication set up authentication for the pims sdk overview documentation content to be added credentials documentation content to be added authentication methods documentation content to be added security best practices documentation content to be added",
+      "headings": [
+        "Overview",
+        "Credentials",
+        "Authentication Methods",
+        "Security Best Practices"
+      ],
+      "keywords": [
+        "authentication",
+        "credentials",
+        "SDK",
+        "security",
+        "Overview",
+        "Credentials",
+        "Authentication Methods",
+        "Security Best Practices"
+      ]
+    }
+  },
+  {
+    "slug": "/pims-sdk/examples",
+    "title": "SDK Examples",
+    "description": "Code examples and use cases for the PIMS SDK.",
+    "content": "# SDK Examples\n\nPractical code examples for common use cases.\n\n## Basic Usage\n\n*Documentation content to be added.*\n\n## Advanced Examples\n\n*Documentation content to be added.*\n\n## Use Cases\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "sdk examples practical code examples for common use cases basic usage documentation content to be added advanced examples documentation content to be added use cases documentation content to be added",
+      "headings": [
+        "Basic Usage",
+        "Advanced Examples",
+        "Use Cases"
+      ],
+      "keywords": [
+        "examples",
+        "code",
+        "SDK",
+        "tutorial",
+        "Basic Usage",
+        "Advanced Examples",
+        "Use Cases"
+      ]
+    }
+  },
+  {
+    "slug": "/pims-sdk",
+    "title": "PIMS SDK",
+    "description": "JavaScript SDK for PIMS Platinum/Gold integration.",
+    "content": "# PIMS SDK\n\nJavaScript SDK for integrating with PIMS Platinum and PIMS Gold.\n\n## Overview\n\nThe PIMS SDK provides a simple JavaScript interface for interacting with PIMS systems.\n\n## Features\n\n* Easy authentication\n* Comprehensive API methods\n* TypeScript support\n* Promise-based async operations\n* Error handling\n\n## Quick Start\n",
+    "_searchMeta": {
+      "cleanContent": "pims sdk javascript sdk for integrating with pims platinum and pims gold overview the pims sdk provides a simple javascript interface for interacting with pims systems features easy authentication comprehensive api methods typescript support promise-based async operations error handling quick start",
+      "headings": [
+        "Overview",
+        "Features",
+        "Quick Start"
+      ],
+      "keywords": [
+        "PIMS",
+        "SDK",
+        "JavaScript",
+        "API",
+        "Overview",
+        "Features",
+        "Quick Start"
+      ]
+    }
+  },
+  {
+    "slug": "/pims-sdk/installation",
+    "title": "PIMS SDK Installation",
+    "description": "Install the PIMS SDK in your project.",
+    "content": "# PIMS SDK Installation\n\nInstall and set up the PIMS SDK in your JavaScript project.\n\n## Installation\n\n*Documentation content to be added.*\n\n## Requirements\n\n*Documentation content to be added.*\n\n## Configuration\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "pims sdk installation install and set up the pims sdk in your javascript project installation documentation content to be added requirements documentation content to be added configuration documentation content to be added",
+      "headings": [
+        "Installation",
+        "Requirements",
+        "Configuration"
+      ],
+      "keywords": [
+        "installation",
+        "npm",
+        "SDK",
+        "setup",
+        "Installation",
+        "Requirements",
+        "Configuration"
+      ]
+    }
+  },
+  {
+    "slug": "/shopify/api",
+    "title": "Shopify API Reference",
+    "description": "API documentation for Shopify integration.",
+    "content": "# Shopify API Reference\n\nTechnical API reference for Shopify integration.\n\n## Endpoints\n\n*Documentation content to be added.*\n\n## Authentication\n\n*Documentation content to be added.*\n\n## Request/Response Formats\n\n*Documentation content to be added.*\n\n## Code Examples\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "shopify api reference technical api reference for shopify integration endpoints documentation content to be added authentication documentation content to be added request response formats documentation content to be added code examples documentation content to be added",
+      "headings": [
+        "Endpoints",
+        "Authentication",
+        "Request/Response Formats",
+        "Code Examples"
+      ],
+      "keywords": [
+        "API",
+        "Shopify",
+        "integration",
+        "reference",
+        "Endpoints",
+        "Authentication",
+        "Request/Response Formats",
+        "Code Examples"
+      ]
+    }
+  },
+  {
+    "slug": "/shopify/cross-sell",
+    "title": "Cross-Sell Widget",
+    "description": "Intelligent cross-selling widget for Shopify stores.",
+    "content": "# Cross-Sell Widget\n\nBoost sales with intelligent product recommendations.\n\n## Overview\n\n*Documentation content to be added.*\n\n## Installation\n\n*Documentation content to be added.*\n\n## Configuration\n\n*Documentation content to be added.*\n\n## Recommendation Engine\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "cross-sell widget boost sales with intelligent product recommendations overview documentation content to be added installation documentation content to be added configuration documentation content to be added recommendation engine documentation content to be added",
+      "headings": [
+        "Overview",
+        "Installation",
+        "Configuration",
+        "Recommendation Engine"
+      ],
+      "keywords": [
+        "cross-sell",
+        "widget",
+        "sales",
+        "Shopify",
+        "Overview",
+        "Installation",
+        "Configuration",
+        "Recommendation Engine"
+      ]
+    }
+  },
+  {
+    "slug": "/shopify",
+    "title": "Shopify Integration",
+    "description": "Sync inventory, orders, and enhance your Shopify store with Weevio Cloud.",
+    "content": "# Shopify Integration\n\nConnect your Shopify store to Weevio Cloud for seamless inventory and order synchronization.\n\n## Overview\n\nShopify Integration provides:\n\n* Inventory sync between PIMS and Shopify\n* Order sync from Shopify to PIMS\n* Variant Selector Widget for improved product selection\n* Cross-Sell Widget for increased sales\n* Real-time synchronization\n\n## Features\n",
+    "_searchMeta": {
+      "cleanContent": "shopify integration connect your shopify store to weevio cloud for seamless inventory and order synchronization overview shopify integration provides: inventory sync between pims and shopify order sync from shopify to pims variant selector widget for improved product selection cross-sell widget for increased sales real-time synchronization features",
+      "headings": [
+        "Overview",
+        "Features"
+      ],
+      "keywords": [
+        "Shopify",
+        "integration",
+        "e-commerce",
+        "sync",
+        "Overview",
+        "Features"
+      ]
+    }
+  },
+  {
+    "slug": "/shopify/inventory-sync",
+    "title": "Inventory Sync",
+    "description": "Synchronize inventory between PIMS and Shopify.",
+    "content": "# Inventory Sync\n\nKeep your inventory levels synchronized between PIMS and Shopify.\n\n## Overview\n\n*Documentation content to be added.*\n\n## Configuration\n\n*Documentation content to be added.*\n\n## Sync Process\n\n*Documentation content to be added.*\n\n## Troubleshooting\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "inventory sync keep your inventory levels synchronized between pims and shopify overview documentation content to be added configuration documentation content to be added sync process documentation content to be added troubleshooting documentation content to be added",
+      "headings": [
+        "Overview",
+        "Configuration",
+        "Sync Process",
+        "Troubleshooting"
+      ],
+      "keywords": [
+        "inventory",
+        "sync",
+        "Shopify",
+        "stock",
+        "Overview",
+        "Configuration",
+        "Sync Process",
+        "Troubleshooting"
+      ]
+    }
+  },
+  {
+    "slug": "/shopify/order-sync",
+    "title": "Order Sync",
+    "description": "Sync Shopify orders to your PIMS system.",
+    "content": "# Order Sync\n\nAutomatically sync orders from Shopify to your PIMS system.\n\n## Overview\n\n*Documentation content to be added.*\n\n## Configuration\n\n*Documentation content to be added.*\n\n## Order Processing\n\n*Documentation content to be added.*\n\n## Order Status\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "order sync automatically sync orders from shopify to your pims system overview documentation content to be added configuration documentation content to be added order processing documentation content to be added order status documentation content to be added",
+      "headings": [
+        "Overview",
+        "Configuration",
+        "Order Processing",
+        "Order Status"
+      ],
+      "keywords": [
+        "orders",
+        "sync",
+        "Shopify",
+        "PIMS",
+        "Overview",
+        "Configuration",
+        "Order Processing",
+        "Order Status"
+      ]
+    }
+  },
+  {
+    "slug": "/shopify/overview",
+    "title": "Shopify Integration Overview",
+    "description": "Introduction to Shopify integration capabilities.",
+    "content": "# Shopify Integration Overview\n\nLearn about the capabilities of Shopify integration with Weevio Cloud.\n\n## Integration Benefits\n\n*Documentation content to be added.*\n\n## Setup Requirements\n\n*Documentation content to be added.*\n\n## Features Overview\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "shopify integration overview learn about the capabilities of shopify integration with weevio cloud integration benefits documentation content to be added setup requirements documentation content to be added features overview documentation content to be added",
+      "headings": [
+        "Integration Benefits",
+        "Setup Requirements",
+        "Features Overview"
+      ],
+      "keywords": [
+        "Shopify",
+        "overview",
+        "features",
+        "Integration Benefits",
+        "Setup Requirements",
+        "Features Overview"
+      ]
+    }
+  },
+  {
+    "slug": "/shopify/variant-selector",
+    "title": "Variant Selector Widget",
+    "description": "Enhanced product variant selection for Shopify stores.",
+    "content": "# Variant Selector Widget\n\nImprove product variant selection with the Weevio Cloud widget.\n\n## Overview\n\n*Documentation content to be added.*\n\n## Installation\n\n*Documentation content to be added.*\n\n## Customization\n\n*Documentation content to be added.*\n\n## Features\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "variant selector widget improve product variant selection with the weevio cloud widget overview documentation content to be added installation documentation content to be added customization documentation content to be added features documentation content to be added",
+      "headings": [
+        "Overview",
+        "Installation",
+        "Customization",
+        "Features"
+      ],
+      "keywords": [
+        "variant selector",
+        "widget",
+        "products",
+        "Shopify",
+        "Overview",
+        "Installation",
+        "Customization",
+        "Features"
+      ]
+    }
+  },
+  {
+    "slug": "/store/customers",
+    "title": "Customer Management",
+    "description": "Manage customer records and profiles in Weevio Cloud.",
+    "content": "# Customer Management\n\nLearn how to manage customer records and build better relationships.\n\n## Overview\n\nThe Customer Management module helps you maintain detailed customer profiles, track interactions, and provide better service.\n\n## Features\n\n* Create and edit customer profiles\n* View customer history\n* Track orders and SROs\n* Manage contact information\n* Customer notes and tags\n* Portal access management\n\n## Customer Profiles\n\n*Documentation content to be added.*\n\n## Customer History\n\n*Documentation content to be added.*\n\n## Portal Access\n\n*Documentation content to be added.*\n\n## Customer Communication\n\n*Documentation content to be added.*\n\n## Related Topics\n\n* [Customer Portal](/docs/customer-portal)\n* [Orders](/docs/store/orders)\n* [Service Repair Orders](/docs/store/sros)\n",
+    "_searchMeta": {
+      "cleanContent": "customer management learn how to manage customer records and build better relationships overview the customer management module helps you maintain detailed customer profiles track interactions and provide better service features create and edit customer profiles view customer history track orders and sros manage contact information customer notes and tags portal access management customer profiles documentation content to be added customer history documentation content to be added portal access documentation content to be added customer communication documentation content to be added related topics customer portal orders service repair orders",
+      "headings": [
+        "Overview",
+        "Features",
+        "Customer Profiles",
+        "Customer History",
+        "Portal Access",
+        "Customer Communication",
+        "Related Topics"
+      ],
+      "keywords": [
+        "customers",
+        "profiles",
+        "management",
+        "CRM",
+        "Overview",
+        "Features",
+        "Customer Profiles",
+        "Customer History",
+        "Portal Access",
+        "Customer Communication",
+        "Related Topics"
+      ]
+    }
+  },
+  {
+    "slug": "/store",
+    "title": "Store Management",
+    "description": "Comprehensive guide to managing orders, SROs, customers, and inventory in Weevio Cloud.",
+    "content": "# Store Management\n\nThe Store Management application is the core of Weevio Cloud, providing complete control over your daily operations.\n\n## Overview\n\nStore Management integrates with PIMS to help you:\n\n* Process and track orders\n* Manage service repair orders (SROs)\n* Maintain customer records\n* Monitor inventory levels\n\n## Key Features\n\n## Getting Started\n\nThe Store Management application syncs with your PIMS system to provide real-time data and seamless workflow integration.\n\n## Next Steps\n\nExplore detailed guides for each feature:\n\n* [Orders](/docs/store/orders)\n* [Service Repair Orders](/docs/store/sros)\n* [Customers](/docs/store/customers)\n* [Inventory](/docs/store/inventory)\n",
+    "_searchMeta": {
+      "cleanContent": "store management the store management application is the core of weevio cloud providing complete control over your daily operations overview store management integrates with pims to help you: process and track orders manage service repair orders sros maintain customer records monitor inventory levels key features getting started the store management application syncs with your pims system to provide real-time data and seamless workflow integration next steps explore detailed guides for each feature: orders service repair orders customers inventory",
+      "headings": [
+        "Overview",
+        "Key Features",
         "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
+        "Next Steps"
       ],
       "keywords": [
+        "store",
+        "orders",
+        "SRO",
+        "customers",
+        "inventory",
+        "PIMS",
+        "Overview",
+        "Key Features",
         "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
+        "Next Steps"
       ]
     }
   },
   {
-    "slug": "/structure/deep/deeper/even-deeper",
-    "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n",
+    "slug": "/store/inventory",
+    "title": "Inventory Management",
+    "description": "Track and manage product inventory in Weevio Cloud.",
+    "content": "# Inventory Management\n\nManage your product inventory and track stock levels.\n\n## Overview\n\nThe Inventory module helps you monitor stock levels, track products, and sync with your sales channels.\n\n## Features\n\n* Track stock levels\n* Monitor product availability\n* Sync with PIMS\n* Sync with Shopify (if integrated)\n* Low stock alerts\n* Inventory reports\n\n## Product Management\n\n*Documentation content to be added.*\n\n## Stock Tracking\n\n*Documentation content to be added.*\n\n## Inventory Sync\n\n*Documentation content to be added.*\n\n## Reports and Analytics\n\n*Documentation content to be added.*\n\n## Related Topics\n\n* [Shopify Integration](/docs/shopify)\n* [Inventory Sync](/docs/shopify/inventory-sync)\n* [Orders](/docs/store/orders)\n",
     "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text",
-      "headings": [],
-      "keywords": []
-    }
-  },
-  {
-    "slug": "/structure/deep/deeper",
-    "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nThank you for choosing the Documentation Template for your project. Whether you're documenting software, APIs, or processes, we're here to support you in creating clear and effective documentation. Happy documenting!\n\n## Tabs Example\n",
-    "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion thank you for choosing the documentation template for your project whether you re documenting software apis or processes we re here to support you in creating clear and effective documentation happy documenting tabs example",
+      "cleanContent": "inventory management manage your product inventory and track stock levels overview the inventory module helps you monitor stock levels track products and sync with your sales channels features track stock levels monitor product availability sync with pims sync with shopify if integrated low stock alerts inventory reports product management documentation content to be added stock tracking documentation content to be added inventory sync documentation content to be added reports and analytics documentation content to be added related topics shopify integration inventory sync orders",
       "headings": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion",
-        "Tabs Example"
+        "Overview",
+        "Features",
+        "Product Management",
+        "Stock Tracking",
+        "Inventory Sync",
+        "Reports and Analytics",
+        "Related Topics"
       ],
       "keywords": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion",
-        "Tabs Example"
+        "inventory",
+        "stock",
+        "products",
+        "management",
+        "Overview",
+        "Features",
+        "Product Management",
+        "Stock Tracking",
+        "Inventory Sync",
+        "Reports and Analytics",
+        "Related Topics"
       ]
     }
   },
   {
-    "slug": "/structure/deep",
-    "title": "Introduction",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nThank you for choosing the Documentation Template for your project. Whether you're documenting software, APIs, or processes, we're here to support you in creating clear and effective documentation. Happy documenting!\n\n## Tabs Example\n",
+    "slug": "/store/orders",
+    "title": "Orders",
+    "description": "Manage and track customer orders in Weevio Cloud Store Management.",
+    "content": "# Orders\n\nLearn how to create, manage, and track customer orders in Weevio Cloud.\n\n## Overview\n\nThe Orders module allows you to handle all aspects of customer orders, from creation to completion.\n\n## Features\n\n* Create new orders\n* Track order status\n* Update order details\n* Process payments\n* Generate invoices\n* View order history\n\n## Creating Orders\n\n*Documentation content to be added.*\n\n## Managing Orders\n\n*Documentation content to be added.*\n\n## Order Status\n\n*Documentation content to be added.*\n\n## Order Reports\n\n*Documentation content to be added.*\n\n## Related Topics\n\n* [Service Repair Orders (SROs)](/docs/store/sros)\n* [Customers](/docs/store/customers)\n* [Invoice Payments](/docs/customer-portal/invoice-payments)\n",
     "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion thank you for choosing the documentation template for your project whether you re documenting software apis or processes we re here to support you in creating clear and effective documentation happy documenting tabs example",
+      "cleanContent": "orders learn how to create manage and track customer orders in weevio cloud overview the orders module allows you to handle all aspects of customer orders from creation to completion features create new orders track order status update order details process payments generate invoices view order history creating orders documentation content to be added managing orders documentation content to be added order status documentation content to be added order reports documentation content to be added related topics service repair orders sros customers invoice payments",
       "headings": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion",
-        "Tabs Example"
+        "Overview",
+        "Features",
+        "Creating Orders",
+        "Managing Orders",
+        "Order Status",
+        "Order Reports",
+        "Related Topics"
       ],
       "keywords": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion",
-        "Tabs Example"
+        "orders",
+        "sales",
+        "tracking",
+        "management",
+        "Overview",
+        "Features",
+        "Creating Orders",
+        "Managing Orders",
+        "Order Status",
+        "Order Reports",
+        "Related Topics"
       ]
     }
   },
   {
-    "slug": "/structure",
-    "title": "Structure",
-    "description": "This section provides an overview of Introduction.",
-    "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime, molestiae, facilis aperiam et, error illum vel ullam? Quis architecto dolore ullam\n\n* \\[x] Write the press release\n* \\[ ] Update the website\n* \\[ ] Contact the media\n\n| Syntax        | Description |   Test Text |\n| :------------ | :---------: | ----------: |\n| Header        |    Title    | Here's this |\n| Paragraph     |    Text     |    And more |\n| Strikethrough |             |    ~~Text~~ |\n\n## Getting Started\n\nTo begin using the Documentation Template, follow these simple steps:\n\n* Start by cloning the repository to your local machine.\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium. Optio, necessitatibus sequi. Veritatis, aspernatur? Possimus quis repellat eum vitae eveniet.\n\n## Blockquotes\n\nBlockquotes are useful for emphasizing key points or quoting external sources:\n\n> \"Documentation is a love letter that you write to your future self.\" - Damian Conway\n\nFeel free to use blockquotes to highlight important information or quotes relevant to your documentation.\n\n## Code Examples with switch\n\nHere a custom tab component from shadcn ui is used.\n\n## Conclusion\n\nThank you for choosing the Documentation Template for your project. Whether you're documenting software, APIs, or processes, we're here to support you in creating clear and effective documentation. Happy documenting!\n",
+    "slug": "/store/sros",
+    "title": "Service Repair Orders (SROs)",
+    "description": "Manage service repair orders in Weevio Cloud Store Management.",
+    "content": "# Service Repair Orders (SROs)\n\nComplete guide to managing service repair orders in Weevio Cloud.\n\n## Overview\n\nSROs help you track repair jobs from intake to completion, with full integration to your PIMS system.\n\n## Features\n\n* Create SROs for repair jobs\n* Track repair status\n* Manage parts and labor\n* Update customers on progress\n* Process SRO payments and deposits\n* Complete and close SROs\n\n## Creating SROs\n\n*Documentation content to be added.*\n\n## SRO Workflow\n\n*Documentation content to be added.*\n\n## Status Tracking\n\n*Documentation content to be added.*\n\n## Customer Communication\n\n*Documentation content to be added.*\n\n## Related Topics\n\n* [Orders](/docs/store/orders)\n* [SRO Deposits](/docs/customer-portal/sro-deposits)\n* [GSX Integration](/docs/gsx)\n",
     "_searchMeta": {
-      "cleanContent": "lorem ipsum dolor sit amet consectetur adipisicing elit numquam iste dolorum tempore consectetur explicabo tempora provident quia maxime molestiae facilis aperiam et error illum vel ullam quis architecto dolore ullam x write the press release update the website contact the media syntax description test text:------------ :---------: ----------:header title here s thisparagraph text and morestrikethrough text getting started to begin using the documentation template follow these simple steps: start by cloning the repository to your local machine lorem ipsum dolor sit amet consectetur adipisicing elit reprehenderit quae iure nulla deserunt dolore quam pariatur minus sapiente accusantium optio necessitatibus sequi veritatis aspernatur possimus quis repellat eum vitae eveniet blockquotes blockquotes are useful for emphasizing key points or quoting external sources: documentation is a love letter that you write to your future self - damian conway feel free to use blockquotes to highlight important information or quotes relevant to your documentation code examples with switch here a custom tab component from shadcn ui is used conclusion thank you for choosing the documentation template for your project whether you re documenting software apis or processes we re here to support you in creating clear and effective documentation happy documenting",
+      "cleanContent": "service repair orders sros complete guide to managing service repair orders in weevio cloud overview sros help you track repair jobs from intake to completion with full integration to your pims system features create sros for repair jobs track repair status manage parts and labor update customers on progress process sro payments and deposits complete and close sros creating sros documentation content to be added sro workflow documentation content to be added status tracking documentation content to be added customer communication documentation content to be added related topics orders sro deposits gsx integration",
       "headings": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
+        "Overview",
+        "Features",
+        "Creating SROs",
+        "SRO Workflow",
+        "Status Tracking",
+        "Customer Communication",
+        "Related Topics"
       ],
       "keywords": [
-        "Getting Started",
-        "Blockquotes",
-        "Code Examples with switch",
-        "Conclusion"
+        "SRO",
+        "service",
+        "repair",
+        "orders",
+        "tracking",
+        "Overview",
+        "Features",
+        "Creating SROs",
+        "SRO Workflow",
+        "Status Tracking",
+        "Customer Communication",
+        "Related Topics"
+      ]
+    }
+  },
+  {
+    "slug": "/support/contact",
+    "title": "Contact Support",
+    "description": "Get in touch with the Weevio Cloud support team.",
+    "content": "# Contact Support\n\nGet help from our support team.\n\n## Support Channels\n\n*Documentation content to be added.*\n\n## Contact Information\n\n*Documentation content to be added.*\n\n## Response Times\n\n*Documentation content to be added.*\n\n## Before Contacting Support\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "contact support get help from our support team support channels documentation content to be added contact information documentation content to be added response times documentation content to be added before contacting support documentation content to be added",
+      "headings": [
+        "Support Channels",
+        "Contact Information",
+        "Response Times",
+        "Before Contacting Support"
+      ],
+      "keywords": [
+        "contact",
+        "support",
+        "help",
+        "email",
+        "Support Channels",
+        "Contact Information",
+        "Response Times",
+        "Before Contacting Support"
+      ]
+    }
+  },
+  {
+    "slug": "/support/faqs",
+    "title": "Frequently Asked Questions",
+    "description": "Common questions and answers about Weevio Cloud.",
+    "content": "# Frequently Asked Questions\n\nFind answers to common questions about Weevio Cloud.\n\n## General Questions\n\n*Documentation content to be added.*\n\n## Technical Questions\n\n*Documentation content to be added.*\n\n## Billing and Account\n\n*Documentation content to be added.*\n\n## Integration Questions\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "frequently asked questions find answers to common questions about weevio cloud general questions documentation content to be added technical questions documentation content to be added billing and account documentation content to be added integration questions documentation content to be added",
+      "headings": [
+        "General Questions",
+        "Technical Questions",
+        "Billing and Account",
+        "Integration Questions"
+      ],
+      "keywords": [
+        "FAQs",
+        "questions",
+        "answers",
+        "help",
+        "General Questions",
+        "Technical Questions",
+        "Billing and Account",
+        "Integration Questions"
+      ]
+    }
+  },
+  {
+    "slug": "/support",
+    "title": "Help & Support",
+    "description": "Get help with Weevio Cloud platform.",
+    "content": "# Help & Support\n\nFind answers and get help with Weevio Cloud.\n\n## Support Resources\n\n## Documentation\n\nBrowse our complete documentation to learn more about Weevio Cloud features.\n\n## Community\n\nJoin our community for tips, discussions, and updates.\n",
+    "_searchMeta": {
+      "cleanContent": "help support find answers and get help with weevio cloud support resources documentation browse our complete documentation to learn more about weevio cloud features community join our community for tips discussions and updates",
+      "headings": [
+        "Support Resources",
+        "Documentation",
+        "Community"
+      ],
+      "keywords": [
+        "support",
+        "help",
+        "FAQs",
+        "contact",
+        "Support Resources",
+        "Documentation",
+        "Community"
+      ]
+    }
+  },
+  {
+    "slug": "/support/release-notes",
+    "title": "Release Notes",
+    "description": "Latest updates and changes to Weevio Cloud.",
+    "content": "# Release Notes\n\nStay up to date with the latest Weevio Cloud updates and improvements.\n\n## Latest Releases\n\n*Documentation content to be added.*\n\n## Version History\n\n*Documentation content to be added.*\n\n## Upcoming Features\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "release notes stay up to date with the latest weevio cloud updates and improvements latest releases documentation content to be added version history documentation content to be added upcoming features documentation content to be added",
+      "headings": [
+        "Latest Releases",
+        "Version History",
+        "Upcoming Features"
+      ],
+      "keywords": [
+        "release notes",
+        "updates",
+        "changelog",
+        "versions",
+        "Latest Releases",
+        "Version History",
+        "Upcoming Features"
+      ]
+    }
+  },
+  {
+    "slug": "/support/troubleshooting",
+    "title": "Troubleshooting Guide",
+    "description": "Solutions to common issues with Weevio Cloud.",
+    "content": "# Troubleshooting Guide\n\nFind solutions to common issues and problems.\n\n## Common Issues\n\n*Documentation content to be added.*\n\n## Connection Problems\n\n*Documentation content to be added.*\n\n## Integration Issues\n\n*Documentation content to be added.*\n\n## Performance Issues\n\n*Documentation content to be added.*\n",
+    "_searchMeta": {
+      "cleanContent": "troubleshooting guide find solutions to common issues and problems common issues documentation content to be added connection problems documentation content to be added integration issues documentation content to be added performance issues documentation content to be added",
+      "headings": [
+        "Common Issues",
+        "Connection Problems",
+        "Integration Issues",
+        "Performance Issues"
+      ],
+      "keywords": [
+        "troubleshooting",
+        "issues",
+        "problems",
+        "solutions",
+        "Common Issues",
+        "Connection Problems",
+        "Integration Issues",
+        "Performance Issues"
       ]
     }
   }

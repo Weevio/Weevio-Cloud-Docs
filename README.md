@@ -14,12 +14,14 @@ Official documentation for Weevio Cloud - a modern documentation site built with
 
 ## Overview
 
-This documentation site provides comprehensive information about Weevio Cloud, including:
+Weevio Cloud is a comprehensive multi-tenant SaaS platform designed for repair shops and service businesses. This documentation covers:
 
-- **Platform Documentation**: Guides for using Weevio Cloud features
-- **PIMS Integration**: Documentation for PIMS Platinum/Gold integration
-- **API Reference**: Complete API documentation for developers
-- **SDK Documentation**: JavaScript SDK guides and examples
+- **Store Management**: Orders, SROs, customers, and inventory
+- **Customer Portal**: Self-service access for customers
+- **Appointment Scheduler**: Website booking with GSX integration
+- **GSX Integration**: Automated workflows for Apple service providers
+- **Shopify Integration**: E-commerce sync and enhancement tools
+- **Developer Resources**: API documentation and PIMS SDK
 
 Built with modern web technologies for fast, accessible, and maintainable documentation.
 
@@ -75,19 +77,34 @@ pnpm run build
 pnpm run start
 ```
 
-Deploy to Vercel for automated builds and hosting.
+This site is configured for GitHub Pages deployment.
 
 ---
 
-## Usage
+## Documentation Structure
 
-This documentation site covers:
+This documentation is organized into the following sections:
 
-- Weevio Cloud platform features and capabilities
-- PIMS integration setup and configuration
-- API endpoints and authentication
-- SDK installation and usage examples
-- Best practices and troubleshooting guides
+### Getting Started
+- Introduction to Weevio Cloud
+- Quick Start Guide
+- System Requirements
+
+### Core Platform
+- **Store Management**: Orders, SROs, customers, inventory
+- **Customer Portal**: Self-service features and customization
+
+### Integrations
+- **Appointment Scheduler**: Website embedding and GSX integration
+- **GSX Integration**: Automated workflows and appointment sync
+- **Shopify Integration**: Inventory sync, order sync, and widgets
+
+### Developer Resources
+- **PIMS SDK**: JavaScript SDK for PIMS integration
+- **API Reference**: Complete REST API documentation
+
+### Support
+- FAQs, troubleshooting, and contact information
 
 ---
 

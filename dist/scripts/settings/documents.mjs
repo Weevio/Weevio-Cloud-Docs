@@ -1,20 +1,202 @@
 export const Documents = [
     {
-        heading: "Introduction",
-        title: "Basic Setup",
-        href: "/basic-setup",
+        heading: "Getting Started",
+        title: "Introduction",
+        href: "/introduction",
+        items: [
+            {
+                title: "What is Weevio Cloud?",
+                href: "/what-is-weevio",
+            },
+            {
+                title: "Quick Start Guide",
+                href: "/quick-start",
+            },
+            {
+                title: "System Requirements",
+                href: "/requirements",
+            },
+        ],
+    },
+    {
+        spacer: true,
+    },
+    {
+        heading: "Core Platform",
+        title: "Store Management",
+        href: "/store",
+        items: [
+            {
+                title: "Orders",
+                href: "/orders",
+            },
+            {
+                title: "Service Repair Orders (SROs)",
+                href: "/sros",
+            },
+            {
+                title: "Customer Management",
+                href: "/customers",
+            },
+            {
+                title: "Inventory",
+                href: "/inventory",
+            },
+        ],
+    },
+    {
+        title: "Customer Portal",
+        href: "/customer-portal",
+        items: [
+            {
+                title: "Overview",
+                href: "/overview",
+            },
+            {
+                title: "Self-Service Features",
+                href: "/features",
+            },
+            {
+                title: "Order Tracking",
+                href: "/order-tracking",
+            },
+            {
+                title: "Invoice Payments",
+                href: "/invoice-payments",
+            },
+            {
+                title: "SRO Deposits",
+                href: "/sro-deposits",
+            },
+            {
+                title: "Customization",
+                href: "/customization",
+            },
+        ],
+    },
+    {
+        spacer: true,
+    },
+    {
+        heading: "Integrations",
+        title: "Appointment Scheduler",
+        href: "/appointment-scheduler",
+        items: [
+            {
+                title: "Setup & Configuration",
+                href: "/setup",
+            },
+            {
+                title: "GSX Integration",
+                href: "/gsx-integration",
+            },
+            {
+                title: "Website Embedding",
+                href: "/embedding",
+            },
+            {
+                title: "Email Notifications",
+                href: "/notifications",
+            },
+        ],
+    },
+    {
+        title: "GSX Integration",
+        href: "/gsx",
+        items: [
+            {
+                title: "Setup & Authentication",
+                href: "/setup",
+            },
+            {
+                title: "Automated Email Workflows",
+                href: "/email-workflows",
+            },
+            {
+                title: "Appointment Sync",
+                href: "/appointment-sync",
+            },
+            {
+                title: "Troubleshooting",
+                href: "/troubleshooting",
+            },
+        ],
+    },
+    {
+        title: "Shopify Integration",
+        href: "/shopify",
+        items: [
+            {
+                title: "Overview",
+                href: "/overview",
+            },
+            {
+                title: "Inventory Sync",
+                href: "/inventory-sync",
+            },
+            {
+                title: "Order Sync",
+                href: "/order-sync",
+            },
+            {
+                title: "Variant Selector Widget",
+                href: "/variant-selector",
+            },
+            {
+                title: "Cross-Sell Widget",
+                href: "/cross-sell",
+            },
+            {
+                title: "API Reference",
+                href: "/api",
+            },
+        ],
+    },
+    {
+        spacer: true,
+    },
+    {
+        heading: "Developer Resources",
+        title: "PIMS SDK",
+        href: "/pims-sdk",
         items: [
             {
                 title: "Installation",
                 href: "/installation",
             },
             {
-                title: "Setup",
-                href: "/setup",
+                title: "Authentication",
+                href: "/authentication",
             },
             {
-                title: "Changelog",
-                href: "/changelog",
+                title: "API Methods",
+                href: "/api-methods",
+            },
+            {
+                title: "Examples",
+                href: "/examples",
+            },
+        ],
+    },
+    {
+        title: "API Reference",
+        href: "/api",
+        items: [
+            {
+                title: "Authentication",
+                href: "/authentication",
+            },
+            {
+                title: "Endpoints",
+                href: "/endpoints",
+            },
+            {
+                title: "Webhooks",
+                href: "/webhooks",
+            },
+            {
+                title: "Rate Limits",
+                href: "/rate-limits",
             },
         ],
     },
@@ -22,75 +204,25 @@ export const Documents = [
         spacer: true,
     },
     {
-        title: "Navigation",
-        href: "/navigation",
-        heading: "Documents",
-    },
-    {
-        title: "Structure",
-        href: "/structure",
+        heading: "Support",
+        title: "Help & Support",
+        href: "/support",
         items: [
             {
-                title: "Deep",
-                href: "/deep",
-                items: [
-                    {
-                        title: "Deeper",
-                        href: "/deeper",
-                        items: [
-                            {
-                                title: "Even deeper",
-                                href: "/even-deeper",
-                            },
-                        ],
-                    },
-                ],
-            },
-        ],
-    },
-    {
-        spacer: true,
-    },
-    {
-        title: "Markdown",
-        href: "/markdown",
-        heading: "Components",
-        items: [
-            {
-                title: "Cards",
-                href: "/cards",
+                title: "FAQs",
+                href: "/faqs",
             },
             {
-                title: "Diagrams",
-                href: "/diagrams",
+                title: "Troubleshooting",
+                href: "/troubleshooting",
             },
             {
-                title: "Filetree",
-                href: "/filetree",
+                title: "Contact Support",
+                href: "/contact",
             },
             {
-                title: "Lists",
-                href: "/lists",
-            },
-            {
-                title: "Maths",
-                href: "/maths",
-            },
-            {
-                title: "Notes",
-                href: "/notes",
-            },
-            {
-                title: "Steps",
-                href: "/steps",
-            },
-            {
-                title: "Table",
-                href: "/table",
-            },
-            {
-                title: "Tabs",
-                href: "/tabs",
+                title: "Release Notes",
+                href: "/release-notes",
             },
         ],
     },

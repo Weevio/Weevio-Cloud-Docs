@@ -1,27 +1,30 @@
-export const url = "https://rubix-documents.vercel.app"
-export const siteicon = "/icon.png"
+export const url = "https://macexperience.github.io/Weevio-Cloud-Docs"
+export const siteicon = "/images/weevio-transparent.png"
 
 export const gtm = "GTM-XXXXXXX"
-export const gtmconnected = true
+export const gtmconnected = false
 
-export const sitename = "Documents"
+export const sitename = "Weevio Cloud"
 export const description =
-  "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements."
+  "Official documentation for Weevio Cloud - A comprehensive multi-tenant SaaS platform for PIMS management, customer portal, appointment scheduling, GSX integration, and Shopify e-commerce."
 export const keywords = [
-  "Next.js",
+  "Weevio Cloud",
+  "PIMS integration",
+  "Customer Portal",
+  "Appointment Scheduler",
+  "GSX Integration",
+  "Shopify Integration",
+  "SaaS",
   "documentation",
-  "Rubix Studios",
-  "open source",
-  "SEO",
 ]
 export const urlimage = "/images/og-image.png"
-export const imagealt = "Rubix Studios Documentation"
-export const twitterhandle = "@RubixStudios"
+export const imagealt = "Weevio Cloud Documentation"
+export const twitterhandle = "@WeevioCloud"
 
-export const companyname = "Rubix Studios"
-export const companylink = "https://rubixstudios.com.au"
+export const companyname = "Weevio"
+export const companylink = "https://weevio.com"
 
-export const branding = true
+export const branding = false
 export const rightsidebar = true
 export const feedbackedit = true
 export const tableofcontent = true
