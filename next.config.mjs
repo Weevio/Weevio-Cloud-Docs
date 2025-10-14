@@ -5,7 +5,7 @@ const nextConfig = {
     unoptimized: true,
   },
   // Set the base path to the repository name for GitHub Pages
-  basePath: process.env.NODE_ENV === 'production' ? '/Weevio-Cloud-Docs' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '' : '',
   // Ensure trailing slashes are handled correctly
   trailingSlash: true,
 }
