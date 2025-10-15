@@ -19,7 +19,7 @@ export const keywords = [
 ]
 export const urlimage = "/images/og-image.png"
 export const imagealt = "Weevio Cloud Documentation"
-export const twitterhandle = false
+export const twitterhandle = ""
 
 export const companyname = "Weevio"
 export const companylink = "https://weevio.co"
