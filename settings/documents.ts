@@ -29,11 +29,11 @@ export const Documents: Paths[] = [
         href: "/orders",
       },
       {
-        title: "SROs (Service Repair Orders)",
+        title: "Service Repair Orders",
         href: "/sros",
       },
       {
-        title: "Customers",
+        title: "Customer Management",
         href: "/customers",
       },
       {

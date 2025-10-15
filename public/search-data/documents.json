@@ -592,39 +592,6 @@
     }
   },
   {
-    "slug": "/introduction/requirements",
-    "title": "System Requirements",
-    "description": "Technical requirements for using Weevio Cloud platform.",
-    "content": "Learn about the technical requirements and compatibility for Weevio Cloud.\n\n## Browser Support\n\nWeevio Cloud supports the latest versions of:\n\n* Google Chrome (recommended)\n* Mozilla Firefox\n* Safari\n* Microsoft Edge\n\n## Network Requirements\n\n* Stable internet connection\n* HTTPS support\n* Ports 443 and 80 accessible\n\n## Integration Requirements\n\n### PIMS Integration\n\n* PIMS Platinum or PIMS Gold\n* Valid PIMS credentials\n* Network access to PIMS server\n\n### GSX Integration\n\n* Apple Authorized Service Provider status\n* Valid GSX credentials\n* GSX API access\n\n### Shopify Integration\n\n* Active Shopify store\n* Shopify admin access\n* API access permissions\n\n## Customer Portal Requirements\n\nFor customers accessing the portal:\n\n* Modern web browser\n* Email address for notifications\n* Mobile-responsive design support\n\n## Appointment Scheduler\n\nFor embedding on your website:\n\n* Website with ability to embed iframes or scripts\n* HTTPS-enabled website (recommended)\n\n## Security Requirements\n\n* TLS 1.2 or higher\n* Modern SSL certificates\n* Secure authentication methods\n\n## Performance Recommendations\n\nFor optimal performance:\n\n* Broadband internet connection (5 Mbps or higher)\n* Modern devices (released within last 5 years)\n* JavaScript enabled\n\n## Need Help?\n\nContact our [Support](/docs/support/contact) team if you have questions about compatibility.\n",
-    "_searchMeta": {
-      "cleanContent": "learn about the technical requirements and compatibility for weevio cloud browser support weevio cloud supports the latest versions of: google chrome recommended mozilla firefox safari microsoft edge network requirements stable internet connection https support ports 443 and 80 accessible integration requirements pims integration pims platinum or pims gold valid pims credentials network access to pims server gsx integration apple authorized service provider status valid gsx credentials gsx api access shopify integration active shopify store shopify admin access api access permissions customer portal requirements for customers accessing the portal: modern web browser email address for notifications mobile-responsive design support appointment scheduler for embedding on your website: website with ability to embed iframes or scripts https-enabled website recommended security requirements tls 1 2 or higher modern ssl certificates secure authentication methods performance recommendations for optimal performance: broadband internet connection 5 mbps or higher modern devices released within last 5 years javascript enabled need help contact our support team if you have questions about compatibility",
-      "headings": [
-        "Browser Support",
-        "Network Requirements",
-        "Integration Requirements",
-        "Customer Portal Requirements",
-        "Appointment Scheduler",
-        "Security Requirements",
-        "Performance Recommendations",
-        "Need Help?"
-      ],
-      "keywords": [
-        "requirements",
-        "technical",
-        "system",
-        "compatibility",
-        "Browser Support",
-        "Network Requirements",
-        "Integration Requirements",
-        "Customer Portal Requirements",
-        "Appointment Scheduler",
-        "Security Requirements",
-        "Performance Recommendations",
-        "Need Help?"
-      ]
-    }
-  },
-  {
     "slug": "/introduction/what-is-weevio",
     "title": "What is Weevio Cloud?",
     "description": "Overview of Weevio Cloud platform capabilities and features.",
