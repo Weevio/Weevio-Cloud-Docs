@@ -7,6 +7,7 @@ import RoutedLink from "@/components/markdown/link"
 import Mermaid from "@/components/markdown/mermaid"
 import Note from "@/components/markdown/note"
 import { Step, StepItem } from "@/components/markdown/step"
+import Support from "@/components/markdown/support"
 
 export const components = {
   a: RoutedLink,
@@ -20,6 +21,7 @@ export const components = {
   pre: Pre,
   Step,
   StepItem,
+  Support,
   Tabs,
   TabsContent,
   TabsList,

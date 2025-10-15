@@ -13,5 +13,5 @@ export const Navigations = [
 ]
 
 export const GitHubLink = {
-  href: null,
+  href: "https://github.com/Weevio/weevio.github.io",
 }

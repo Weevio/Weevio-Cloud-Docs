@@ -10,7 +10,7 @@ type SideBarEdit = {
 }
 
 export default function RightSideBar({ slug, title }: SideBarEdit) {
-  const feedbackUrl = `${GitHubLink.href}/issues/new?title=Feedback for "${title}"&labels=feedback`
+  const feedbackUrl = "https://support.weeviosoftware.com/portal/en/newticket"
   const editUrl = `${GitHubLink.href}/edit/main/contents/docs/${slug}/index.mdx`
 
   return (

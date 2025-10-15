@@ -81,6 +81,7 @@ function removeCustomComponents() {
     "Step",
     "StepItem",
     "Note",
+    "Support",
     "FileTree",
     "Folder",
     "File",
@@ -124,7 +125,7 @@ function cleanContentForSearch(content: string): string {
   })
 
   cleanedContent = cleanedContent.replace(
-    /<(?:Note|Card|Step|FileTree|Folder|File|Mermaid)[^>]*>([\s\S]*?)<\/(?:Note|Card|Step|FileTree|Folder|File|Mermaid)>/g,
+    /<(?:Note|Card|Step|Support|FileTree|Folder|File|Mermaid)[^>]*>([\s\S]*?)<\/(?:Note|Card|Step|Support|FileTree|Folder|File|Mermaid)>/g,
     "$1"
   )
 
