@@ -71,10 +71,6 @@ export const Documents = [
         ],
     },
     {
-        spacer: true,
-    },
-    {
-        heading: "Integrations",
         title: "Appointment Scheduler",
         href: "/appointment-scheduler",
         items: [
@@ -97,6 +93,10 @@ export const Documents = [
         ],
     },
     {
+        spacer: true,
+    },
+    {
+        heading: "Integrations",
         title: "GSX Integration",
         href: "/gsx",
         items: [
