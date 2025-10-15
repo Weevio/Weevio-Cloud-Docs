@@ -25,6 +25,24 @@ export const Documents = [
             {
                 title: "Orders",
                 href: "/orders",
+                items: [
+                    {
+                        title: "Order Table",
+                        href: "/order-table",
+                    },
+                    {
+                        title: "Order View Overview",
+                        href: "/order-view-overview",
+                    },
+                    {
+                        title: "Line Items",
+                        href: "/line-items",
+                    },
+                    {
+                        title: "Customer Management",
+                        href: "/customer-management",
+                    },
+                ],
             },
             {
                 title: "Service Repair Orders",
