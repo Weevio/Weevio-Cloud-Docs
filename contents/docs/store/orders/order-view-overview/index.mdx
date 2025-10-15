@@ -4,18 +4,14 @@ description: Understanding the Order View interface for creating and editing ord
 keywords: ["order view", "order creation", "order editing", "order workflow", "sales order", "invoice", "worksheet", "quote"]
 ---
 
-import { Callout } from "@/components/Callout"
-import { CardGrid } from "@/components/CardGrid"
-import { Card } from "@/components/Card"
-import { Steps } from "@/components/Steps"
 
 # Order View Overview
 
 The **Order View** is the primary interface for creating and editing all types of orders in Weevio Store. Whether you're creating a quick worksheet, generating a quote, processing an invoice, or managing a sales order, this unified interface provides all the tools you need.
 
-<Callout type="info">
+<Note type="note">
 The Order View dynamically adapts based on the order type you select, showing relevant features and hiding unavailable options. For example, payment options only appear for invoices.
-</Callout>
+</Note>
 
 ## What is the Order View?
 
@@ -56,9 +52,9 @@ Switch between two customer information panels:
 - **Customer Shipping**: Shipping destination, contact details
 - **Quick Actions**: Search customers, view customer records, access shipping locations
 
-<Callout type="tip">
+<Note type="note" title="Tip">
 Use the "Shipping Locations" button to quickly populate shipping information from saved customer addresses.
-</Callout>
+</Note>
 
 ### 3. Line Items Table
 
@@ -108,45 +104,64 @@ Orders in Weevio Store progress through different types based on their lifecycle
 - **Use Case**: Completed sales transactions
 - **Note**: Once paid, invoices become locked and cannot be converted to other types
 
-<Callout type="warning">
+<Note type="warning">
 **Important**: Converting between order types has restrictions. For example, you cannot convert a paid Invoice back to a Worksheet. The system will warn you if a conversion is not allowed.
-</Callout>
+</Note>
 
 ## Core Workflows
 
 ### Creating a New Order
 
-<Steps>
-1. **Navigate to Order View**: Click "New Order" from the POS menu or order list
-2. **Set Order Type**: Select the appropriate order type from the dropdown (defaults to your configured preference, typically Worksheet)
-3. **Add Customer** (Optional but recommended):
-   - Search by name, email, or customer code in the "Name / Search" field
-   - Select from search results
-   - Or continue without linking a customer
-4. **Add Line Items**:
-   - Click in the first empty Part Number field
-   - Search for products using part number, description, or barcode
-   - Set quantity and verify pricing
-   - Repeat for additional items
-5. **Review Totals**: Check subtotal, tax, and grand total in the footer
-6. **Finalize**:
-   - For Worksheets/Quotes/Sales Orders: Click "Close" to save
-   - For Invoices: Process payment when prompted, then close
-</Steps>
+<Step>
+<StepItem title="Navigate to Order View">
+Click "New Order" from the POS menu or order list
+</StepItem>
+<StepItem title="Set Order Type">
+Select the appropriate order type from the dropdown (defaults to your configured preference, typically Worksheet)
+</StepItem>
+<StepItem title="Add Customer (Optional but recommended)">
+- Search by name, email, or customer code in the "Name / Search" field
+- Select from search results
+- Or continue without linking a customer
+</StepItem>
+<StepItem title="Add Line Items">
+- Click in the first empty Part Number field
+- Search for products using part number, description, or barcode
+- Set quantity and verify pricing
+- Repeat for additional items
+</StepItem>
+<StepItem title="Review Totals">
+Check subtotal, tax, and grand total in the footer
+</StepItem>
+<StepItem title="Finalize">
+- For Worksheets/Quotes/Sales Orders: Click "Close" to save
+- For Invoices: Process payment when prompted, then close
+</StepItem>
+</Step>
 
 ### Editing an Existing Order
 
-<Steps>
-1. **Open the Order**: Navigate from order list, search results, or customer record
-2. **Verify Order Type**: Check the order type indicator in the header
-3. **Make Changes**: Edit customer info, add/remove line items, adjust quantities
-4. **Auto-Save**: Changes save automatically as you move between fields
-5. **Close**: Click "Close" when finished
-</Steps>
+<Step>
+<StepItem title="Open the Order">
+Navigate from order list, search results, or customer record
+</StepItem>
+<StepItem title="Verify Order Type">
+Check the order type indicator in the header
+</StepItem>
+<StepItem title="Make Changes">
+Edit customer info, add/remove line items, adjust quantities
+</StepItem>
+<StepItem title="Auto-Save">
+Changes save automatically as you move between fields
+</StepItem>
+<StepItem title="Close">
+Click "Close" when finished
+</StepItem>
+</Step>
 
-<Callout type="info">
+<Note type="note">
 Paid invoices have limited editing capabilities. You cannot modify line items or customer information once payment is processed.
-</Callout>
+</Note>
 
 ### Converting Order Types
 
@@ -181,9 +196,9 @@ The Order View uses **auto-save** for most changes:
 - **Customer information**: Saves automatically when field loses focus
 - **Order type changes**: Save immediately upon conversion
 
-<Callout type="success">
+<Note type="success">
 Look for brief "Saving..." indicators in the order type badge when auto-save occurs.
-</Callout>
+</Note>
 
 ### Closing and Canceling
 
@@ -232,26 +247,35 @@ The Order View includes several specialized features, each documented in detail 
 
 Ready to create your first order? Here's a simple example:
 
-<Steps>
-1. **Click "New Order"** from the Store menu
-2. **Search for a customer**: Type a name in "Name / Search" and select from results
-3. **Add a product**:
-   - Click the first Part Number field
-   - Type a product name or code
-   - Select from autocomplete results
-   - Verify quantity (default is 1)
-4. **Review the total**: Check the Grand Total in the bottom right
-5. **Set order type**:
-   - Keep as "Worksheet" for a draft
-   - Or change to "Invoice" to process payment
-6. **Finalize**:
-   - If Invoice: Complete payment when prompted
-   - Click "Close" to save
-</Steps>
+<Step>
+<StepItem title="Click 'New Order'">
+From the Store menu
+</StepItem>
+<StepItem title="Search for a customer">
+Type a name in "Name / Search" and select from results
+</StepItem>
+<StepItem title="Add a product">
+- Click the first Part Number field
+- Type a product name or code
+- Select from autocomplete results
+- Verify quantity (default is 1)
+</StepItem>
+<StepItem title="Review the total">
+Check the Grand Total in the bottom right
+</StepItem>
+<StepItem title="Set order type">
+- Keep as "Worksheet" for a draft
+- Or change to "Invoice" to process payment
+</StepItem>
+<StepItem title="Finalize">
+- If Invoice: Complete payment when prompted
+- Click "Close" to save
+</StepItem>
+</Step>
 
-<Callout type="success">
+<Note type="success">
 Congratulations! You've created your first order. The order is now saved and can be found in your order list.
-</Callout>
+</Note>
 
 ## Order Workflow Diagram
 
@@ -367,6 +391,6 @@ Now that you understand the Order View interface, dive deeper into specific feat
 - **[Serial Numbers](/docs/store/orders/serial-numbers)**: Track and assign serial numbers
 - **[Shipping & Dropship](/docs/store/orders/shipping-dropship)**: Configure shipping and dropship orders
 
-<Callout type="info">
+<Note type="note">
 Have questions? Contact your system administrator or refer to the complete Weevio Store documentation.
-</Callout>
+</Note>

@@ -4,7 +4,6 @@ description: Select and manage customer information including billing and shippi
 keywords: ["customers", "billing", "shipping", "addresses", "customer lookup", "customer search"]
 ---
 
-import { Tabs } from 'nextra/components'
 
 # Customer Management
 
@@ -36,9 +35,9 @@ The primary way to add a customer to an order is through the customer search fea
    - Phone number
 3. **Select Customer**: Click on a customer from the search results to link them to the order
 
-<Callout type="info">
+<Note type="note">
 The search is case-insensitive and searches across multiple fields simultaneously. You can type partial information to find customers.
-</Callout>
+</Note>
 
 ### Customer Search Fields
 
@@ -70,30 +69,34 @@ This shortcut saves time when you know part of the customer's information.
 
 The Customer Billing tab displays and allows editing of:
 
-<Tabs items={['Fields', 'Layout']}>
-  <Tabs.Tab>
-    **Contact Information**:
-    - ATTN (Attention/Contact Person)
-    - Email
-    - Phone 1
-    - Phone 2 (for SROs) or Fax (for Orders)
+<Tabs defaultValue="fields">
+  <TabsList>
+    <TabsTrigger value="fields">Fields</TabsTrigger>
+    <TabsTrigger value="layout">Layout</TabsTrigger>
+  </TabsList>
+  <TabsContent value="fields">
+**Contact Information**:
+- ATTN (Attention/Contact Person)
+- Email
+- Phone 1
+- Phone 2 (for SROs) or Fax (for Orders)
 
-    **Billing Address**:
-    - Address 1 (with USPS validation button)
-    - Address 2
-    - City
-    - State
-    - Postal Code
-    - Country
-  </Tabs.Tab>
-  <Tabs.Tab>
-    The billing tab uses a two-column layout:
+**Billing Address**:
+- Address 1 (with USPS validation button)
+- Address 2
+- City
+- State
+- Postal Code
+- Country
+  </TabsContent>
+  <TabsContent value="layout">
+The billing tab uses a two-column layout:
 
-    - **Left column**: Name/search field and contact details
-    - **Right column**: Address fields with validation
+- **Left column**: Name/search field and contact details
+- **Right column**: Address fields with validation
 
-    All fields update in real-time as you type and save automatically when you tab to the next field (for saved orders).
-  </Tabs.Tab>
+All fields update in real-time as you type and save automatically when you tab to the next field (for saved orders).
+  </TabsContent>
 </Tabs>
 
 ### Customer Shipping Tab
@@ -105,9 +108,9 @@ The Customer Shipping tab mirrors the billing structure but focuses on delivery 
 - **Shipping Address**: Complete delivery address with USPS validation
 - **Shipping Contact**: Email and phone for delivery coordination
 
-<Callout type="tip">
+<Note type="note" title="Tip">
 For individual customers (not businesses), the ATTN field is automatically hidden in the shipping tab.
-</Callout>
+</Note>
 
 ## Billing Information
 
@@ -128,9 +131,9 @@ To modify billing information:
 - **Phone 1**: Primary phone number (automatically formatted)
 - **Phone 2/Fax**: Secondary contact number
 
-<Callout type="warning">
+<Note type="warning">
 Changes to billing information on a saved order update PIMS immediately. For unsaved orders, changes are held locally until the order is created.
-</Callout>
+</Note>
 
 ### Billing Address Validation
 
@@ -214,9 +217,9 @@ If you've selected an alternate shipping location and want to revert:
 2. Click the **Use Primary Shipping Address** button at the bottom
 3. Shipping fields reset to the customer's default PIMS shipping address
 
-<Callout type="info">
+<Note type="note">
 The system tracks whether you're using an alternate location with the `usingAShippingLocation` flag. This ensures proper order processing and shipping label generation.
-</Callout>
+</Note>
 
 ### Shipping Contact Details
 
@@ -240,9 +243,9 @@ When you link a customer to an order, Weevio performs several synchronization st
 3. **Sync Line Items**: Updates pricing, discounts, and AppleCare based on customer
 4. **Recalculate Totals**: Applies customer-specific pricing and tax rules
 
-<Callout type="tip">
+<Note type="note" title="Tip">
 Customer sync only occurs when an order has been saved (has an ORDER_NUMBER). For new unsaved orders, customer data is applied locally without PIMS updates.
-</Callout>
+</Note>
 
 ### Customer Refetch
 
@@ -270,9 +273,9 @@ To remove a customer from an order:
 - Purchase Order Number and Reference Number clear
 - Salesperson Code is preserved
 
-<Callout type="warning">
+<Note type="warning">
 Unlinking a customer cannot be undone. You'll need to search and re-link the customer if needed.
-</Callout>
+</Note>
 
 ### Replacing Customers
 
@@ -344,9 +347,9 @@ For customers without PIMS records:
 - No customer history tracking
 - Manual entry required for each order
 
-<Callout type="tip">
+<Note type="note" title="Tip">
 For frequent walk-in customers, create a PIMS customer record in the POS Customers module. This enables better tracking and reporting.
-</Callout>
+</Note>
 
 ### Guest Checkout
 
@@ -413,9 +416,9 @@ If you notice customer information is outdated while creating an order:
    - Return to your order
    - The system refetches updated data
 
-<Callout type="info">
+<Note type="note">
 Changes made in an order update that specific order but may not update the customer's master record in PIMS. For permanent changes, edit the customer record directly.
-</Callout>
+</Note>
 
 ## Viewing Customer Details
 

@@ -43,27 +43,8 @@ Line items are the individual products or parts within an order. Each line item 
 
 ### Method 1: Manual Part Number Entry
 
-<Steps>
-<StepItem title="Enter Part Number">
-Click in the "Part / Search" field on an empty line and type the part code exactly as it appears in your inventory.
-</StepItem>
-
-<StepItem title="Press Enter or Tab">
-After entering the part number, press **Enter** or **Tab** to load the part details from inventory.
-</StepItem>
-
-<StepItem title="Verify Details">
-The system automatically populates:
-- Product name/description
-- Current price
-- Stock quantity
-- Product attributes (serial number requirements, AppleCare eligibility)
-</StepItem>
-
-<StepItem title="Adjust Quantity (Optional)">
-Modify the quantity field if you need more than one unit. The default is 1.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 <Note type="tip">
 **Quick Tip**: The part number field is case-insensitive. "ABC123" and "abc123" will find the same part.
@@ -71,62 +52,13 @@ Modify the quantity field if you need more than one unit. The default is 1.
 
 ### Method 2: Scanning Part Codes
 
-<Steps>
-<StepItem title="Position Cursor">
-Click in the "Part / Search" field where you want to add the item.
-</StepItem>
-
-<StepItem title="Scan Barcode">
-Use your barcode scanner to scan the part's barcode. The system searches for matching codes in:
-- Part Code field
-- Barcode field
-- Distributor Number field
-</StepItem>
-
-<StepItem title="Confirm Selection">
-If the barcode matches a part, details are loaded automatically. If multiple matches are found, you'll see a search results modal.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 ### Method 3: Searching Inventory
 
-<Steps>
-<StepItem title="Open Search Modal">
-Click in the "Part / Search" field and begin typing any search term. The inventory search modal opens automatically.
-
-You can search by:
-- Part code
-- Product name
-- Description
-- Model number
-- Distributor number
-- Barcode
-- Additional keywords
-</StepItem>
-
-<StepItem title="Filter Results">
-Type in the filter field at the top of the search modal. The search looks across all fields simultaneously and filters results in real-time.
-
-Example searches:
-- "iPhone" - finds all iPhone parts
-- "cable hdmi" - finds HDMI cables
-- "123" - finds part codes containing 123
-</StepItem>
-
-<StepItem title="Review Results">
-The search results table shows:
-- Part Code
-- Product Name
-- Price
-- On-Hand quantity
-- Available quantity
-- Category/Manufacturer information
-</StepItem>
-
-<StepItem title="Select Part">
-Click on any row to add that part to your order. You'll be asked to confirm before the part is added.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 <Note type="info">
 **Search Behavior**: The search automatically excludes discontinued parts unless they have stock available. This prevents adding parts that cannot be fulfilled.
@@ -136,23 +68,8 @@ Click on any row to add that part to your order. You'll be asked to confirm befo
 
 You can add line items without a part number for custom or one-off items:
 
-<Steps>
-<StepItem title="Leave Part Number Empty">
-Keep the "Part / Search" field blank.
-</StepItem>
-
-<StepItem title="Enter Description">
-Type the product description in the "Description" field.
-</StepItem>
-
-<StepItem title="Set Price">
-The price field becomes editable when no part number is present. Enter the desired unit price.
-</StepItem>
-
-<StepItem title="Set Quantity">
-Enter the quantity needed.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 <Note type="warning">
 **Important**: Line items without part numbers:
@@ -166,41 +83,15 @@ Enter the quantity needed.
 
 ### Changing Quantities
 
-<Steps>
-<StepItem title="Click Quantity Field">
-Click in the **Quantity** field for the line you want to modify.
-</StepItem>
-
-<StepItem title="Enter New Quantity">
-Type the new quantity value.
-</StepItem>
-
-<StepItem title="Tab or Click Away">
-Press **Tab** or click outside the field. The system:
-- Validates quantity against available stock
-- Recalculates extended price
-- Updates shipped quantity (for Worksheets/Quotes)
-- Checks for inventory mismatches (for Sales Orders/Invoices)
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 ### Changing Shipped Quantities
 
 For Sales Orders and Invoices, you can adjust how many items are fulfilled:
 
-<Steps>
-<StepItem title="Click Shipped Field">
-Click in the **Shipped** field for the line you want to modify.
-</StepItem>
-
-<StepItem title="Enter Shipped Amount">
-Type how many units you're shipping. This must be less than or equal to the ordered quantity.
-</StepItem>
-
-<StepItem title="Save Changes">
-Press **Tab** or click outside the field. The remaining quantity becomes a backorder.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 <Note type="warning">
 **Validation Rules**:
@@ -211,44 +102,15 @@ Press **Tab** or click outside the field. The remaining quantity becomes a backo
 
 ### Editing Descriptions
 
-<Steps>
-<StepItem title="Click Description Field">
-Click in the **Description** field. The text area expands to 5 rows for easier editing.
-</StepItem>
-
-<StepItem title="Modify Text">
-Edit the product name or description as needed. You can add:
-- Custom notes
-- Serial numbers (for reference)
-- Special instructions
-- Model variations
-</StepItem>
-
-<StepItem title="Click Away to Save">
-Click outside the description field or press **Tab**. Changes are saved automatically.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 ### Applying Discounts
 
 When a part has available price codes, a discount link appears in the **Discount** column:
 
-<Steps>
-<StepItem title="Click Discount Link">
-Click the discount link (shows "Add" or current price code).
-</StepItem>
-
-<StepItem title="Select Price Code">
-Choose from available price codes. The system shows:
-- Price code name
-- Valid date range
-- Discount amount or special pricing
-</StepItem>
-
-<StepItem title="Apply to Line">
-Click the price code to apply it. The price updates immediately.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 <Note type="info">
 **Price Code Inheritance**: If a customer has a default price code, it's automatically applied to new line items. You can override it with a different code using the discount link.
@@ -256,21 +118,8 @@ Click the price code to apply it. The price updates immediately.
 
 ### Toggling Tax Status
 
-<Steps>
-<StepItem title="Locate No Tax Toggle">
-Find the toggle switch in the **No Tax** column for the line item.
-</StepItem>
-
-<StepItem title="Click Toggle">
-Click the toggle to mark the item as non-taxable or taxable.
-- **ON** (blue): Item is non-taxable
-- **OFF** (gray): Item is taxable
-</StepItem>
-
-<StepItem title="Automatic Update">
-Tax calculations update immediately across the order.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 ## Inventory Integration
 
@@ -293,28 +142,8 @@ The **Stock** column shows the on-hand quantity at your current location. This u
 
 When you try to ship more items than available stock, the system displays an **Inventory Mismatch** modal:
 
-<Steps>
-<StepItem title="Review the Mismatch">
-The modal shows:
-- Line number and part code
-- Quantity ordered
-- Quantity available in stock
-- Quantity not stocked (the shortage)
-</StepItem>
-
-<StepItem title="Balance the Quantities">
-Adjust the three fields to balance:
-- **Shipped**: Items to fulfill from stock
-- **Backorder**: Items to order later
-- **Quantity**: Total ordered (must equal Shipped + Backorder)
-
-The equation must balance: **Shipped + Backorder = Quantity**
-</StepItem>
-
-<StepItem title="Continue">
-Once balanced, the **Continue** button becomes active. Click it to proceed.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 **Example Scenario**:
 - Customer orders 10 units (Quantity: 10)
@@ -331,19 +160,8 @@ Once balanced, the **Continue** button becomes active. Click it to proceed.
 
 When converting an order (e.g., Quote to Sales Order), you may see the **Update from Stock** modal:
 
-<Steps>
-<StepItem title="Choose Update Method">
-Select one of three options:
-
-- **Yes**: Automatically update all shipped quantities to match available stock
-- **No**: Keep current quantities as-is (may trigger inventory mismatch modals)
-- **Manual**: Review and adjust each line item individually
-</StepItem>
-
-<StepItem title="Confirm Selection">
-Click the button to proceed with your choice.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 <Note type="tip">
 **Recommended**: Use "Yes" when converting quotes to orders, then manually adjust any lines that need special handling. This ensures shipped quantities reflect current inventory.
@@ -357,41 +175,15 @@ If you switch locations while editing an order:
 - Previously loaded parts show updated on-hand amounts
 - The system validates quantities against the new location's inventory
 
-<Steps>
-<StepItem title="Change Location">
-Use the location selector in the order header to switch locations.
-</StepItem>
-
-<StepItem title="Wait for Refresh">
-Stock quantities update automatically for all line items.
-</StepItem>
-
-<StepItem title="Review Quantities">
-Check that shipped quantities are still valid for the new location's inventory levels.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 ## Line Item Actions
 
 ### Removing Line Items
 
-<Steps>
-<StepItem title="Open Actions Menu">
-Click the **⋮** (vertical ellipsis) button in the Actions column for the line you want to remove.
-</StepItem>
-
-<StepItem title="Select Delete">
-Click **Delete** from the dropdown menu.
-</StepItem>
-
-<StepItem title="Confirm Deletion">
-The line is removed immediately. The system:
-- Deletes the line from PIMS
-- Removes any linked AppleCare lines
-- Recalculates order totals
-- Fetches the updated order data
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 <Note type="warning">
 **Important**: Deleting a line item:
@@ -405,19 +197,8 @@ The line is removed immediately. The system:
 
 For parts that require serial number tracking, the Actions menu includes a **Serials** option.
 
-<Steps>
-<StepItem title="Open Actions Menu">
-Click the **⋮** button for the serialized line item.
-</StepItem>
-
-<StepItem title="Click Serials">
-Select **Serials** from the dropdown. This opens the Serial Numbers modal.
-</StepItem>
-
-<StepItem title="Assign Serial Numbers">
-Enter or scan serial numbers for the shipped quantity. Refer to the [Serial Number Management](/docs/store/orders/serial-numbers) guide for detailed instructions.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 <Note type="info">
 **When Serials Appear**: The Serials option only appears for:
@@ -430,19 +211,8 @@ Enter or scan serial numbers for the shipped quantity. Refer to the [Serial Numb
 
 For Apple products eligible for AppleCare, the Actions menu includes an **AppleCare** option.
 
-<Steps>
-<StepItem title="Open Actions Menu">
-Click the **⋮** button for the AppleCare-eligible line item.
-</StepItem>
-
-<StepItem title="Click AppleCare">
-Select **AppleCare** from the dropdown.
-</StepItem>
-
-<StepItem title="Configure Coverage">
-Add or modify AppleCare coverage for the device. This automatically adds associated AppleCare product lines to the order.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 ## Understanding Line Item Fields
 
@@ -539,41 +309,15 @@ Add or modify AppleCare coverage for the device. This automatically adds associa
 
 If you enter an invalid quantity:
 
-<Steps>
-<StepItem title="Note the Error">
-The system displays a toast notification or modal explaining the issue.
-</StepItem>
-
-<StepItem title="Cancel (if prompted)">
-For shipped quantity errors, click **Cancel** to revert to the previous value.
-</StepItem>
-
-<StepItem title="Re-enter Correct Value">
-The field returns to its previous valid state. Enter the correct quantity.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 #### Recovering from Loading Errors
 
 If a part fails to load:
 
-<Steps>
-<StepItem title="Check the Error Message">
-Review the toast notification for specific error details.
-</StepItem>
-
-<StepItem title="Clear the Part Number">
-Delete the part number from the field.
-</StepItem>
-
-<StepItem title="Try Again">
-Re-enter the part code or use the search modal to find the correct part.
-</StepItem>
-
-<StepItem title="Contact Support">
-If the error persists, the part record may be corrupted. Contact support with the part code and error message.
-</StepItem>
-</Steps>
+<Step>
+</Step>
 
 ## Special Line Item Types
 
