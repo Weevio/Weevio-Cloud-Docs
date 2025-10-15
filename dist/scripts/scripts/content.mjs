@@ -65,6 +65,7 @@ function removeCustomComponents() {
         "Step",
         "StepItem",
         "Note",
+        "Support",
         "FileTree",
         "Folder",
         "File",
@@ -96,7 +97,7 @@ function cleanContentForSearch(content) {
             .map((cell) => cell.trim())
             .join(" ");
     });
-    cleanedContent = cleanedContent.replace(/<(?:Note|Card|Step|FileTree|Folder|File|Mermaid)[^>]*>([\s\S]*?)<\/(?:Note|Card|Step|FileTree|Folder|File|Mermaid)>/g, "$1");
+    cleanedContent = cleanedContent.replace(/<(?:Note|Card|Step|Support|FileTree|Folder|File|Mermaid)[^>]*>([\s\S]*?)<\/(?:Note|Card|Step|Support|FileTree|Folder|File|Mermaid)>/g, "$1");
     cleanedContent = cleanedContent
         .replace(/^\s*[-*+]\s+/gm, "")
         .replace(/^\s*\d+\.\s+/gm, "")
