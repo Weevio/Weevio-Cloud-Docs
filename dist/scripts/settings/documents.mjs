@@ -156,29 +156,6 @@ export const Documents = [
         spacer: true,
     },
     {
-        heading: "Developer Resources",
-        title: "PIMS SDK",
-        href: "/pims-sdk",
-        items: [
-            {
-                title: "Installation",
-                href: "/installation",
-            },
-            {
-                title: "Authentication",
-                href: "/authentication",
-            },
-            {
-                title: "API Methods",
-                href: "/api-methods",
-            },
-            {
-                title: "Examples",
-                href: "/examples",
-            },
-        ],
-    },
-    {
         title: "API Reference",
         href: "/api",
         items: [
