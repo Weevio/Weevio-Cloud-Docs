@@ -303,30 +303,15 @@
     "slug": "/store/orders",
     "title": "Orders",
     "description": "Manage and track customer orders in Weevio Cloud Store Management.",
-    "content": "Learn how to create, manage, and track customer orders in Weevio Cloud.\n\n## Overview\n\nThe Orders module allows you to handle all aspects of customer orders, from creation to completion.\n\n## Features\n\n* Create new orders\n* Track order status\n* Update order details\n* Process payments\n* Generate invoices\n* View order history\n\n## Creating Orders\n\n*Documentation content to be added.*\n\n## Managing Orders\n\n*Documentation content to be added.*\n\n## Order Status\n\n*Documentation content to be added.*\n\n## Order Reports\n\n*Documentation content to be added.*\n\n## Related Topics\n\n* [Service Repair Orders (SROs)](/docs/store/sros)\n* [Customers](/docs/store/customers)\n* [Invoice Payments](/docs/customer-portal/invoice-payments)\n",
+    "content": "Content will go here.\n",
     "_searchMeta": {
-      "cleanContent": "learn how to create manage and track customer orders in weevio cloud overview the orders module allows you to handle all aspects of customer orders from creation to completion features create new orders track order status update order details process payments generate invoices view order history creating orders documentation content to be added managing orders documentation content to be added order status documentation content to be added order reports documentation content to be added related topics service repair orders sros customers invoice payments",
-      "headings": [
-        "Overview",
-        "Features",
-        "Creating Orders",
-        "Managing Orders",
-        "Order Status",
-        "Order Reports",
-        "Related Topics"
-      ],
+      "cleanContent": "content will go here",
+      "headings": [],
       "keywords": [
         "orders",
         "sales",
         "tracking",
-        "management",
-        "Overview",
-        "Features",
-        "Creating Orders",
-        "Managing Orders",
-        "Order Status",
-        "Order Reports",
-        "Related Topics"
+        "management"
       ]
     }
   },
