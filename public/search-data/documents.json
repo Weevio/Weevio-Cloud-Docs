@@ -649,37 +649,5 @@
         "[Line Items](/docs/store/orders/line-items)"
       ]
     }
-  },
-  {
-    "slug": "/store/sros",
-    "title": "Service Repair Orders (SROs)",
-    "description": "Manage service repair orders in Weevio Cloud Store Management.",
-    "content": "Complete guide to managing service repair orders in Weevio Cloud.\n\n## Overview\n\nSROs help you track repair jobs from intake to completion, with full integration to your PIMS system.\n\n## Features\n\n* Create SROs for repair jobs\n* Track repair status\n* Manage parts and labor\n* Update customers on progress\n* Process SRO payments and deposits\n* Complete and close SROs\n\n## Creating SROs\n\n*Documentation content to be added.*\n\n## SRO Workflow\n\n*Documentation content to be added.*\n\n## Status Tracking\n\n*Documentation content to be added.*\n\n## Customer Communication\n\n*Documentation content to be added.*\n\n## Related Topics\n\n* [Orders](/docs/store/orders)\n* [SRO Deposits](/docs/customer-portal/sro-deposits)\n* [GSX Integration](/docs/gsx)\n",
-    "_searchMeta": {
-      "cleanContent": "complete guide to managing service repair orders in weevio cloud overview sros help you track repair jobs from intake to completion with full integration to your pims system features create sros for repair jobs track repair status manage parts and labor update customers on progress process sro payments and deposits complete and close sros creating sros documentation content to be added sro workflow documentation content to be added status tracking documentation content to be added customer communication documentation content to be added related topics orders sro deposits gsx integration",
-      "headings": [
-        "Overview",
-        "Features",
-        "Creating SROs",
-        "SRO Workflow",
-        "Status Tracking",
-        "Customer Communication",
-        "Related Topics"
-      ],
-      "keywords": [
-        "SRO",
-        "service",
-        "repair",
-        "orders",
-        "tracking",
-        "Overview",
-        "Features",
-        "Creating SROs",
-        "SRO Workflow",
-        "Status Tracking",
-        "Customer Communication",
-        "Related Topics"
-      ]
-    }
   }
 ]
