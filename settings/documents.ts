@@ -73,10 +73,6 @@ export const Documents: Paths[] = [
     ],
   },
   {
-    spacer: true,
-  },
-  {
-    heading: "Integrations",
     title: "Appointment Scheduler",
     href: "/appointment-scheduler",
     items: [
@@ -99,6 +95,10 @@ export const Documents: Paths[] = [
     ],
   },
   {
+    spacer: true,
+  },
+  {
+    heading: "Integrations",
     title: "GSX Integration",
     href: "/gsx",
     items: [
