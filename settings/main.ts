@@ -6,7 +6,7 @@ export const gtmconnected = false
 
 export const sitename = "Weevio Cloud"
 export const description =
-  "Official documentation for Weevio Cloud - A comprehensive multi-tenant SaaS platform for PIMS management, customer portal, appointment scheduling, GSX integration, and Shopify e-commerce."
+  "Official documentation for Weevio Cloud - The cloud platform for repair shops and service businesses."
 export const keywords = [
   "Weevio Cloud",
   "PIMS integration",
@@ -19,7 +19,7 @@ export const keywords = [
 ]
 export const urlimage = "/images/og-image.png"
 export const imagealt = "Weevio Cloud Documentation"
-export const twitterhandle = "@WeevioCloud"
+export const twitterhandle = false
 
 export const companyname = "Weevio"
 export const companylink = "https://weevio.co"
