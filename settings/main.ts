@@ -4,7 +4,7 @@ export const siteicon = "/images/weevio-transparent.png"
 export const gtm = "GTM-XXXXXXX"
 export const gtmconnected = false
 
-export const sitename = "Weevio Cloud"
+export const sitename = "Weevio Cloud - Documentation"
 export const description =
   "Official documentation for Weevio Cloud - The cloud platform for repair shops and service businesses."
 export const keywords = [
