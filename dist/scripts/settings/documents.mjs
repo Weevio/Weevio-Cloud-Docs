@@ -151,31 +151,33 @@ export const Documents = [
     {
         spacer: true,
     },
+    /*
     {
-        title: "API Reference",
-        href: "/api",
-        items: [
-            {
-                title: "Authentication",
-                href: "/authentication",
-            },
-            {
-                title: "Endpoints",
-                href: "/endpoints",
-            },
-            {
-                title: "Webhooks",
-                href: "/webhooks",
-            },
-            {
-                title: "Rate Limits",
-                href: "/rate-limits",
-            },
-        ],
+      title: "API Reference",
+      href: "/api",
+      items: [
+        {
+          title: "Authentication",
+          href: "/authentication",
+        },
+        {
+          title: "Endpoints",
+          href: "/endpoints",
+        },
+        {
+          title: "Webhooks",
+          href: "/webhooks",
+        },
+        {
+          title: "Rate Limits",
+          href: "/rate-limits",
+        },
+      ],
     },
     {
-        spacer: true,
+      spacer: true,
     },
+    */
     {
         heading: "Support",
         title: "Help & Support",
