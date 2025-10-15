@@ -8,7 +8,7 @@ export default function Home() {
         <section className="flex min-h-[86.5vh] flex-col items-center justify-center px-2 py-8 text-center">
             <h1 className="mb-4 text-4xl font-bold sm:text-7xl">Weevio Cloud</h1>
             <p className="text-foreground mb-8 max-w-[800px] sm:text-lg">
-                The cloud platform for repair shops and service businesses.
+                Official documentation for Weevio Cloud - The cloud platform for repair shops and service businesses.
             </p>
 
             <div className="flex items-center gap-5">
