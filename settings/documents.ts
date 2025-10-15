@@ -153,6 +153,7 @@ export const Documents: Paths[] = [
   {
     spacer: true,
   },
+  /*
   {
     title: "API Reference",
     href: "/api",
@@ -178,6 +179,7 @@ export const Documents: Paths[] = [
   {
     spacer: true,
   },
+  */
   {
     heading: "Support",
     title: "Help & Support",
