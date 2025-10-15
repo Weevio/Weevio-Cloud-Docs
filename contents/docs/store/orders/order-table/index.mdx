@@ -1,0 +1,360 @@
+---
+title: Order Table
+description: Browse, search, and manage orders in the Weevio Store order list view.
+keywords: ["orders", "order list", "search", "filtering", "order management", "invoices", "sales orders", "quotes", "worksheets"]
+---
+
+# Order Table
+
+The Order Table provides a comprehensive view of all your orders, invoices, sales orders, quotes, and worksheets in one centralized location. This powerful interface allows you to quickly browse, search, filter, and manage your order data.
+
+<!-- Screenshot: Order table main view showing the data grid with multiple orders -->
+
+## Overview
+
+The Order Table is your primary interface for viewing and managing all order-related transactions. It displays orders from your PIMS system in an easy-to-navigate data grid with advanced filtering, sorting, and search capabilities.
+
+### Key Features
+
+- **Real-time data synchronization** with PIMS
+- **Advanced filtering** by order type, date range, and custom criteria
+- **Quick search** across all order fields
+- **Column customization** to show only the data you need
+- **Bulk operations** and data export
+- **Automatic caching** for offline access
+- **Dynamic totals** that update based on filtered results
+
+## Interface Layout
+
+The Order Table interface consists of several key sections:
+
+### Navigation Bar
+
+Located at the top of the screen, the navigation bar includes:
+
+- **Refresh button**: Manually refresh order data from PIMS
+- **Date range picker**: Filter orders by date
+- **Quick search**: Search across all order fields
+- **New Order button**: Create a new order
+
+### Left Sidebar
+
+The sidebar provides quick access to order type filters:
+
+- **All Orders**: View all order types together
+- **Invoices**: Filter to show only invoices (paid customer orders)
+- **Sales Orders**: Filter to show only sales orders (confirmed but not yet invoiced)
+- **Quotes**: Filter to show only quotes (price estimates)
+- **Worksheets**: Filter to show only worksheets (work in progress)
+
+<!-- Screenshot: Left sidebar showing order type filters -->
+
+### Data Grid
+
+The main data grid displays your orders with the following columns:
+
+| Column | Description |
+|--------|-------------|
+| **Lock Icon** | Indicates if the order can be edited (unlocked) or is read-only (locked) |
+| **Order #** | Unique order identifier from PIMS |
+| **Date** | Order creation date (MM/DD/YY format) |
+| **Customer Name** | Name of the customer associated with the order |
+| **Salesperson** | Salesperson code assigned to the order |
+| **PO #** | Customer purchase order number (if provided) |
+| **Total** | Order grand total in USD currency format |
+| **Type** | Order type with color-coded label (Invoice, Sales Order, Quote, or Worksheet) |
+| **Actions** | Available actions for the order (e.g., View Customer) |
+
+### Footer
+
+The footer displays aggregate information:
+
+- **Order Count**: Number of orders currently visible (after filters applied)
+- **Total**: Sum of all visible order totals
+
+## Understanding Order Status
+
+### Order Types
+
+Orders are categorized into four main types, each with a distinct color-coded label:
+
+**Invoice** (Blue Label)
+- Represents a completed, invoiced sale
+- Customer has been billed for products/services
+- May be locked if payment has been processed
+
+**Sales Order** (Yellow Label)
+- Confirmed order that has not yet been invoiced
+- Customer commitment to purchase
+- Can be converted to an invoice
+
+**Quote** (Green Label)
+- Price estimate provided to a customer
+- Not yet committed or confirmed
+- Can be converted to a sales order or invoice
+
+**Worksheet** (White Label with Black Border)
+- Work in progress
+- Often used for service/repair work
+- Can be converted to other order types
+
+<!-- Screenshot: Order type labels showing different colors -->
+
+### Lock Status
+
+Each order displays a lock icon indicating its edit status:
+
+- **Unlocked (Green)**: Order can be edited and modified
+- **Locked (Gray)**: Order is read-only for one of these reasons:
+  - Invoice has been paid (has a payment type assigned)
+  - Order has been voided
+
+## Search & Filtering
+
+### Text Search
+
+The Order Table offers two search methods:
+
+**Navbar Search** (Top of page)
+- Searches across all order fields
+- Useful for finding specific orders by customer name, order number, or other details
+- Updates results as you type
+
+**Data Grid Quick Filter** (In the toolbar)
+- Filters visible rows in the table
+- Searches across all columns simultaneously
+- Useful for narrowing down already-loaded orders
+- Supports multiple search terms separated by spaces
+
+<!-- Screenshot: Search functionality in action -->
+
+### Date Range Filtering
+
+Filter orders by creation date:
+
+1. Click the **date range picker** in the navigation bar
+2. Select a start date and end date
+3. Orders will automatically filter to show only those within the selected range
+4. Click the **Reset** button to clear the date filter
+
+**Default Behavior**: When no date range is selected, the system loads orders from the past 365 days.
+
+**Single Date Selection**: If you select only one date, the system will show orders from one day before to one day after that date.
+
+### Order Type Filtering
+
+Filter by specific order types using the left sidebar:
+
+1. Click on any order type in the sidebar:
+   - **Invoices**
+   - **Sales Orders**
+   - **Quotes**
+   - **Worksheets**
+2. The data grid will update to show only orders of the selected type
+3. Click **All Orders** to remove the filter and view all order types
+
+**Tip**: The quick filter in the data grid toolbar automatically updates when you select an order type from the sidebar.
+
+## Data Grid Features
+
+### Sorting
+
+Sort any column by clicking on the column header:
+
+- **First click**: Sorts ascending
+- **Second click**: Sorts descending
+- **Third click**: Returns to default sort (by order date, newest first)
+
+### Column Management
+
+Customize which columns are visible:
+
+1. Click the **Columns** button in the data grid toolbar
+2. Check or uncheck columns to show or hide them
+3. Drag column headers to reorder them
+4. Your column preferences are saved automatically
+
+<!-- Screenshot: Column management dialog -->
+
+### Advanced Filtering
+
+Access advanced filter options:
+
+1. Click the **Filters** button in the data grid toolbar
+2. Add filter rules for specific columns
+3. Combine multiple filters with AND/OR logic
+4. Filter by text, numbers, dates, and more
+
+### Pagination
+
+The Order Table loads up to 2,500 orders at a time. Use the pagination controls at the bottom of the grid to:
+
+- Navigate between pages
+- Change the number of rows displayed per page
+- Jump to a specific page
+
+### Export Data
+
+Export your filtered order data:
+
+1. Apply any desired filters (date range, order type, quick filter)
+2. Click the menu icon (⋮) in the data grid toolbar
+3. Select **Export** > **Download as CSV** or **Print**
+4. The export will include only the currently visible/filtered orders
+
+## Actions
+
+### Viewing an Order
+
+To open an order in detail view:
+
+- **Click anywhere on the order row** (except action buttons)
+- The order opens in a new window/tab
+- You can edit the order if it's unlocked
+
+### Viewing Customer Details
+
+To view the customer associated with an order:
+
+1. Locate the **Actions** column for the order
+2. Click the **View Customer** button
+3. The customer record opens in a new window/tab
+
+### Creating a New Order
+
+To create a new order:
+
+1. Click the **Order** button in the navigation bar
+2. A new order form opens
+3. Fill in customer information and line items
+4. Save the order
+
+## Performance & Caching
+
+### Automatic Caching
+
+The Order Table automatically caches order data to improve performance:
+
+- **Initial load**: Data is fetched from PIMS and cached locally
+- **Subsequent loads**: Cached data displays immediately while fresh data loads in the background
+- **Offline access**: View cached orders even when PIMS is unavailable
+- **Cache refresh**: Data refreshes automatically when you return to the Orders page
+
+### Sample Data Mode
+
+For demonstration or training purposes, you can enable sample data mode:
+
+- Sample orders are loaded instead of real PIMS data
+- Useful for testing filters and exploring features without affecting real data
+- Sample data is indicated by a banner notification
+
+**Note**: Sample data mode is typically accessed through developer/admin settings.
+
+### Offline Capabilities
+
+When PIMS is unavailable:
+
+- The most recently cached order data remains available
+- You can still search, filter, and view cached orders
+- A notification appears indicating the connection status
+- Click the notification to retry the connection
+- New orders or changes cannot be saved while offline
+
+## Data Refresh
+
+### Automatic Refresh
+
+The Order Table automatically refreshes when:
+
+- You return to the Orders page after viewing another page
+- The browser window regains focus after being inactive
+- You switch between order type filters
+
+### Manual Refresh
+
+To manually refresh order data:
+
+1. Click the **Refresh** icon in the navigation bar
+2. The loading indicator appears while data is being fetched
+3. The table updates with the latest data from PIMS
+
+**Note**: Search and filter settings are preserved during manual refresh.
+
+## Tips & Best Practices
+
+### Efficient Order Searching
+
+- **Use date ranges**: Always filter by date range first to reduce the dataset
+- **Combine filters**: Use order type filter + quick search for fastest results
+- **Search by order number**: Type the full order number in quick search for instant results
+- **Sort by relevant columns**: Sort by date, customer name, or total based on your task
+
+### Understanding Totals
+
+- The **footer total** reflects only the visible/filtered orders
+- Use this to quickly calculate totals for specific order types or date ranges
+- Export filtered data to Excel for more complex calculations
+
+### Managing Large Order Lists
+
+When working with many orders:
+
+1. Start with a narrow date range (e.g., current month)
+2. Apply order type filters to further reduce results
+3. Use column sorting to prioritize important orders
+4. Hide unnecessary columns to focus on key data
+5. Increase rows per page to see more orders at once
+
+### Locked Orders
+
+If you need to edit a locked order:
+
+- **Paid invoices**: Contact your PIMS administrator about payment reversal procedures
+- **Voided orders**: Voided orders cannot be unvoided; create a new order instead
+
+## Troubleshooting
+
+### Orders Not Loading
+
+If orders don't appear:
+
+1. **Check your PIMS connection**: Look for connection error notifications
+2. **Verify location settings**: Ensure your PIMS location code is configured correctly
+3. **Check date range**: Expand the date range to include older orders
+4. **Clear filters**: Reset all filters and try again
+5. **Refresh manually**: Click the refresh button
+6. **Check permissions**: Ensure the Orders module is enabled for your account
+
+### Missing Orders
+
+If expected orders are missing:
+
+- **Check date range**: The default range is 365 days; older orders require custom date selection
+- **Verify order type filter**: Clear the order type filter to view all types
+- **Check location**: Orders are filtered by your current PIMS location
+- **Review search filters**: Clear all quick filters and advanced filters
+
+### Slow Performance
+
+If the Order Table loads slowly:
+
+- **Reduce date range**: Narrow your date range to fewer days
+- **Close other tabs**: Close other Weevio Cloud tabs to free up resources
+- **Check internet connection**: Slow connections affect PIMS data loading
+- **Clear browser cache**: Old cached data can sometimes cause issues
+
+### Export Issues
+
+If export doesn't work:
+
+- **Check browser pop-up blocker**: Allow pop-ups for Weevio Cloud
+- **Reduce dataset**: Filter to fewer orders before exporting
+- **Try different format**: Try CSV if Print doesn't work, or vice versa
+
+## Related Topics
+
+- [Creating Orders](/docs/store/orders/creating-orders) - Learn how to create new orders
+- [Order Details](/docs/store/orders/order-details) - Understanding the order detail view
+- [Service Repair Orders (SROs)](/docs/store/sros) - Managing service and repair work
+- [Customers](/docs/store/customers) - Managing customer records
+- [Invoice Payments](/docs/customer-portal/invoice-payments) - Processing invoice payments

@@ -1,0 +1,555 @@
+---
+title: Customer Management
+description: Select and manage customer information including billing and shipping details in orders.
+keywords: ["customers", "billing", "shipping", "addresses", "customer lookup", "customer search"]
+---
+
+import { Tabs } from 'nextra/components'
+
+# Customer Management
+
+Customer information is essential for processing orders in Weevio Store. This guide covers how to select customers, manage billing and shipping addresses, and handle various customer scenarios.
+
+## Overview
+
+Every order in Weevio can be associated with a customer from your PIMS database. Customer information includes:
+
+- **Billing details**: Contact person, billing address, email, and phone
+- **Shipping details**: Shipping address and contact information
+- **Customer history**: Payment terms, pricing, and purchase history
+- **Multiple shipping locations**: Alternative delivery addresses
+
+When a customer is linked to an order, their information automatically populates billing and shipping fields, making order entry faster and more accurate.
+
+## Selecting Customers
+
+### Using Customer Search
+
+The primary way to add a customer to an order is through the customer search feature:
+
+1. **Access Search**: In the Customer Billing or Customer Shipping tab, click the **Search** button next to the "Name / Search" field
+2. **Enter Search Terms**: Type any of the following:
+   - Customer code (e.g., "CUST001")
+   - Customer name (billing or shipping)
+   - Email address (billing or shipping)
+   - First or last name
+   - Phone number
+3. **Select Customer**: Click on a customer from the search results to link them to the order
+
+<Callout type="info">
+The search is case-insensitive and searches across multiple fields simultaneously. You can type partial information to find customers.
+</Callout>
+
+### Customer Search Fields
+
+The customer search modal displays the following columns:
+
+| Column | Description |
+|--------|-------------|
+| Customer Code | Unique identifier from PIMS |
+| Billing Name | Company or customer name |
+| Billing Email | Primary email address |
+| Billing Phone | Primary phone number |
+| Business | Indicates if this is a business account |
+
+**Screenshot Placeholder**: Customer Search Modal showing search results
+
+### Quick Search via Name Field
+
+You can also trigger customer search automatically:
+
+1. Type a customer name, email, or code directly into the **Name / Search** field
+2. When the field loses focus (on blur), if no customer is linked yet, the search modal opens automatically
+3. The search modal pre-populates with your entered text
+
+This shortcut saves time when you know part of the customer's information.
+
+## Customer Information Display
+
+### Customer Billing Tab
+
+The Customer Billing tab displays and allows editing of:
+
+<Tabs items={['Fields', 'Layout']}>
+  <Tabs.Tab>
+    **Contact Information**:
+    - ATTN (Attention/Contact Person)
+    - Email
+    - Phone 1
+    - Phone 2 (for SROs) or Fax (for Orders)
+
+    **Billing Address**:
+    - Address 1 (with USPS validation button)
+    - Address 2
+    - City
+    - State
+    - Postal Code
+    - Country
+  </Tabs.Tab>
+  <Tabs.Tab>
+    The billing tab uses a two-column layout:
+
+    - **Left column**: Name/search field and contact details
+    - **Right column**: Address fields with validation
+
+    All fields update in real-time as you type and save automatically when you tab to the next field (for saved orders).
+  </Tabs.Tab>
+</Tabs>
+
+### Customer Shipping Tab
+
+The Customer Shipping tab mirrors the billing structure but focuses on delivery details:
+
+- **Shipping Name**: Company or recipient name
+- **ATTN**: Delivery contact person (for business addresses)
+- **Shipping Address**: Complete delivery address with USPS validation
+- **Shipping Contact**: Email and phone for delivery coordination
+
+<Callout type="tip">
+For individual customers (not businesses), the ATTN field is automatically hidden in the shipping tab.
+</Callout>
+
+## Billing Information
+
+### Editing Billing Details
+
+To modify billing information:
+
+1. Navigate to the **Customer Billing** tab
+2. Click into any field to edit
+3. Make your changes
+4. Tab to the next field or click elsewhere to save
+
+**Field Behaviors**:
+
+- **ATTN (Attention)**: Contact person at the billing address
+- **Name**: Automatically populated from `BNAME` or `CUSTOMER_NAME`
+- **Email**: Primary contact email (used for invoices and receipts)
+- **Phone 1**: Primary phone number (automatically formatted)
+- **Phone 2/Fax**: Secondary contact number
+
+<Callout type="warning">
+Changes to billing information on a saved order update PIMS immediately. For unsaved orders, changes are held locally until the order is created.
+</Callout>
+
+### Billing Address Validation
+
+Weevio includes USPS address validation:
+
+1. Enter or modify an address in the billing fields
+2. Click the **Validate Address** button next to Address 1
+3. The system validates the address against USPS database
+4. If validated successfully:
+   - Address fields update to standardized format
+   - Notifications appear for business addresses or vacant properties
+   - Order is automatically saved (if it has an order number)
+
+**Validation Messages**:
+- "According to the USPS, this is a business address."
+- "According to the USPS, this address is vacant."
+
+### Required Billing Fields
+
+While Weevio allows flexible data entry, certain fields improve order processing:
+
+| Field | Required | Notes |
+|-------|----------|-------|
+| Name | Recommended | Used for invoices and shipping labels |
+| Email | Recommended | Required for digital receipts |
+| Phone 1 | Optional | Helpful for delivery coordination |
+| Address 1 | Required for shipping | Must be validated for ship orders |
+| City | Required for shipping | Part of complete address |
+| State | Required for shipping | Used for tax calculations |
+| Postal Code | Required for shipping | Enables accurate shipping costs |
+
+## Shipping Information
+
+### Using Billing Address for Shipping
+
+By default, shipping information mirrors billing information when you first link a customer. To keep them synchronized:
+
+1. Make changes in the **Customer Billing** tab
+2. The shipping fields automatically reflect customer defaults from PIMS
+3. To override, switch to **Customer Shipping** tab and make changes
+
+### Separate Shipping Address
+
+To use a different shipping address:
+
+1. Navigate to the **Customer Shipping** tab
+2. Modify any shipping field as needed
+3. Changes save automatically when the field loses focus
+
+**Common Scenarios**:
+- Shipping to a different office or warehouse
+- Delivering to a customer's home vs. business
+- Special event or temporary location delivery
+
+### Using Shipping Locations
+
+Many customers have multiple pre-configured shipping locations in PIMS:
+
+1. Click the **Locations** button (map marker icon) in the order header
+2. The Shipping Locations modal displays all additional addresses for this customer
+3. Click on any location to apply it to the current order
+4. The shipping tab updates with the selected location's details
+
+**Shipping Locations Display**:
+
+| Column | Description |
+|--------|-------------|
+| Name | Location identifier |
+| Address 1 | Primary street address |
+| City | City name |
+| Zipcode | Postal code |
+| Phone | Contact number for this location |
+
+**Screenshot Placeholder**: Shipping Locations modal showing multiple addresses
+
+### Reverting to Primary Shipping Address
+
+If you've selected an alternate shipping location and want to revert:
+
+1. Open the **Locations** modal
+2. Click the **Use Primary Shipping Address** button at the bottom
+3. Shipping fields reset to the customer's default PIMS shipping address
+
+<Callout type="info">
+The system tracks whether you're using an alternate location with the `usingAShippingLocation` flag. This ensures proper order processing and shipping label generation.
+</Callout>
+
+### Shipping Contact Details
+
+For shipping addresses, you can specify:
+
+- **ATTN**: Person receiving the shipment (shown only for business addresses)
+- **Email**: Delivery notification email
+- **Phone**: Contact number for delivery issues
+- **Phone 2** (SROs): Secondary contact
+
+These details help carriers coordinate delivery and notify recipients.
+
+## Customer Sync & Validation
+
+### Syncing with PIMS
+
+When you link a customer to an order, Weevio performs several synchronization steps:
+
+1. **Fetch Customer Data**: Retrieves complete customer record from PIMS
+2. **Update Order Fields**: Populates billing and shipping information
+3. **Sync Line Items**: Updates pricing, discounts, and AppleCare based on customer
+4. **Recalculate Totals**: Applies customer-specific pricing and tax rules
+
+<Callout type="tip">
+Customer sync only occurs when an order has been saved (has an ORDER_NUMBER). For new unsaved orders, customer data is applied locally without PIMS updates.
+</Callout>
+
+### Customer Refetch
+
+If customer information changes in PIMS while you're editing an order:
+
+1. Another user updates customer details in PIMS
+2. Weevio detects the change via localStorage events
+3. The system automatically refetches customer data
+4. Your order updates with the latest information
+
+This cross-window synchronization ensures data consistency.
+
+### Unlinking Customers
+
+To remove a customer from an order:
+
+1. Click the **Unlink** button (yellow) next to the Search button
+2. Confirm the action
+3. All customer fields clear to blank values
+4. If the order is saved, PIMS is updated to remove the customer link
+
+**What happens when unlinking**:
+- `CUSTOMER_CODE` is cleared
+- All billing and shipping fields reset to empty
+- Purchase Order Number and Reference Number clear
+- Salesperson Code is preserved
+
+<Callout type="warning">
+Unlinking a customer cannot be undone. You'll need to search and re-link the customer if needed.
+</Callout>
+
+### Replacing Customers
+
+If you need to change which customer is linked to an order:
+
+1. Search for and select a different customer
+2. Weevio displays a confirmation modal showing:
+   - Current customer information
+   - New customer you're selecting
+3. Choose **Replace** to confirm
+4. The system updates the order with new customer data
+5. Line items re-sync with new customer pricing
+
+## Validation Rules
+
+### Address Validation
+
+USPS address validation performs the following checks:
+
+- **Standardization**: Converts addresses to USPS standard format
+- **Business Detection**: Identifies commercial addresses
+- **Vacancy Check**: Flags vacant properties
+- **Deliverability**: Verifies address can receive mail
+
+**Validation Triggers**:
+- Clicking the validation button next to Address 1
+- Automatic validation on blur (for some implementations)
+
+### Field-Level Validation
+
+Weevio performs automatic validation on customer fields:
+
+- **Email**: Must be valid email format (username@domain.com)
+- **Phone**: Automatically formatted (e.g., (555) 555-5555)
+- **Postal Code**: Must match country format
+
+### Required Fields
+
+For different order types, certain fields are required:
+
+**Quotes and Worksheets**:
+- Customer Name (optional)
+- Minimal address information
+
+**Sales Orders**:
+- Customer Code (recommended)
+- Billing Name
+- Billing Email
+
+**Invoices**:
+- Customer Code (required for PIMS integration)
+- Complete billing address
+- Complete shipping address (if different)
+- Valid email for digital receipts
+
+## Special Cases
+
+### Walk-in Customers
+
+For customers without PIMS records:
+
+1. Leave the customer search empty
+2. Manually enter billing and shipping information
+3. Create the order without linking a customer
+4. The order saves with entered information only
+
+**Limitations**:
+- No automatic pricing or discounts
+- No customer history tracking
+- Manual entry required for each order
+
+<Callout type="tip">
+For frequent walk-in customers, create a PIMS customer record in the POS Customers module. This enables better tracking and reporting.
+</Callout>
+
+### Guest Checkout
+
+Guest checkout is similar to walk-in:
+
+1. Enter minimal customer information
+2. Focus on shipping address accuracy
+3. Collect email for order confirmation
+4. Skip customer code entry
+
+### Multiple Shipping Locations
+
+For customers with many shipping locations:
+
+1. Link the customer first
+2. Open the **Locations** modal
+3. Use the filter/search to find specific location
+4. Select the appropriate shipping address
+
+**Tips for Multiple Locations**:
+- Locations are named descriptively (e.g., "Main Warehouse", "Retail Store")
+- Search by city, zipcode, or location name
+- The modal shows up to 2,500 locations
+- Use consistent naming in PIMS for easier searching
+
+### International Addresses
+
+For customers outside the United States:
+
+1. Enter billing/shipping information as normal
+2. **Country field**: Specify the country name
+3. **State field**: Use province or region as appropriate
+4. **Postal Code**: Use format appropriate for the country
+5. **USPS Validation**: Skip validation (only works for US addresses)
+
+**International Field Tips**:
+- Use full country names (e.g., "Canada" not "CA")
+- State field accepts any text for international addresses
+- Phone numbers: Include country code (e.g., "+1 (555) 555-5555")
+
+### Business vs. Individual Customers
+
+The system handles business and individual customers differently:
+
+**Business Customers** (`BUSINESS_OR_INDIVIDUAL = true`):
+- Display ATTN field in both billing and shipping tabs
+- ATTN is the contact person name
+- Name field is company name
+
+**Individual Customers**:
+- Hide ATTN field (in some views)
+- Name field combines FIRST_NAME and LAST_NAME
+- Simpler contact information
+
+### Updating Existing Customer Information
+
+If you notice customer information is outdated while creating an order:
+
+1. **For minor corrections**: Edit fields directly in the order
+2. **For major updates**:
+   - Navigate to POS > Customers
+   - Search for the customer
+   - Update their master record in PIMS
+   - Return to your order
+   - The system refetches updated data
+
+<Callout type="info">
+Changes made in an order update that specific order but may not update the customer's master record in PIMS. For permanent changes, edit the customer record directly.
+</Callout>
+
+## Viewing Customer Details
+
+### Customer Button
+
+Once a customer is linked to an order:
+
+1. Look for the **Customer** button (user icon) in the order header
+2. Click to open the customer's full profile in a new window
+3. View complete customer history, notes, and details
+4. The original order remains open in your current window
+
+This allows you to reference customer information while building the order.
+
+### Customer Code Display
+
+The customer code appears in multiple places:
+
+- **Order Header**: In the customer tabs area
+- **Customer Search**: When searching for customers
+- **Shipping Locations**: Associated with each location
+
+Customer codes are unique identifiers in PIMS and should be used for accurate record-keeping.
+
+## Troubleshooting
+
+### Customer Search Returns No Results
+
+**Problem**: Searching for a customer returns no results.
+
+**Solutions**:
+1. Try different search terms (name, email, customer code)
+2. Check for typos or extra spaces
+3. Verify the customer exists in PIMS
+4. Try searching by partial information
+5. Check if customer is in the correct organization/location
+
+### Customer Information Won't Save
+
+**Problem**: Edits to customer fields don't persist.
+
+**Solutions**:
+1. **Check Order Status**: Ensure the order has been saved (has an ORDER_NUMBER)
+2. **Check Editability**: Verify the order is not locked or paid
+3. **Network Issues**: Check your internet connection to PIMS
+4. **Field Focus**: Make sure to tab out of fields to trigger save
+5. **Permissions**: Verify you have edit permissions for this order type
+
+### Shipping Location Not Applying
+
+**Problem**: Selecting a shipping location doesn't update the order.
+
+**Solutions**:
+1. Click the location row in the modal (don't just select it)
+2. Wait for the modal to close before checking shipping tab
+3. Refresh the order if changes don't appear
+4. Verify the location has complete address information in PIMS
+
+### Address Validation Fails
+
+**Problem**: USPS validation returns an error or doesn't recognize the address.
+
+**Solutions**:
+1. **Rural Addresses**: Some rural routes may not validate
+2. **New Construction**: Recent addresses may not be in USPS database yet
+3. **Format Issues**: Try entering address without abbreviations
+4. **PO Boxes**: Use standard format "PO Box 123"
+5. **Manual Entry**: You can skip validation and enter manually if needed
+
+### Customer Code Already Linked
+
+**Problem**: Trying to link a customer but getting a warning.
+
+**Solutions**:
+1. Check if customer is already linked (look for customer code in fields)
+2. Use **Unlink** button to remove current customer first
+3. Use **Replace** option if prompted to confirm customer change
+4. Verify you're working with the correct order
+
+### Duplicate Customer Records
+
+**Problem**: Search shows multiple entries for the same customer.
+
+**Solutions**:
+1. Check customer codes to identify the primary record
+2. Use the most recent or most complete record
+3. Note duplicate codes and report to PIMS administrator
+4. Verify with customer which record is correct
+5. In PIMS, merge duplicate customer records
+
+### Missing Shipping Locations
+
+**Problem**: Customer should have multiple locations but modal shows none.
+
+**Solutions**:
+1. Verify locations are set up in PIMS customer record
+2. Check that locations are in the `CUSTOMERS_ADDITIONAL_LOCATIONS` sub-records
+3. Ensure customer code is correct
+4. Refresh the order and try again
+5. Add missing locations in PIMS if needed
+
+## Best Practices
+
+### Customer Linking
+
+1. **Link customers early**: Search and link customers before adding line items
+2. **Verify customer**: Double-check customer name and code before proceeding
+3. **Update information**: Correct any outdated customer details as you go
+4. **Use customer codes**: When possible, search by customer code for accuracy
+
+### Address Management
+
+1. **Validate addresses**: Always use USPS validation for shipping orders
+2. **Complete information**: Fill in all address fields, even optional ones
+3. **Shipping locations**: Use pre-configured locations instead of manual entry
+4. **International addresses**: Be extra careful with format and country codes
+
+### Order Efficiency
+
+1. **Batch similar orders**: Link the same customer across multiple orders
+2. **Save frequently**: Save orders after linking customers to trigger sync
+3. **Use keyboard**: Tab through fields instead of clicking for faster entry
+4. **Shortcuts**: Use quick search by typing in name field
+
+### Data Quality
+
+1. **Consistent formatting**: Use same format for phone numbers, addresses
+2. **Complete records**: Fill in email and phone even if not required
+3. **Update PIMS**: Fix customer data in PIMS, not just in orders
+4. **Report issues**: Note any data quality problems for administrator review
+
+## Related Documentation
+
+- [Creating Orders](/docs/store/orders/creating-orders) - How to create new orders
+- [Order Header](/docs/store/orders/order-header) - Understanding order details section
+- [Order Finalization](/docs/store/orders/finalization) - Converting orders to invoices
+- [POS Customers Module](/docs/store/customers) - Managing customer master records

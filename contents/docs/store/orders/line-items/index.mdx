@@ -1,0 +1,723 @@
+---
+title: Line Items Management
+description: Add, edit, and manage line items in orders including pricing, quantities, and inventory checks.
+keywords: ["line items", "order items", "inventory", "pricing", "quantities", "parts", "stock", "backorder"]
+---
+
+# Line Items Management
+
+Line items represent individual products or parts added to an order. Each line item contains product details, pricing, quantities, and inventory information. This guide covers how to add, edit, and manage line items in your orders.
+
+## Overview
+
+### What are Line Items?
+
+Line items are the individual products or parts within an order. Each line item includes:
+
+- **Part Number**: Unique identifier for the product
+- **Description**: Product name and details
+- **Quantity**: Amount ordered
+- **Shipped Quantity**: Amount fulfilled
+- **Price**: Unit and extended pricing
+- **Stock Information**: Available inventory
+- **Backorder Status**: Items on backorder
+
+### Line Item Table Columns
+
+| Column | Description |
+|--------|-------------|
+| **Line #** | Sequential line number (auto-assigned) |
+| **Part / Search** | Part number entry field with inventory search |
+| **Description** | Product name and description (editable) |
+| **Quantity** | Amount ordered |
+| **Shipped** | Amount fulfilled/shipped |
+| **Stock** | On-hand quantity at current location |
+| **Backorder** | Items on backorder (appears as gray badge) |
+| **Discount** | Price code/discount link (when applicable) |
+| **No Tax** | Tax exemption toggle |
+| **Price** | Unit price |
+| **Extended** | Total price (Quantity × Price) |
+| **Actions** | Line item menu (serial numbers, delete) |
+
+## Adding Line Items
+
+### Method 1: Manual Part Number Entry
+
+<Steps>
+<StepItem title="Enter Part Number">
+Click in the "Part / Search" field on an empty line and type the part code exactly as it appears in your inventory.
+</StepItem>
+
+<StepItem title="Press Enter or Tab">
+After entering the part number, press **Enter** or **Tab** to load the part details from inventory.
+</StepItem>
+
+<StepItem title="Verify Details">
+The system automatically populates:
+- Product name/description
+- Current price
+- Stock quantity
+- Product attributes (serial number requirements, AppleCare eligibility)
+</StepItem>
+
+<StepItem title="Adjust Quantity (Optional)">
+Modify the quantity field if you need more than one unit. The default is 1.
+</StepItem>
+</Steps>
+
+<Note type="tip">
+**Quick Tip**: The part number field is case-insensitive. "ABC123" and "abc123" will find the same part.
+</Note>
+
+### Method 2: Scanning Part Codes
+
+<Steps>
+<StepItem title="Position Cursor">
+Click in the "Part / Search" field where you want to add the item.
+</StepItem>
+
+<StepItem title="Scan Barcode">
+Use your barcode scanner to scan the part's barcode. The system searches for matching codes in:
+- Part Code field
+- Barcode field
+- Distributor Number field
+</StepItem>
+
+<StepItem title="Confirm Selection">
+If the barcode matches a part, details are loaded automatically. If multiple matches are found, you'll see a search results modal.
+</StepItem>
+</Steps>
+
+### Method 3: Searching Inventory
+
+<Steps>
+<StepItem title="Open Search Modal">
+Click in the "Part / Search" field and begin typing any search term. The inventory search modal opens automatically.
+
+You can search by:
+- Part code
+- Product name
+- Description
+- Model number
+- Distributor number
+- Barcode
+- Additional keywords
+</StepItem>
+
+<StepItem title="Filter Results">
+Type in the filter field at the top of the search modal. The search looks across all fields simultaneously and filters results in real-time.
+
+Example searches:
+- "iPhone" - finds all iPhone parts
+- "cable hdmi" - finds HDMI cables
+- "123" - finds part codes containing 123
+</StepItem>
+
+<StepItem title="Review Results">
+The search results table shows:
+- Part Code
+- Product Name
+- Price
+- On-Hand quantity
+- Available quantity
+- Category/Manufacturer information
+</StepItem>
+
+<StepItem title="Select Part">
+Click on any row to add that part to your order. You'll be asked to confirm before the part is added.
+</StepItem>
+</Steps>
+
+<Note type="info">
+**Search Behavior**: The search automatically excludes discontinued parts unless they have stock available. This prevents adding parts that cannot be fulfilled.
+</Note>
+
+### Method 4: Manual Entry Without Part Number
+
+You can add line items without a part number for custom or one-off items:
+
+<Steps>
+<StepItem title="Leave Part Number Empty">
+Keep the "Part / Search" field blank.
+</StepItem>
+
+<StepItem title="Enter Description">
+Type the product description in the "Description" field.
+</StepItem>
+
+<StepItem title="Set Price">
+The price field becomes editable when no part number is present. Enter the desired unit price.
+</StepItem>
+
+<StepItem title="Set Quantity">
+Enter the quantity needed.
+</StepItem>
+</Steps>
+
+<Note type="warning">
+**Important**: Line items without part numbers:
+- Do not adjust inventory
+- Do not check stock availability
+- Cannot have serial numbers assigned
+- May require manual tax calculation
+</Note>
+
+## Editing Line Items
+
+### Changing Quantities
+
+<Steps>
+<StepItem title="Click Quantity Field">
+Click in the **Quantity** field for the line you want to modify.
+</StepItem>
+
+<StepItem title="Enter New Quantity">
+Type the new quantity value.
+</StepItem>
+
+<StepItem title="Tab or Click Away">
+Press **Tab** or click outside the field. The system:
+- Validates quantity against available stock
+- Recalculates extended price
+- Updates shipped quantity (for Worksheets/Quotes)
+- Checks for inventory mismatches (for Sales Orders/Invoices)
+</StepItem>
+</Steps>
+
+### Changing Shipped Quantities
+
+For Sales Orders and Invoices, you can adjust how many items are fulfilled:
+
+<Steps>
+<StepItem title="Click Shipped Field">
+Click in the **Shipped** field for the line you want to modify.
+</StepItem>
+
+<StepItem title="Enter Shipped Amount">
+Type how many units you're shipping. This must be less than or equal to the ordered quantity.
+</StepItem>
+
+<StepItem title="Save Changes">
+Press **Tab** or click outside the field. The remaining quantity becomes a backorder.
+</StepItem>
+</Steps>
+
+<Note type="warning">
+**Validation Rules**:
+- Shipped quantity cannot exceed ordered quantity
+- For items requiring inventory adjustment, shipped quantity cannot exceed available stock
+- The system shows an inventory mismatch modal if you try to ship more than available
+</Note>
+
+### Editing Descriptions
+
+<Steps>
+<StepItem title="Click Description Field">
+Click in the **Description** field. The text area expands to 5 rows for easier editing.
+</StepItem>
+
+<StepItem title="Modify Text">
+Edit the product name or description as needed. You can add:
+- Custom notes
+- Serial numbers (for reference)
+- Special instructions
+- Model variations
+</StepItem>
+
+<StepItem title="Click Away to Save">
+Click outside the description field or press **Tab**. Changes are saved automatically.
+</StepItem>
+</Steps>
+
+### Applying Discounts
+
+When a part has available price codes, a discount link appears in the **Discount** column:
+
+<Steps>
+<StepItem title="Click Discount Link">
+Click the discount link (shows "Add" or current price code).
+</StepItem>
+
+<StepItem title="Select Price Code">
+Choose from available price codes. The system shows:
+- Price code name
+- Valid date range
+- Discount amount or special pricing
+</StepItem>
+
+<StepItem title="Apply to Line">
+Click the price code to apply it. The price updates immediately.
+</StepItem>
+</Steps>
+
+<Note type="info">
+**Price Code Inheritance**: If a customer has a default price code, it's automatically applied to new line items. You can override it with a different code using the discount link.
+</Note>
+
+### Toggling Tax Status
+
+<Steps>
+<StepItem title="Locate No Tax Toggle">
+Find the toggle switch in the **No Tax** column for the line item.
+</StepItem>
+
+<StepItem title="Click Toggle">
+Click the toggle to mark the item as non-taxable or taxable.
+- **ON** (blue): Item is non-taxable
+- **OFF** (gray): Item is taxable
+</StepItem>
+
+<StepItem title="Automatic Update">
+Tax calculations update immediately across the order.
+</StepItem>
+</Steps>
+
+## Inventory Integration
+
+### Stock Quantity Display
+
+The **Stock** column shows the on-hand quantity at your current location. This updates in real-time when:
+
+- Adding a new part
+- Changing locations
+- After other orders are processed
+
+<Note type="info">
+**Stock Display Rules**:
+- Shows actual on-hand quantity for inventory-tracked parts
+- Shows 0 for parts marked "Do Not Adjust On-Hand"
+- Refreshes when you reload the order
+</Note>
+
+### Inventory Mismatch Handling
+
+When you try to ship more items than available stock, the system displays an **Inventory Mismatch** modal:
+
+<Steps>
+<StepItem title="Review the Mismatch">
+The modal shows:
+- Line number and part code
+- Quantity ordered
+- Quantity available in stock
+- Quantity not stocked (the shortage)
+</StepItem>
+
+<StepItem title="Balance the Quantities">
+Adjust the three fields to balance:
+- **Shipped**: Items to fulfill from stock
+- **Backorder**: Items to order later
+- **Quantity**: Total ordered (must equal Shipped + Backorder)
+
+The equation must balance: **Shipped + Backorder = Quantity**
+</StepItem>
+
+<StepItem title="Continue">
+Once balanced, the **Continue** button becomes active. Click it to proceed.
+</StepItem>
+</Steps>
+
+**Example Scenario**:
+- Customer orders 10 units (Quantity: 10)
+- You have 6 in stock (Stock: 6)
+- System calculates: 4 units not stocked
+
+**Solution**:
+- Set Shipped: 6
+- Set Backorder: 4
+- Quantity remains: 10
+- Click Continue
+
+### Stock Update Modal
+
+When converting an order (e.g., Quote to Sales Order), you may see the **Update from Stock** modal:
+
+<Steps>
+<StepItem title="Choose Update Method">
+Select one of three options:
+
+- **Yes**: Automatically update all shipped quantities to match available stock
+- **No**: Keep current quantities as-is (may trigger inventory mismatch modals)
+- **Manual**: Review and adjust each line item individually
+</StepItem>
+
+<StepItem title="Confirm Selection">
+Click the button to proceed with your choice.
+</StepItem>
+</Steps>
+
+<Note type="tip">
+**Recommended**: Use "Yes" when converting quotes to orders, then manually adjust any lines that need special handling. This ensures shipped quantities reflect current inventory.
+</Note>
+
+### Multiple Location Support
+
+If you switch locations while editing an order:
+
+- Stock quantities refresh for the new location
+- Previously loaded parts show updated on-hand amounts
+- The system validates quantities against the new location's inventory
+
+<Steps>
+<StepItem title="Change Location">
+Use the location selector in the order header to switch locations.
+</StepItem>
+
+<StepItem title="Wait for Refresh">
+Stock quantities update automatically for all line items.
+</StepItem>
+
+<StepItem title="Review Quantities">
+Check that shipped quantities are still valid for the new location's inventory levels.
+</StepItem>
+</Steps>
+
+## Line Item Actions
+
+### Removing Line Items
+
+<Steps>
+<StepItem title="Open Actions Menu">
+Click the **⋮** (vertical ellipsis) button in the Actions column for the line you want to remove.
+</StepItem>
+
+<StepItem title="Select Delete">
+Click **Delete** from the dropdown menu.
+</StepItem>
+
+<StepItem title="Confirm Deletion">
+The line is removed immediately. The system:
+- Deletes the line from PIMS
+- Removes any linked AppleCare lines
+- Recalculates order totals
+- Fetches the updated order data
+</StepItem>
+</Steps>
+
+<Note type="warning">
+**Important**: Deleting a line item:
+- Cannot be undone
+- Removes associated serial numbers
+- Deletes auto-loaded AppleCare coverage (if applicable)
+- Updates inventory allocations immediately
+</Note>
+
+### Managing Serial Numbers
+
+For parts that require serial number tracking, the Actions menu includes a **Serials** option.
+
+<Steps>
+<StepItem title="Open Actions Menu">
+Click the **⋮** button for the serialized line item.
+</StepItem>
+
+<StepItem title="Click Serials">
+Select **Serials** from the dropdown. This opens the Serial Numbers modal.
+</StepItem>
+
+<StepItem title="Assign Serial Numbers">
+Enter or scan serial numbers for the shipped quantity. Refer to the [Serial Number Management](/docs/store/orders/serial-numbers) guide for detailed instructions.
+</StepItem>
+</Steps>
+
+<Note type="info">
+**When Serials Appear**: The Serials option only appears for:
+- Parts marked as requiring serial numbers in inventory
+- Sales Orders and Invoices (not Worksheets or Quotes)
+- Lines with a shipped quantity greater than 0
+</Note>
+
+### AppleCare Management
+
+For Apple products eligible for AppleCare, the Actions menu includes an **AppleCare** option.
+
+<Steps>
+<StepItem title="Open Actions Menu">
+Click the **⋮** button for the AppleCare-eligible line item.
+</StepItem>
+
+<StepItem title="Click AppleCare">
+Select **AppleCare** from the dropdown.
+</StepItem>
+
+<StepItem title="Configure Coverage">
+Add or modify AppleCare coverage for the device. This automatically adds associated AppleCare product lines to the order.
+</StepItem>
+</Steps>
+
+## Understanding Line Item Fields
+
+### Part Number vs Description
+
+- **Part Number**: Immutable once saved. Must match an inventory record (unless blank).
+- **Product Name/Description**: Editable even after loading from inventory. Use for custom notes or variations.
+
+### Price Fields
+
+**Unit Price**:
+- Loaded from inventory record
+- Can be overridden with price codes
+- Editable only for line items without a part number
+
+**Extended Price**:
+- Automatically calculated as Quantity × Unit Price
+- Updates in real-time when quantity or price changes
+- Shown in bold in the Extended column
+
+### Quantity vs Shipped
+
+**Quantity**: Total amount ordered by the customer
+
+**Shipped**: Amount being fulfilled in this transaction
+
+**Backorder**: Calculated as Quantity - Shipped (shown in Backorder column)
+
+**Worksheet/Quote Behavior**: Shipped always equals Quantity (no backorders)
+
+**Sales Order/Invoice Behavior**: Shipped can be less than Quantity, creating backorders
+
+### Cost vs Price
+
+- **Cost**: Your cost from vendor (not visible in line item table)
+- **Price**: Selling price to customer (visible in Price column)
+- **List Price**: MSRP or retail price (stored but not displayed)
+
+## Validation and Error Handling
+
+### Common Validation Errors
+
+#### "Part not found"
+
+**Cause**: The part number doesn't exist in inventory at your current location.
+
+**Solution**:
+- Double-check the part code spelling
+- Verify the part exists in your location's inventory
+- Use the inventory search modal to browse available parts
+- Add the part to inventory first if it's a new item
+
+#### "Inventory Mismatch"
+
+**Cause**: Trying to ship more items than available in stock.
+
+**Solution**:
+- Use the Inventory Mismatch modal to balance shipped and backorder quantities
+- Reduce the shipped quantity to match available stock
+- Increase backorder quantity to account for the shortage
+- Verify stock levels in the inventory module
+
+#### "Shipped quantity exceeds ordered quantity"
+
+**Cause**: The number in the Shipped field is greater than the Quantity field.
+
+**Solution**:
+- Reduce shipped quantity to match or be less than the ordered quantity
+- Increase the ordered quantity if the customer wants more items
+- Check for data entry errors
+
+#### "Empty value cannot be updated"
+
+**Cause**: Attempting to save a line with blank required fields.
+
+**Solution**:
+- Enter a quantity value (cannot be blank)
+- For custom items, ensure description and price are filled in
+- Use 0 for shipped if no items are being fulfilled yet
+
+#### "AppleCare parts can't be modified"
+
+**Cause**: Trying to edit an auto-loaded AppleCare line item.
+
+**Solution**:
+- AppleCare lines are auto-generated and protected from editing
+- Modify the parent device line item instead
+- Use the AppleCare action menu to adjust coverage
+- Delete and re-add the parent item if major changes are needed
+
+### Error Recovery
+
+#### Undoing Quantity Changes
+
+If you enter an invalid quantity:
+
+<Steps>
+<StepItem title="Note the Error">
+The system displays a toast notification or modal explaining the issue.
+</StepItem>
+
+<StepItem title="Cancel (if prompted)">
+For shipped quantity errors, click **Cancel** to revert to the previous value.
+</StepItem>
+
+<StepItem title="Re-enter Correct Value">
+The field returns to its previous valid state. Enter the correct quantity.
+</StepItem>
+</Steps>
+
+#### Recovering from Loading Errors
+
+If a part fails to load:
+
+<Steps>
+<StepItem title="Check the Error Message">
+Review the toast notification for specific error details.
+</StepItem>
+
+<StepItem title="Clear the Part Number">
+Delete the part number from the field.
+</StepItem>
+
+<StepItem title="Try Again">
+Re-enter the part code or use the search modal to find the correct part.
+</StepItem>
+
+<StepItem title="Contact Support">
+If the error persists, the part record may be corrupted. Contact support with the part code and error message.
+</StepItem>
+</Steps>
+
+## Special Line Item Types
+
+### AppleCare Products
+
+AppleCare line items are automatically added when you configure coverage for eligible devices:
+
+**Characteristics**:
+- Cannot be manually edited (quantity, price, description locked)
+- Linked to a parent device line item
+- Automatically deleted if parent device is removed
+- Show "AppleCare parts can't be modified" tooltip when clicked
+
+**Management**: Use the AppleCare action menu on the parent device to modify coverage.
+
+### Parts Not in Inventory
+
+Line items without a part number:
+
+**Characteristics**:
+- Price field becomes editable
+- No stock quantity shown
+- No inventory adjustments occur
+- Cannot have serial numbers
+- Useful for services, one-time items, or special orders
+
+**Best Practice**: Add a detailed description since there's no inventory record to reference.
+
+### Discontinued Parts with Stock
+
+Discontinued parts appear in search results only if stock is available:
+
+**Characteristics**:
+- Can be added to orders while stock lasts
+- Stock quantity is accurate
+- May have limited or no pricing information
+- Description may indicate "Discontinued"
+
+**Recommendation**: Notify customers that the part is discontinued and may not be available for future orders.
+
+## Keyboard Shortcuts and Quick Actions
+
+### Navigation
+
+- **Tab**: Move to next field (and trigger save for quantities)
+- **Shift+Tab**: Move to previous field
+- **Enter**: Load part number (in Part field only)
+- **Escape**: Close search modal
+
+### Quick Entry Workflow
+
+For fast order entry, use this pattern:
+
+1. Click Part Number field
+2. Type or scan part code
+3. Press **Enter** to load
+4. Press **Tab** (quantity defaults to 1)
+5. Press **Tab** (accept default shipped)
+6. Repeat for next line
+
+### Field Auto-Selection
+
+When you click in quantity, shipped, or price fields, the entire value is automatically selected. This allows you to:
+
+- Type a new value to replace the old one completely
+- Press Delete to clear the field
+- Start typing immediately without selecting text first
+
+## Troubleshooting
+
+### Line Item Won't Save
+
+**Check these items**:
+- Is the order in a saved state? (Check for ORDER_NUMBER)
+- Are you on a line marked as "Auto Load"?
+- Is the order type editable? (Voided and Posted orders cannot be edited)
+- Do you have the correct permissions?
+
+### Stock Quantity Not Updating
+
+**Try these steps**:
+1. Refresh the order to reload inventory data
+2. Verify the correct location is selected
+3. Check if the part is marked "Do Not Adjust On-Hand"
+4. Confirm inventory was updated in the inventory module
+
+### Price Not Applying Correctly
+
+**Verify**:
+- Is a price code applied? (Check Discount column)
+- Does the customer have a default price code?
+- Is the price code still valid? (Check date range)
+- Has the inventory record's price been updated?
+
+### Search Modal Not Finding Parts
+
+**Common causes**:
+- Part doesn't exist at your current location
+- Part is discontinued with zero stock
+- Search terms don't match any indexed fields
+- Inventory cache needs refresh
+
+**Solution**: Try searching by part code directly, or check the inventory module to verify the part exists.
+
+## Best Practices
+
+### Order Entry Efficiency
+
+1. **Use Tab Navigation**: Keep your hands on the keyboard by using Tab to move between fields.
+
+2. **Leverage Search**: When unsure of exact part codes, use the search modal with partial terms.
+
+3. **Batch Similar Items**: Add all line items before adjusting quantities or prices.
+
+4. **Review Stock First**: For large orders, check stock availability in the inventory module before creating the order.
+
+5. **Save Frequently**: The system auto-saves line items, but major changes trigger saves. Don't rely on manual save buttons.
+
+### Avoiding Common Mistakes
+
+1. **Don't Mix Up Quantity and Shipped**: For Sales Orders/Invoices, these are different fields. Quantity is ordered, Shipped is fulfilled.
+
+2. **Check Location First**: Ensure you're in the correct location before adding parts. Stock quantities are location-specific.
+
+3. **Verify Part Numbers**: Small typos in part codes can load the wrong item. Always verify the product name after loading.
+
+4. **Use Price Codes Properly**: Apply price codes before finalizing quantities to ensure correct pricing.
+
+5. **Note Serial Requirements**: Check if parts require serial numbers before setting shipped quantities. You'll need to assign serials before finalizing.
+
+### Data Quality
+
+1. **Maintain Clean Descriptions**: Even though descriptions are editable, keep them clear and consistent.
+
+2. **Document Custom Items**: For line items without part numbers, include detailed descriptions for future reference.
+
+3. **Track Backorders**: Use the backorder quantity to maintain accurate fulfillment records.
+
+4. **Review Before Finalizing**: Double-check quantities, prices, and stock availability before converting to invoices.
+
+## Related Topics
+
+- [Serial Number Management](/docs/store/orders/serial-numbers) - Assigning and tracking serial numbers for line items
+- [Order Types](/docs/store/orders/order-types) - Understanding different order types and their behaviors
+- [Inventory Management](/docs/store/inventory) - Managing parts and stock levels
+- [Price Codes](/docs/store/pricing/price-codes) - Setting up and applying discounts
+- [AppleCare Integration](/docs/store/integrations/applecare) - Managing AppleCare coverage for eligible devices
