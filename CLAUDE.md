@@ -202,6 +202,8 @@ Props for `<Card>`:
 - `variant` (optional): "normal" (default), "small", or "image"
 - `image` (optional): Image URL for "image" variant
 
+**IMPORTANT**: All internal links in Card components (and markdown links) must start with `/docs/` prefix.
+
 ```mdx
 <CardGrid>
   <Card
@@ -335,15 +337,31 @@ The navigation hierarchy in [settings/documents.ts](settings/documents.ts) suppo
 - **Nested items**: `{ title: "...", href: "/...", items: [...] }`
 - **Spacers**: `{ spacer: true }`
 
-URLs are constructed by concatenating parent and child hrefs. For example:
+**URL Construction**:
+- Navigation structure defines relative paths (e.g., `/store/orders`)
+- These are concatenated to build the full path
+- **ALL actual page URLs require the `/docs` prefix** when used in content
+
+Example navigation structure:
 ```typescript
 {
   title: "Store",
   href: "/store",
   items: [
-    { title: "Orders", href: "/orders" }  // Final URL: /store/orders
+    { title: "Orders", href: "/orders" }  // Navigation path: /store/orders
   ]
 }
+```
+
+Example usage in MDX content:
+```mdx
+<!-- Correct: Include /docs prefix in content links -->
+<Card href="/docs/store/orders" />
+[Link text](/docs/store/orders)
+
+<!-- Incorrect: Missing /docs prefix -->
+<Card href="/store/orders" />
+[Link text](/store/orders)
 ```
 
 ## Deployment
