@@ -11,11 +11,7 @@ export const Documents = [
             {
                 title: "Quick Start Guide",
                 href: "/quick-start",
-            },
-            {
-                title: "System Requirements",
-                href: "/requirements",
-            },
+            }
         ],
     },
     {
@@ -23,7 +19,7 @@ export const Documents = [
     },
     {
         heading: "Core Platform",
-        title: "Store Management",
+        title: "Weevio Store",
         href: "/store",
         items: [
             {
@@ -31,11 +27,11 @@ export const Documents = [
                 href: "/orders",
             },
             {
-                title: "Service Repair Orders (SROs)",
+                title: "SROs (Service Repair Orders)",
                 href: "/sros",
             },
             {
-                title: "Customer Management",
+                title: "Customers",
                 href: "/customers",
             },
             {
@@ -154,29 +150,6 @@ export const Documents = [
     },
     {
         spacer: true,
-    },
-    {
-        heading: "Developer Resources",
-        title: "PIMS SDK",
-        href: "/pims-sdk",
-        items: [
-            {
-                title: "Installation",
-                href: "/installation",
-            },
-            {
-                title: "Authentication",
-                href: "/authentication",
-            },
-            {
-                title: "API Methods",
-                href: "/api-methods",
-            },
-            {
-                title: "Examples",
-                href: "/examples",
-            },
-        ],
     },
     {
         title: "API Reference",
