@@ -1,3 +1,13 @@
+/**
+ * Navigation Helper Functions
+ *
+ * Provides utilities for querying and traversing the documentation navigation hierarchy.
+ * These functions help locate navigation items, build full paths, and retrieve children
+ * for use in automatic navigation card generation and other navigation-related features.
+ *
+ * @module lib/navigation-helpers
+ */
+
 import { Documents } from "@/settings/documents"
 import { Paths } from "@/lib/pageroutes"
 
