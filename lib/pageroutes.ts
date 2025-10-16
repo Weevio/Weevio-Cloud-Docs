@@ -7,6 +7,13 @@ export type Paths =
       noLink?: true
       heading?: string
       items?: Paths[]
+      cardMeta?: {
+        subtitle?: string
+        description?: string
+        icon?: string
+        variant?: "normal" | "small" | "image"
+        image?: string
+      }
     }
   | {
       spacer: true
