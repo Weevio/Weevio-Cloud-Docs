@@ -126,7 +126,7 @@ export function AutoNavigationCards({
 
     // Use cardMeta if available, otherwise use defaults
     const cardData: CardData = {
-      title: item.cardMeta?.subtitle || item.title,
+      title: item.title,
       subtitle: item.cardMeta?.subtitle,
       description: item.cardMeta?.description,
       href: fullHref,
