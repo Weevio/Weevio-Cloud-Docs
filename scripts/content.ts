@@ -76,6 +76,7 @@ function removeCustomComponents() {
     "TabsTrigger",
     "pre",
     "Mermaid",
+    "AutoNavigationCards",
     "Card",
     "CardGrid",
     "Step",
@@ -125,7 +126,7 @@ function cleanContentForSearch(content: string): string {
   })
 
   cleanedContent = cleanedContent.replace(
-    /<(?:Note|Card|Step|Support|FileTree|Folder|File|Mermaid)[^>]*>([\s\S]*?)<\/(?:Note|Card|Step|Support|FileTree|Folder|File|Mermaid)>/g,
+    /<(?:Note|Card|AutoNavigationCards|Step|Support|FileTree|Folder|File|Mermaid)[^>]*>([\s\S]*?)<\/(?:Note|Card|AutoNavigationCards|Step|Support|FileTree|Folder|File|Mermaid)>/g,
     "$1"
   )
 
