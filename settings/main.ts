@@ -1,4 +1,4 @@
-export const url = "https://macexperience.github.io/Weevio-Cloud-Docs"
+export const url = "https://weevio.github.io"
 export const siteicon = "/images/weevio-transparent.png"
 
 export const gtm = "GTM-XXXXXXX"
