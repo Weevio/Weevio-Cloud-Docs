@@ -21,11 +21,19 @@ export default function Anchor({
   ...props
 }: AnchorProps) {
   const path = usePathname()
-  let isMatch = absolute
-    ? props.href.toString().split("/")[1] == path.split("/")[1]
-    : path === props.href
+  const hrefString = props.href.toString()
 
-  if (props.href.toString().includes("http")) isMatch = false
+  let isMatch = false
+  if (hrefString.includes("http")) {
+    isMatch = false
+  } else if (absolute) {
+    // For absolute matching, compare first path segment (e.g., /docs)
+    isMatch = hrefString.split("/")[1] === path.split("/")[1]
+  } else {
+    // For sidebar links, match if current path starts with href
+    // This allows parent items to be highlighted when on child pages
+    isMatch = path === hrefString || path.startsWith(hrefString + "/")
+  }
 
   if (disabled)
     return <div className={cn(className, "cursor-not-allowed")}>{children}</div>
