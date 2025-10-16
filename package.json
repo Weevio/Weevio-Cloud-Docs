@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/macexperience/Weevio-Cloud-Docs/issues"
   },
-  "homepage": "https://macexperience.github.io/Weevio-Cloud-Docs",
+  "homepage": "https://weevio.github.io",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
