@@ -9,7 +9,7 @@ type SideBarEdit = {
   slug: string
 }
 
-export default function RightSideBar({ slug, title }: SideBarEdit) {
+export default function RightSideBar({ slug }: SideBarEdit) {
   const feedbackUrl = "https://support.weeviosoftware.com/portal/en/newticket"
   const editUrl = `${GitHubLink.href}/edit/main/contents/docs/${slug}/index.mdx`
 

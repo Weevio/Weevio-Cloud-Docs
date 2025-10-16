@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation"
 import { Card, CardGrid } from "@/components/markdown/card"
 import { Routes, Paths } from "@/lib/pageroutes"
+import { iconMap } from "@/settings/icons"
 
 /**
  * AutoNavigationCards Component
@@ -40,7 +41,7 @@ interface CardData {
   subtitle?: string
   description?: string
   href: string
-  icon?: string
+  icon?: keyof typeof iconMap
   variant?: "normal" | "small" | "image"
   image?: string
 }
@@ -96,7 +97,7 @@ function getChildrenForPath(targetPath: string): Paths[] {
 
 export function AutoNavigationCards({
   variant = "normal",
-  columns = 2,
+  columns: _columns = 2, // Unused but kept for future grid layout implementation
   exclude = [],
   customPath,
 }: AutoNavigationCardsProps) {
@@ -130,7 +131,7 @@ export function AutoNavigationCards({
       subtitle: item.cardMeta?.subtitle,
       description: item.cardMeta?.description,
       href: fullHref,
-      icon: item.cardMeta?.icon,
+      icon: item.cardMeta?.icon as keyof typeof iconMap | undefined,
       variant: item.cardMeta?.variant || variant,
       image: item.cardMeta?.image,
     }
@@ -152,7 +153,7 @@ export function AutoNavigationCards({
           subtitle={card.subtitle}
           description={card.description}
           href={card.href}
-          icon={card.icon as any}
+          icon={card.icon}
           variant={card.variant}
           image={card.image}
         />
