@@ -19,7 +19,7 @@ export function PageMenu({ isSheet = false }) {
         return (
           <div key={item.title + index}>
             {item.heading && (
-              <div className="mb-4 text-sm font-bold">{item.heading}</div>
+              <h3 className="mb-4 font-bold">{item.heading}</h3>
             )}
             <SubLink
               {...{
