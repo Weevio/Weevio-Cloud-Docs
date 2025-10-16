@@ -42,18 +42,30 @@ export const Documents: Paths[] = [
                     {
                         title: "Order Table",
                         href: "/order-table",
+                        cardMeta: {
+                            description: "Browse, search, and filter all orders with a powerful data table interface. Sort by date, customer, status, total, and more."
+                        }
                     },
                     {
                         title: "Order View Overview",
                         href: "/order-view-overview",
+                        cardMeta: {
+                            description: "View comprehensive order details including customer info, line items, totals, payments, and shipping information all in one place."
+                        }
                     },
                     {
                         title: "Line Items",
                         href: "/line-items",
+                        cardMeta: {
+                            description: "Add, edit, and remove products from orders. Adjust quantities, pricing, and discounts with real-time inventory validation."
+                        }
                     },
                     {
                         title: "Customer Management",
                         href: "/customer-management",
+                        cardMeta: {
+                            description: "View and update customer information, including contact details, shipping addresses, and order history."
+                        }
                     },
                 ],
             },
