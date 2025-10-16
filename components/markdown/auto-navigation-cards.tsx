@@ -97,6 +97,7 @@ function getChildrenForPath(targetPath: string): Paths[] {
 
 export function AutoNavigationCards({
   variant = "normal",
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   columns: _columns = 2, // Unused but kept for future grid layout implementation
   exclude = [],
   customPath,
