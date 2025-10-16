@@ -9,10 +9,18 @@ export const Documents: Paths[] = [
             {
                 title: "What is Weevio Cloud?",
                 href: "/what-is-weevio",
+                cardMeta: {
+                    subtitle: "Platform Overview",
+                    description: "Learn about the platform's capabilities and features."
+                }
             },
             {
                 title: "Quick Start Guide",
                 href: "/quick-start",
+                cardMeta: {
+                    subtitle: "Quick Setup",
+                    description: "Get up and running with Weevio Cloud in minutes."
+                }
             }
         ],
     },
