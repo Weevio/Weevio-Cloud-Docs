@@ -35,6 +35,9 @@ export const Documents: Paths[] = [
             {
                 title: "Orders",
                 href: "/orders",
+                cardMeta: {
+                    description: "Browse, search, and manage all customer orders with advanced filtering and sorting tools."
+                },
                 items: [
                     {
                         title: "Order Table",
